@@ -376,7 +376,7 @@
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-  const swiper = new Swiper('.swiper-container', {
+  const swiper1 = new Swiper('.swiper-container1', {
     loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -426,83 +426,81 @@
 <!-- Container for hero -->
 
 
-<div class="w-4xl mx-auto px-4 py-16">
-  <div class="grid grid-cols-2 border border-gray-200 rounded-2xl shadow-2xl overflow-hidden">
-    
-    <!-- Header Row -->
-    <div class="p-2 bg-white">
-      <h2 class="text-[28px] font-semibold text-[#1e2f6f]">Other Agencies Issues</h2>
-    </div>
-    <div class="p-2 bg-[#f3f4ff]">
-      <div class="flex items-center gap-2">
-        <img 
-          src="/photos/logo.png" 
-          alt="Work Vantage Logo" 
-          class="h-20"
-        />
-        <span class="text-[28px] font-semibold text-[#1e2f6f]">Solutions</span>
+<div class="w-4xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+  <!-- Other Agencies Issues Card -->
+  <div class="border border-gray-200 rounded-2xl shadow-lg bg-white p-6">
+    <h2 class="text-[28px] font-semibold text-[#1e2f6f] mb-4">Other Agencies Issues</h2>
+    <div class="space-y-4">
+      <!-- Row 1 -->
+      <div class="flex items-center">
+        <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
+        <p class="text-[#1e2f6f] text-lg">Hard to find enough skilled workers locally</p>
+      </div>
+      <!-- Row 2 -->
+      <div class="flex items-center">
+        <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
+        <p class="text-[#1e2f6f] text-lg">Limited access to specialized skills</p>
+      </div>
+      <!-- Row 3 -->
+      <div class="flex items-center">
+        <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
+        <p class="text-[#1e2f6f] text-lg">Immigration paperwork is complex and confusing</p>
+      </div>
+      <!-- Row 4 -->
+      <div class="flex items-center">
+        <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
+        <p class="text-[#1e2f6f] text-lg">Recruitment takes too long and is inefficient</p>
+      </div>
+      <!-- Row 5 -->
+      <div class="flex items-center">
+        <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
+        <p class="text-[#1e2f6f] text-lg">High turnover rates disrupt business operations</p>
+      </div>
+      <!-- Row 6 -->
+      <div class="flex items-center">
+        <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
+        <p class="text-[#1e2f6f] text-lg">Seasonal labour demands are hard to meet</p>
       </div>
     </div>
+  </div>
 
-    <!-- Comparison Rows -->
-    <!-- Row 1 -->
-    <div class="border-t border-gray-200 p-4 bg-white flex items-center">
-      <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
-      <p class="text-[#1e2f6f] text-lg">Hard to find enough skilled workers locally</p>
+  <!-- Work Vantage Solution Card -->
+  <div class="border border-gray-200 rounded-2xl shadow-lg bg-[#f3f4ff] p-6">
+    <div class="flex items-center gap-3 mb-4">
+      <img src="/photos/logo.png" alt="Work Vantage Logo" class="h-12">
+      <h2 class="text-[28px] font-semibold text-[#1e2f6f]">Work Vantage Solution</h2>
     </div>
-    <div class="border-t border-gray-200 p-4 bg-[#f3f4ff] flex items-center">
-      <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
-      <p class="text-[#1e2f6f] text-lg">Access a <span class="font-bold">global talent pool</span></p>
-    </div>
-
-    <!-- Row 2 -->
-    <div class="border-t border-gray-200 p-4 bg-white flex items-center">
-      <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
-      <p class="text-[#1e2f6f] text-lg">Limited access to specialized skills</p>
-    </div>
-    <div class="border-t border-gray-200 p-4 bg-[#f3f4ff] flex items-center">
-      <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
-      <p class="text-[#1e2f6f] text-lg">Candidates with <span class="font-bold">specific skills</span> tailored to your industry</p>
-    </div>
-
-    <!-- Row 3 -->
-    <div class="border-t border-gray-200 p-4 bg-white flex items-center">
-      <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
-      <p class="text-[#1e2f6f] text-lg">Immigration paperwork is complex and confusing</p>
-    </div>
-    <div class="border-t border-gray-200 p-4 bg-[#f3f4ff] flex items-center">
-      <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
-      <p class="text-[#1e2f6f] text-lg">We ensure a <span class="font-bold">smooth process</span></p>
-    </div>
-
-    <!-- Row 4 -->
-    <div class="border-t border-gray-200 p-4 bg-white flex items-center">
-      <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
-      <p class="text-[#1e2f6f] text-lg">Recruitment takes too long and is inefficient</p>
-    </div>
-    <div class="border-t border-gray-200 p-4 bg-[#f3f4ff] flex items-center">
-      <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
-      <p class="text-[#1e2f6f] text-lg">Streamlined process for <span class="font-bold">faster hiring</span></p>
-    </div>
-
-    <!-- Row 5 -->
-    <div class="border-t border-gray-200 p-4 bg-white flex items-center">
-      <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
-      <p class="text-[#1e2f6f] text-lg">High turnover rates disrupt business operations</p>
-    </div>
-    <div class="border-t border-gray-200 p-4 bg-[#f3f4ff] flex items-center">
-      <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
-      <p class="text-[#1e2f6f] text-lg"><span class="font-bold">Qualified workers</span> to enhance workforce stability</p>
-    </div>
-
-    <!-- Row 6 -->
-    <div class="border-t border-gray-200 p-4 bg-white flex items-center">
-      <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
-      <p class="text-[#1e2f6f] text-lg">Seasonal labour demands are hard to meet</p>
-    </div>
-    <div class="border-t border-gray-200 p-4 bg-[#f3f4ff] flex items-center">
-      <span class="text-green-500 mr-3 text-2xl  font-bold">✓</span>
-      <p class="text-[#1e2f6f] text-lg"><span class="font-bold">Seasonal workers</span> to meet peak labour demands</p>
+    <div class="space-y-4">
+      <!-- Row 1 -->
+      <div class="flex items-center">
+        <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
+        <p class="text-[#1e2f6f] text-lg">Access a <span class="font-bold">global talent pool</span></p>
+      </div>
+      <!-- Row 2 -->
+      <div class="flex items-center">
+        <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
+        <p class="text-[#1e2f6f] text-lg">Candidates with <span class="font-bold">specific skills</span> tailored to your industry</p>
+      </div>
+      <!-- Row 3 -->
+      <div class="flex items-center">
+        <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
+        <p class="text-[#1e2f6f] text-lg">We ensure a <span class="font-bold">smooth process</span></p>
+      </div>
+      <!-- Row 4 -->
+      <div class="flex items-center">
+        <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
+        <p class="text-[#1e2f6f] text-lg">Streamlined process for <span class="font-bold">faster hiring</span></p>
+      </div>
+      <!-- Row 5 -->
+      <div class="flex items-center">
+        <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
+        <p class="text-[#1e2f6f] text-lg"><span class="font-bold">Qualified workers</span> to enhance workforce stability</p>
+      </div>
+      <!-- Row 6 -->
+      <div class="flex items-center">
+        <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
+        <p class="text-[#1e2f6f] text-lg"><span class="font-bold">Seasonal workers</span> to meet peak labour demands</p>
+      </div>
     </div>
   </div>
 </div>
