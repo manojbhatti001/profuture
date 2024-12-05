@@ -4,15 +4,7 @@
   
   .flip-card:hover {
     transform: rotateX(180deg);
+    background-image: none;
   }
 
-  
-  .perspective {
-    perspective: 1000px; /* Creates a 3D effect */
-  }
-  
-  .flip-card-inner {
-    transform-style: preserve-3d; /* Ensures 3D transforms work */
-    backface-visibility: hidden; /* Hides the back side when rotated */
-  }
   
