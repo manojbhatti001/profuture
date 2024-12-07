@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Job Portal</title>
   <style>
     
@@ -36,31 +37,40 @@
   </style>
 </head>
 <body class="bg-gray-100 font-sans text-gray-800">
-    <nav class="bg-blue-600 shadow-md p-4 sticky top-0 z-10">
-        <div class="container mx-auto flex justify-between items-center">
-          <h1 class="text-2xl font-bold text-white">Job Portal</h1>
-          <div class="hidden lg:flex items-center space-x-6">
-            <a href="#" class="text-white hover:text-blue-200">Home</a>
-            <a href="#jobs" class="text-white hover:text-blue-200">Jobs</a>
-            <a href="#about" class="text-white hover:text-blue-200">About Us</a>
-            <a href="#contact" class="text-white hover:text-blue-200">Contact</a>
-            <div class="relative group">
-              <button class="text-white hover:text-blue-200">Job Categories</button>
-              <div class="absolute bg-white text-blue-600 rounded-lg shadow-lg hidden group-hover:block">
-                <a href="#tech" class="block px-4 py-2 hover:bg-blue-100">Technology</a>
-                <a href="#finance" class="block px-4 py-2 hover:bg-blue-100">Finance</a>
-                <a href="#design" class="block px-4 py-2 hover:bg-blue-100">Design</a>
-                <a href="#healthcare" class="block px-4 py-2 hover:bg-blue-100">Healthcare</a>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4">
-            <input id="searchBar" type="text" placeholder="Search Jobs..." class="p-2 border border-gray-300 rounded-lg w-64 search-input" oninput="filterJobs()" />
-            <button class="px-4 py-2 bg-white text-blue-600 rounded-lg hover:bg-blue-100 hover:text-white">Search</button>
-            
-          </div>
-        </div>
+    <!-- Navbar Section -->
+  <header class="bg-white py-4 px-8 shadow-md">
+    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+      <!-- Logo and Tagline -->
+      <div class="flex items-center space-x-4">
+        <img src="/photos/logo.png" class="h-14 w-auto" alt="Logo" />
+        <!-- Adjusted logo size -->
+      </div>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="flex flex-wrap space-x-8 text-blue-900 font-bold">
+          <li>
+            <a href="#" class="hover:text-orange-600">Employers <span class="text-sm">▼</span></a>
+          </li>
+          <li><a href="#" class="hover:text-orange-600">About Us</a></li>
+          <li>
+            <a href="#" class="hover:text-orange-600">Immigration Services</a>
+          </li>
+          <li><a href="#" class="hover:text-orange-600">Job Seekers</a></li>
+          <li><a href="#" class="hover:text-orange-600">Blog</a></li>
+          <li><a href="#" class="hover:text-orange-600">Contact Us</a></li>
+        </ul>
       </nav>
+
+      <!-- Language Flags -->
+      <div class="flex items-center space-x-2">
+        <div class="w-4 h-4 bg-blue-500" style="
+              background: linear-gradient(to right, #0055a4, #ffffff, #ef4135);
+            "></div>
+      </div>
+    </div>
+  </header>
+
       
 
   <div class="container mx-auto p-6 flex gap-6">
@@ -124,82 +134,128 @@
     </aside>
 
     <!-- Main Content -->
-    <main class="w-3/4">
-      <h2 class="text-3xl font-bold text-gray-800 mb-6">Job Listings</h2>
-      <div id="jobCardsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 rounded-lg bg-gray-100 h-[80vh] overflow-y-auto scrollable">
+    <main class="w-full ">
+      <h2 class="text-5xl font-bold text-center text-blue-800 mb-6">Job Listings</h2>
+      <div id="jobCardsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-6 rounded-lg bg-white-300 h-[80vh] overflow-y-auto scrollable">
         <!-- Job cards will be inserted here dynamically -->
+         
       </div>
     </main>
   </div>
 
+  <div id="jobCardsContainer" class="grid grid-cols-1 gap-6 ">
+
+  </div>
+  
   <script>
     const jobData = [
-      { title: "Marketing Manager", company: "Innovative Tech Ltd.", experience: "2-4 Yrs", salary: "₹ 4-6 Lacs PA", workMode: "hybrid", department: "marketing", description: "Develop and execute marketing campaigns." },
-      { title: "HR Specialist", company: "Global HR Solutions", experience: "1-3 Yrs", salary: "₹ 3-5 Lacs PA", workMode: "remote", department: "hr", description: "Manage recruitment, employee relations, and compliance." },
-      { title: "Software Engineer", company: "Tech Innovators Inc.", experience: "3-5 Yrs", salary: "₹ 6-8 Lacs PA", workMode: "office", department: "engineering", description: "Develop and maintain software applications." },
-      { title: "Sales Executive", company: "Sales Experts Ltd.", experience: "0-2 Yrs", salary: "₹ 2-3 Lacs PA", workMode: "hybrid", department: "sales", description: "Promote products and services to clients." },
-      { title: "Product Designer", company: "Design Master Inc.", experience: "3-5 Yrs", salary: "₹ 5-7 Lacs PA", workMode: "remote", department: "engineering", description: "Design and prototype new product features." },
-      { title: "Data Scientist", company: "Data Insights Co.", experience: "2-4 Yrs", salary: "₹ 7-9 Lacs PA", workMode: "office", department: "engineering", description: "Analyze data to derive actionable insights." },
-      { title: "Business Analyst", company: "Visionary Analytics", experience: "1-3 Yrs", salary: "₹ 4-6 Lacs PA", workMode: "hybrid", department: "marketing", description: "Analyze market trends and provide insights." },
-      { title: "Content Writer", company: "Creative Media Ltd.", experience: "1-2 Yrs", salary: "₹ 2-3 Lacs PA", workMode: "remote", department: "marketing", description: "Write articles, blogs, and social media content." },
-      { title: "Financial Analyst", company: "Money Matters Corp.", experience: "2-4 Yrs", salary: "₹ 5-7 Lacs PA", workMode: "office", department: "finance", description: "Analyze financial data and create reports." },
-      { title: "Customer Support Executive", company: "Support Solutions Ltd.", experience: "0-2 Yrs", salary: "₹ 2-3 Lacs PA", workMode: "remote", department: "sales", description: "Provide customer support through various channels." },
-      { title: "UI/UX Designer", company: "Techify Solutions", experience: "2-4 Yrs", salary: "₹ 5-7 Lacs PA", workMode: "office", department: "engineering", description: "Design user-friendly interfaces and experiences." },
-      { title: "Marketing Manager", company: "Innovative Tech Ltd.", experience: "2-4 Yrs", salary: "₹ 4-6 Lacs PA", workMode: "hybrid", department: "marketing", description: "Develop and execute marketing campaigns." },
-      { title: "HR Specialist", company: "Global HR Solutions", experience: "1-3 Yrs", salary: "₹ 3-5 Lacs PA", workMode: "remote", department: "hr", description: "Manage recruitment, employee relations, and compliance." },
-      { title: "Software Engineer", company: "Tech Innovators Inc.", experience: "3-5 Yrs", salary: "₹ 6-8 Lacs PA", workMode: "office", department: "engineering", description: "Develop and maintain software applications." },
-      { title: "Sales Executive", company: "Sales Experts Ltd.", experience: "0-2 Yrs", salary: "₹ 2-3 Lacs PA", workMode: "hybrid", department: "sales", description: "Promote products and services to clients." },
-      { title: "Product Designer", company: "Design Master Inc.", experience: "3-5 Yrs", salary: "₹ 5-7 Lacs PA", workMode: "remote", department: "engineering", description: "Design and prototype new product features." },
-      { title: "Data Scientist", company: "Data Insights Co.", experience: "2-4 Yrs", salary: "₹ 7-9 Lacs PA", workMode: "office", department: "engineering", description: "Analyze data to derive actionable insights." },
-      { title: "Business Analyst", company: "Visionary Analytics", experience: "1-3 Yrs", salary: "₹ 4-6 Lacs PA", workMode: "hybrid", department: "marketing", description: "Analyze market trends and provide insights." },
-      { title: "Content Writer", company: "Creative Media Ltd.", experience: "1-2 Yrs", salary: "₹ 2-3 Lacs PA", workMode: "remote", department: "marketing", description: "Write articles, blogs, and social media content." },
-      { title: "Financial Analyst", company: "Money Matters Corp.", experience: "2-4 Yrs", salary: "₹ 5-7 Lacs PA", workMode: "office", department: "finance", description: "Analyze financial data and create reports." },
-      { title: "Customer Support Executive", company: "Support Solutions Ltd.", experience: "0-2 Yrs", salary: "₹ 2-3 Lacs PA", workMode: "remote", department: "sales", description: "Provide customer support through various channels." },
-      { title: "UI/UX Designer", company: "Techify Solutions", experience: "2-4 Yrs", salary: "₹ 5-7 Lacs PA", workMode: "office", department: "engineering", description: "Design user-friendly interfaces and experiences." }
+      {
+        title: ".Net Production Support",
+        company: "Capgemini",
+        experience: "5-10 Yrs",
+        salary: "₹7-17 Lacs PA",
+        workMode: "hybrid",
+        department: "engineering",
+        location: "Bangalore, Pune",
+        description: "Functional RUN experience (JIRA, tickets), Good oral and written English communication",
+        image: "https://via.placeholder.com/150/4C9BFF/FFFFFF?text=Capgemini",
+      },
+      {
+        title: "Software Developer",
+        company: "Infosys",
+        experience: "3-6 Yrs",
+        salary: "₹6-12 Lacs PA",
+        workMode: "remote",
+        department: "engineering",
+        location: "Remote",
+        description: "Experience in Java, Spring, and Microservices",
+        image: "https://via.placeholder.com/150/FF5733/FFFFFF?text=Infosys",
+      },
+      {
+        title: "Marketing Manager",
+        company: "Tata Group",
+        experience: "5-8 Yrs",
+        salary: "₹8-15 Lacs PA",
+        workMode: "office",
+        department: "marketing",
+        location: "Mumbai",
+        description: "Experience in SEO and Digital Marketing",
+        image: "https://via.placeholder.com/150/FFC300/FFFFFF?text=Tata+Group",
+      },
+      {
+        title: "Sales Executive",
+        company: "Wipro",
+        experience: "2-5 Yrs",
+        salary: "₹4-9 Lacs PA",
+        workMode: "hybrid",
+        department: "sales",
+        location: "Bangalore",
+        description: "Experience in sales and customer management",
+        image: "https://via.placeholder.com/150/28A745/FFFFFF?text=Wipro",
+      },
+      {
+        title: "HR Manager",
+        company: "Cognizant",
+        experience: "5-10 Yrs",
+        salary: "₹10-20 Lacs PA",
+        workMode: "office",
+        department: "hr",
+        location: "Chennai",
+        description: "Expertise in recruitment and employee engagement",
+        image: "https://via.placeholder.com/150/6F42C1/FFFFFF?text=Cognizant",
+      },
+      {
+        title: "Finance Analyst",
+        company: "HDFC",
+        experience: "2-4 Yrs",
+        salary: "₹5-10 Lacs PA",
+        workMode: "remote",
+        department: "finance",
+        location: "Remote",
+        description: "Experience in financial modeling and analysis",
+        image: "https://via.placeholder.com/150/007BFF/FFFFFF?text=HDFC",
+      },
     ];
-
-    // Display jobs based on filters
-    function filterJobs() {
-      const searchQuery = document.getElementById('searchBar').value.toLowerCase();
-      const departmentFilter = document.getElementById('departmentFilter').value;
-      const workModeFilters = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(input => input.value);
-      const experienceRange = document.getElementById('experienceRange').value;
-      const salaryRange = document.getElementById('salaryRange').value;
-
-      const filteredJobs = jobData.filter(job => {
-        const matchesSearch = job.title.toLowerCase().includes(searchQuery) || job.company.toLowerCase().includes(searchQuery);
-        const matchesDepartment = departmentFilter === "" || job.department === departmentFilter;
-        const matchesWorkMode = workModeFilters.length === 0 || workModeFilters.includes(job.workMode);
-        
-        // Experience filter
-        const jobExperienceMax = parseInt(job.experience.split('-')[1]);
-        const matchesExperience = jobExperienceMax >= experienceRange;
-        
-        // Salary filter
-        const jobSalaryMax = parseInt(job.salary.split('-')[1].split(' ')[0]);
-        const matchesSalary = jobSalaryMax >= salaryRange;
-
-        return matchesSearch && matchesDepartment && matchesWorkMode && matchesExperience && matchesSalary;
-      });
-
-      displayJobs(filteredJobs);
-    }
-
-    // Display jobs in the UI
+  
     function displayJobs(jobs) {
-      const container = document.getElementById('jobCardsContainer');
-      container.innerHTML = '';
-      jobs.forEach(job => {
-        const jobCard = document.createElement('div');
-        jobCard.classList.add('bg-white', 'p-6', 'rounded-3xl', 'shadow-3xl', 'card-hover');
+      const container = document.getElementById("jobCardsContainer");
+      container.innerHTML = "";
+      jobs.forEach((job) => {
+        const jobCard = document.createElement("div");
+        jobCard.className =
+          "bg-white p-4 rounded-2xl shadow-2xl card-hover max-w-xl border border-gray-200";
+  
         jobCard.innerHTML = `
-          <h3 class="text-xl font-semibold text-gray-800">${job.title}</h3>
-          <p class="text-sm text-gray-600">${job.company}</p>
-          <p class="text-sm text-gray-600">Experience: ${job.experience}</p>
-          <p class="text-sm text-gray-600">Salary: ${job.salary}</p>
-          <p class="text-sm text-gray-600">Department: ${job.department}</p>
-          <p class="text-sm text-gray-600">Work Mode: ${job.workMode}</p>
+          <div class="flex justify-between items-center mb-4">
+            <img src="${job.image}" alt="${job.company}" class="h-12 w-12 rounded-md">
+            <div class="text-right">
+              <h3 class="text-lg font-bold text-gray-900">${job.title}</h3>
+              <p class="text-xl text-black">${job.company}</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2 text-sm text-gray-700 mb-4">
+            <span class="flex items-center">
+              <i class="fa-solid fa-briefcase"></i>${job.experience}
+            </span>
+            <span class="flex items-center">
+              <i class="fa-solid fa-indian-rupee-sign"></i> ${job.salary}
+            </span>
+            <span class="flex items-center">
+               <i class="fa-solid fa-location-dot"></i>${job.location}
+            </span>
+          </div>
+          <p class="text-black-600">${job.description}</p>
+          <div class="flex justify-between items-center mt-4 text-blue-600">
+            <div class="flex gap-2  text-lg">
+              <span>${job.department}</span>
+              <span>${job.workMode}</span>
+            </div>
+            <button class="border border-blue-600 px-3 py-1 rounded-md text-blue-600 hover:bg-blue-50">
+              Save
+            </button>
+          </div>
         `;
+  
         container.appendChild(jobCard);
       });
     }
