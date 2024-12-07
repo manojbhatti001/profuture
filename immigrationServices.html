@@ -1,80 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
 <body class="font-sans">
 
-        <!-- Header Section -->
-        <header class="bg-blue-900 text-white">
-            <div class="flex justify-between items-center px-6 py-3">
-              <!-- Free Assessment Button -->
-              <a
-                href="#"
-                class="bg-orange-600 text-white px-4 py-2 rounded-full font-bold hover:bg-orange-700"
-              >
-                Free Assessment
-              </a>
-      
-              <!-- Phone Number -->
-              <a href="tel:+18774725818" class="text-lg font-bold hover:underline">
-                +1 (877) 472-5818
-              </a>
-            </div>
-          </header>
-      
-          <!-- Navbar Section -->
-          <header class="bg-white py-4 px-8 shadow-md">
-            <div class="flex justify-between items-center max-w-screen-xl mx-auto">
-              <!-- Logo and Tagline -->
-              <div class="flex items-center space-x-4">
-                <img src="/photos/logo.png" class="h-14 w-auto" alt="Logo" />
-                <!-- Adjusted logo size -->
-              </div>
-      
-              <!-- Navigation Links -->
-              <nav>
-                <ul class="flex flex-wrap space-x-8 text-blue-900 font-bold">
-                  <li>
-                    <a href="#" class="hover:text-orange-600"
-                      >Employers <span class="text-sm">▼</span></a
-                    >
-                  </li>
-                  <li><a href="#" class="hover:text-orange-600">About Us</a></li>
-                  <li>
-                    <a href="#" class="hover:text-orange-600">Immigration Services</a>
-                  </li>
-                  <li><a href="#" class="hover:text-orange-600">Job Seekers</a></li>
-                  <li><a href="#" class="hover:text-orange-600">Blog</a></li>
-                  <li><a href="#" class="hover:text-orange-600">Contact Us</a></li>
-                </ul>
-              </nav>
-      
-              <!-- Language Flags -->
-              <div class="flex items-center space-x-2">
-                <div
-                  class="w-4 h-4 bg-blue-500"
-                  style="
+  <!-- Header Section -->
+  <header class="bg-blue-900 text-white">
+    <div class="flex justify-between items-center px-6 py-3">
+      <!-- Free Assessment Button -->
+      <a href="#" class="bg-orange-600 text-white px-4 py-2 rounded-full font-bold hover:bg-orange-700">
+        Free Assessment
+      </a>
+
+      <!-- Phone Number -->
+      <a href="tel:+18774725818" class="text-lg font-bold hover:underline">
+        +1 (877) 472-5818
+      </a>
+    </div>
+  </header>
+
+  <!-- Navbar Section -->
+  <header class="bg-white py-4 px-8 shadow-md">
+    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+      <!-- Logo and Tagline -->
+      <a href="index.html" class="flex items-center space-x-4">
+        <img src="/photos/logo.png" class="h-14 w-auto" alt="Logo" />
+        <!-- Adjusted logo size -->
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="flex flex-wrap space-x-8 text-blue-900 font-bold">
+          <li>
+            <a href="#" class="hover:text-orange-600">Employers <span class="text-sm">▼</span></a>
+          </li>
+          <li><a href="#" class="hover:text-orange-600">About Us</a></li>
+          <li>
+            <a href="/immigrationServices.html" class="hover:text-orange-600">Immigration Services</a>
+          </li>
+          <li><a href="#" class="hover:text-orange-600">Job Seekers</a></li>
+          <li><a href="#" class="hover:text-orange-600">Blog</a></li>
+          <li><a href="#" class="hover:text-orange-600">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language Flags -->
+      <div class="flex items-center space-x-2">
+        <div class="w-4 h-4 bg-blue-500" style="
                     background: linear-gradient(to right, #0055a4, #ffffff, #ef4135);
-                  "
-                ></div>
-              </div>
-            </div>
-          </header>
+                  "></div>
+      </div>
+    </div>
+  </header>
 
-          <!-- Streamline and  hiring -->
+  <!-- Streamline and  hiring -->
 
-          <div class="">
-
+  <div class="py-20 px-5  flex flex-col gap-4 text-white" style="background-image: url('./photos/Pattern-1.jpg')">
+    <h3 class="px-5 text-5xl font-semibold text-center">
+      Streamline Your Hiring with Workvantage's Immigration Services Expert Support for Canadian Employers
+    </h3>
+    <div class="flex flex-col md:flex-row  items-center gap-6 mt-4">
+      <div class="sm:w-1/2 h-full">
+        <img
+          src="/photos/immigrationPage/canadian-woman-consular-officer-giving-passport-male-immigrant-work-visa-citizenship-visa-application-online-form-immigration-concept-visa-approval-Immigration-WV-scaled.webp"
+          alt="" class="w-full h-full object-cover">
+      </div>
+      <div class="flex flex-col gap-8 sm:w-1/2">
+        <p class="text-xl">Immigration can be tricky, but Workvantage makes it simple. Our services help Canadian
+          employers bring in top international talent with ease. We handle everything from <span
+            class="font-semibold">start to finish</span> so you can focus on your business.
+          We work with a <span class="font-semibold">top-notch partner</span> to offer all the immigration help you
+          need. From <span class="font-semibold">work permits and LMIA applications to permanent residency</span>, we’ve
+          got your <span class="font-semibold">foreign workers covered</span>. Our team ensures everything runs smoothly
+          and meets all legal requirements.</p>
+        <div class="flex items-center justify-around">
+          <div class="sm:w-20 sm:h-20 h-16 w-16 flex justify-center items-center">
+            <img src="/photos/Long-term-Staffing.png" alt="" class="w-full h-full object-cover">
           </div>
-    
+          <div class="sm:w-20 sm:h-20 h-16 w-16 flex justify-center items-center">
+            <img src="/photos/Permanent-and-Seasonal-Jobs.png" alt="" class="w-full h-full object-cover">
+          </div>
+          <div class="sm:w-20 sm:h-20 h-16 w-16 flex justify-center items-center">
+            <img src="/photos/Legal-Compliance.png" alt="" class="w-full h-full object-cover">
+          </div>
+          <div class="sm:w-20 sm:h-20 h-16 w-16 flex justify-center items-center">
+            <img src="/photos/Canada-Licensed.png" alt="" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <div class="flex justify-around">
+          <div class="flex flex-col gap-2 items-center text-center justify-center">
+            <h3 class="font-extrabold text-4xl">17+</h3>
+            <p class="font-medium text-xl">Years of experience</p>
+          </div>
+          <div class="flex flex-col gap-2 items-center text-center justify-center">
+            <h3 class="font-extrabold text-4xl">95%</h3>
+            <p class="font-medium text-xl">Success Rate</p>
+          </div>
+          <div class="flex flex-col gap-2 items-center text-center justify-center">
+            <h3 class="font-extrabold text-4xl">7000+</h3>
+            <p class="font-medium text-xl">Workers in Canada</p>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <button
+            class="px-6 py-3 text-white bg-[#e0421b] text-xl font-semibold rounded-full hover:bg-[#282e69] border-2 border-[#e0421b]">Free
+            Eligibility Assessment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider -->
+
+  <div class="bg-white">
+    <!-- Main Container -->
+    <div class="container mx-auto py-6 px-6 bg-white-300 rounded-lg shadow-md">
+      <!-- Section Heading -->
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-bold text-blue-800">Trusted by Employers</h2>
+        <p class="mt-2 text-2xl text-gray-600">
+          Hear from our clients why partnering with us makes all the
+          difference!
+        </p>
+      </div>
+
+      <!-- Testimonial Slider -->
+      <div class="relative bg-white overflow-hidden">
+        <div class="swiper-container bg-white">
+          <div class="swiper-wrapper bg-white overflow-hidden">
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
+                "We have been working with Workvantage since 2021 to meet our
+                staffing needs."
+              </p>
+              <img src="/photos/Prairie-Pride1.png" alt="Prairie Pride Logo"
+                class="w-40 h-40 rounded-full object-cover mb-4" />
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
+                "We have been working with Workvantage International since
+                2015 to assist us with our labour challenges."
+              </p>
+              <img src="/photos/Etegra6.png" alt="Etegra Logo" class="w-40 h-40 rounded-full object-cover mb-4" />
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
+                "Workvantage has always been very thorough about assisting us
+                in choosing the foreign workers."
+              </p>
+              <img src="/photos/Pops-pub-and-Grill5.png" alt="Pops Pub and Grill Logo"
+                class="w-40 h-40 rounded-full object-cover mb-4" />
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
+                "Their team is responsive, reliable, knowledgeable, and
+                provides great service at a good price."
+              </p>
+              <img src="/photos/Trenton-Cold-Storage4.png" alt="Trenton Cold Storage Logo"
+                class="w-40 h-40 rounded-full object-cover mb-4" />
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
+                "Workvantage makes our lives easier by recruiting and doing
+                all the necessary paperwork."
+              </p>
+              <img src="/photos/WCA3.png" alt="WCA Logo" class="w-40 h-40 rounded-full object-cover mb-4" />
+            </div>
+          </div>
+
+          <!-- Swiper Navigation Buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        slidesPerView: 1,
+        spaceBetween: 20,
+        allowTouchMove: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+
+      });
+    </script>
+  </div>
+
+
+  <!--Partnering with Experts  -->
+  <div class="flex bg-[#282e69] px-5 sm:px-20 py-20 gap-8 items-center md:flex-row flex-col text-white">
+    <div class="w-full">
+      <h2 class="font-semibold text-3xl ">Partnering with Experts for Your Success
+      </h2>
+      <p class="text-xl font-medium">
+        Beyond meeting your labour needs, <span class="text-[#e0421b]">Workvantage</span> collaborates with <span
+          class="text-[#e0421b]">Immigration Pros</span> consultancy services.
+        Our partner is fully licensed by <span class="font-bold">The College of Immigration and Citizenship Consultants
+          (CICC),</span> so you’re in
+        good hands.
+      </p>
+      <p class="text-xl font-medium">
+        We handle all the legal details, making the process of hiring foreign workers seamless and stress-free and we
+        will look at all of the options available for you to qualify under one of the recruitment programs available.
+      </p>
+    </div>
+    <div class="w-full ">
+      <div
+        class="w-4/5 bg-white p-4 bg-white flex items-center justify-center rounded-tl-[60px] rounded-br-[60px] overflow-hidden">
+        <img src="/photos/Logo-Immigrationpros.png" alt="Immigration Consultancy" class="w-full object-cover" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Workvantage International Workforce Solutions Inc. has more than 17 years of experience recruiting foreign workers -->
+
+  <div class="px-5 sm:px-20 py-20 bg-white flex flex-col gap-8 text-[#282e69] text-center">
+    <h4 class="text-2xl font-semibold "><span class="font-bold">Workvantage International Workforce Solutions
+        Inc.</span> has more than <span class="font-bold">17 years of experience</span> recruiting foreign workers</h4>
+    <h2 class="text-[#e0421b] font-bold text-5xl">Free no-obligation assessment available</h2>
+    <h3 class="font-semibold text-xl ">At <span class="text-[#e0421b]">Workvantage</span>, we offer a complimentary,
+      no-obligation assessment to help you explore your options for <span class="font-bold">hiring foreign workers
+      </span> through the <span class="font-bold">Temporary Foreign Worker Program</span>. Our expert team will guide
+      you through every step, ensuring you understand all the available pathways.</h3>
+    <div class="p-4">
+      <img src="/photos/immigrationPage/smiling-colleagues-watching-document-folder-scaled.webp" alt=""
+        class="w-full h-full object-cover">
+    </div>
+    <div class="flex justify-center">
+      <button class="px-6 py-3 text-white bg-[#e0421b] text-xl font-semibold rounded-full hover:bg-[#282e69] ">Hire With
+        Confidence!</button>
+    </div>
+  </div>
+
+  <!-- 
+    Immigration services we offer for your foreign workers
+  -->
+
+  <div class="px-5 sm:px-20 py-20 bg-[#edeef7] flex flex-col gap-8 justify-center items-center">
+    <h2 class="font-bold text-5xl text-center text-[#e0421b] ">Immigration services we offer for your foreign workers
+    </h2>
+    <div class=" gap-8 flex flex-wrap  justify-center items-center items-stretch text-[#282e69]">
+
+      <div class="flex flex-col gap-4  shadow-2xl  p-8 py-10 w-72 bg-white rounded-lg ">
+        <div class="text-6xl  text-center">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+        <h3 class=" text-[#282e69] text-xl  font-semibold">LMIA & Work Permit Applications:</h3>
+        <h3 class="flex items-center gap-2 text-lg font-medium">
+          <i class="fa-solid fa-arrow-right-long"></i>
+          Labour Market Impact Assessment
+        </h3>
+        <h3 class="flex items-center gap-2 text-lg font-medium">
+          <i class="fa-solid fa-arrow-right-long"></i>
+          Work Permit Application
+        </h3>
+      </div>
+
+      <div class="flex flex-col gap-2 shadow-2xl  p-8 py-10 w-72 bg-white rounded-lg ">
+        <div class="text-6xl  text-center">
+          <i class="fa-solid fa-file-contract"></i>
+        </div>
+        <h3 class=" text-[#282e69] text-xl  font-semibold">Temporary Residence Services:</h3>
+        <h3 class="flex items-center gap-2 text-lg font-medium"><i class="fa-solid fa-arrow-right-long"></i>Temporary
+          Residence</h3>
+        <h3 class="flex items-center gap-2 text-lg font-medium"><i class="fa-solid fa-arrow-right-long"></i>Visitor Visa
+        </h3>
+        <h3 class="flex items-center gap-2 text-lg font-medium"><i class="fa-solid fa-arrow-right-long"></i>Study Permit
+        </h3>
+        <h3 class="flex items-center gap-2 text-lg font-medium"><i class="fa-solid fa-arrow-right-long"></i>Restoration
+          of Status</h3>
+
+
+      </div>
+
+      <div class="flex flex-col gap-4  shadow-2xl p-8 py-10 w-72 bg-white rounded-lg ">
+        <div class="text-6xl  text-center">
+          <i class="fa-solid fa-house-chimney-user"></i>
+        </div>
+        <h3 class=" text-[#282e69] text-xl  font-semibold">Permanent Residence Services:</h3>
+        <h3 class="flex items-center gap-2 text-lg font-medium"><i class="fa-solid fa-arrow-right-long"></i>Permanent
+          Residence</h3>
+        <h3 class="flex items-center gap-2 text-lg font-medium"><i class="fa-solid fa-arrow-right-long"></i>Express
+          Entry</h3>
+        <h3 class="flex items-center gap-2 text-lg font-medium"><i class="fa-solid fa-arrow-right-long"></i>Family &
+          Spouse SponserShip</h3>
+        <h3 class="flex items-center gap-2 text-lg font-medium"><i class="fa-solid fa-arrow-right-long"></i>Provincial
+          Nominee</h3>
+      </div>
+
+    </div>
+  </div>
+
+    <!-- Hassle Free Recruitment -->
+    <div class="w-full px-5 sm:px-20 py-12 flex flex-col gap-4 justify-center items-center text-center text-[#10143b]">
+      <h3 class="font-bold text-4xl">
+        How Our Hassle-Free Recruitment Process Works?
+      </h3>
+      <p class="text-xl font-semibold">
+        We handle everything from start to finish. You get the best skilled
+        trades candidates without the stress, so you can focus on what you do
+        best – keeping your company as an industry leader.
+      </p>
+  
+      <div class="grid sm:grid-cols-3 gap-4 mt-4">
+        <div class="flex flex-col gap-4 items-center">
+          <div class="w-24 h-24 justify-center items-center">
+            <img src="/photos/laptop.png" alt="" class="w-full h-full object-cover" />
+          </div>
+          <h4 class="font-bold text-2xl text-[#10143b]">
+            1. Recruit, Screen & Vet Candidates
+          </h4>
+        </div>
+        <div class="flex flex-col gap-4 items-center">
+          <div class="w-24 h-24 justify-center items-center">
+            <img src="/photos/user.png" alt="" class="w-full h-full object-cover" />
+          </div>
+          <h4 class="font-bold text-2xl text-[#10143b]">
+            2. Interview, Select Workers & process the
+            <span class="text-[#e0421b]">LMIA</span>
+          </h4>
+        </div>
+  
+        <div class="flex flex-col gap-4 items-center">
+          <div class="w-24 h-24 justify-center items-center">
+            <img src="/photos/airplane.png" alt="" class="w-full h-full object-cover" />
+          </div>
+          <h4 class="font-bold text-2xl text-[#10143b]">
+            3. Process Work Permits & Arrange Travel to Canada
+          </h4>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Real Feedback Real Success -->
+  <div class="p-4 w-full flex gap-4 flex-col justify-between items-center py-12">
+    <div class="w-28 h-28 flex justify-center items-center">
+      <img src="/photos/Logo-Google.png" alt="" class="w-full h-full object-cover" />
+    </div>
+    <h3 class="text-5xl font-bold text-[#10143b]">
+      Real Feedback, Real Success
+    </h3>
+
+    <div class="flex flex-col justify-center items-center">
+      <div class="p-4 text-[#10143b] bg-[#f0f0f0] text-xl font-semibold my-4">
+        They are reliable and friendly and affordble
+      </div>
+
+      <h3 class="text-[#e0421b] text-2xl font-bold">CHAD JEMIESON</h3>
+      <p class="text-[#10143b]">3 months ago</p>
+      <div class="flex gap-1 mt-4">
+        <div class="w-4 h-4 flex justify-center items-center">
+          <img src="/photos/star.png" alt="" class="w-full h-full object-cover" />
+        </div>
+        <div class="w-4 h-4 flex justify-center items-center">
+          <img src="/photos/star.png" alt="" class="w-full h-full object-cover" />
+        </div>
+        <div class="w-4 h-4 flex justify-center items-center">
+          <img src="/photos/star.png" alt="" class="w-full h-full object-cover" />
+        </div>
+        <div class="w-4 h-4 flex justify-center items-center">
+          <img src="/photos/star.png" alt="" class="w-full h-full object-cover" />
+        </div>
+        <div class="w-4 h-4 flex justify-center items-center">
+          <img src="/photos/star.png" alt="" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- company -->
+   <div class="w-full flex flex-col gap-2 px-5 sm:px-20 py-20">
+    <div class="bg-[#f7f7f7] grid md:grid-cols-3 py-8 gap-4 md:gap-2">
+      <div class="flex flex-col justify-center items-center">
+        <img src="/photos/paper.png" alt="" class="md:w-1/3 w-1/5" />
+        <div class="px-6 py-3 rounded-full bg-black text-white font-semibold text-xl">
+          Job Seekers
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center items-center md:border-x-4">
+        <img src="/photos/building.png" alt="" class="md:w-1/3 w-1/5" />
+        <div class="px-6 py-3 rounded-full bg-black text-white font-semibold text-xl">
+          Agencies
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img src="/photos/maple.png" alt="" class="md:w-1/3 w-1/5" />
+        <div class="px-6 py-3 rounded-full bg-black text-white font-semibold text-xl">
+          Immigration Services
+        </div>
+      </div>
+    </div>
+
+    <div class="grid gap-4 md:gap-2 py-8 md:grid-cols-3">
+      <div class="flex flex-col gap-4 justify-between items-center">
+        <div class="px-6 py-3 text-[#282e69] font-semibold text-2xl">
+          PARTNER COMPANY
+        </div>
+        <img src="/photos/Logo-Immigrationpros.png" alt="" class="md:w-1/3 w-1/5" />
+      </div>
+      <div class="flex flex-col gap-4 justify-between items-center md:border-x-4">
+        <div class="px-6 py-3 text-[#282e69] font-semibold text-2xl">
+          ALLIED COMPANY
+        </div>
+        <img src="/photos/RCIC-CRIC.png" alt="" class="md:w-1/3 w-1/5" />
+      </div>
+      <div class="flex flex-col gap-4 justify-between items-center">
+        <div class="px-6 py-3 text-[#282e69] font-semibold text-2xl">
+          ACCREDITATION
+        </div>
+        <img src="/photos/Logo-Immigrationpros.png" alt="" class="md:w-1/3 w-1/5" />
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <footer class="bg-black text-white pt-8">
+    <div class="p-4 gap-6 grid w-full grid sm:grid-cols-2 lg:grid-cols-4 lg:">
+      <div class="flex flex-col gap-4">
+        <div class="w-full">
+          <img src="/photos/Workvantage-logo-blanco.webp" alt="" class="w-40 h-full object-cover" />
+        </div>
+        <div>
+          *Office attention is by appointment only. If you would like to book
+          an appointment please call us.
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <p class="text-lg font-medium mb-2">Offices</p>
+        <p class="flex items-center gap-2">
+          <span>&#128222;</span>
+          +1 (587) 409-0054
+          <span><img src="/photos/location-pin.png" alt="" class="w-4 h-4" /></span>
+          Alberta
+        </p>
+        <p class="flex items-center gap-2">
+          <span>&#128222;</span>
+          +1 (587) 409-0054
+          <span><img src="/photos/location-pin.png" alt="" class="w-4 h-4" /></span>
+          Ontario
+        </p>
+        <p class="flex items-center gap-2">
+          <span>&#128222;</span>
+          +1 (587) 409-0054
+          <span><img src="/photos/location-pin.png" alt="" class="w-4 h-4" /></span>
+          Quebec
+        </p>
+        <p class="flex items-center gap-2">
+          <span>&#128222;</span>
+          +1 (587) 409-0054
+          <span><img src="/photos/location-pin.png" alt="" class="w-4 h-4" /></span>
+          Nova Scotia
+        </p>
+        <p class="flex items-center gap-2">
+          <span>&#128222;</span>
+          +1 (587) 409-0054
+          <span><img src="/photos/location-pin.png" alt="" class="w-4 h-4" /></span>
+          British Columbia
+        </p>
+      </div>
+
+      <div class="flex-col gap-2">
+        <h3 class="text-lg font-medium mb-2">Employers Contact</h3>
+        <p>Toll Free</p>
+        <p><span>&#128222;</span>+1 (877) 575-7202</p>
+        <p class="flex gap-2 items-center">
+          <span><img src="/photos/gmail.png" alt="" class="w-4 h-4" /></span>
+          info@workvantage.ca
+        </p>
+      </div>
+
+      <div>
+        <p class="text-lg font-medium mb-2">Job Seekers Contact</p>
+        <p class="flex items-center">
+          <span>&#128222;</span> +1 (587) 409-0054
+        </p>
+      </div>
+    </div>
+
+    <div class="p-4 px-10 bg-[#e0421b] sm:text-xl font-medium flex flex-wrap gap-4 justify-between">
+      <p class="text-center">&copy; 2024 Workvantage - all rights reserved</p>
+      <p class="text-center order-1 sm:order-none">Privacy Policy</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
