@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMIA Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-blue-900 text-white">
+      <div class="flex justify-between items-center px-6 py-3">
+        <!-- Free Assessment Button -->
+        <a
+          href="#"
+          class="bg-orange-600 text-white px-4 py-2 rounded-full font-bold hover:bg-orange-700"
+        >
+          Free Assessment
+        </a>
+
+        <!-- Phone Number -->
+        <a href="tel:+18774725818" class="text-lg font-bold hover:underline">
+          +1 (877) 472-5818
+        </a>
+      </div>
+    </header>
+
+    <!-- Navbar Section -->
+    <header class="bg-white py-4 px-8 shadow-md">
+      <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+        <!-- Logo and Tagline -->
+        <a href="index.html" class="flex items-center space-x-4">
+          <img src="/photos/logo.png" class="h-14 w-auto" alt="Logo" />
+          <!-- Adjusted logo size -->
+        </a>
+
+        <!-- Navigation Links -->
+        <nav>
+          <ul class="flex flex-wrap space-x-8 text-blue-900 font-bold">
+            <li>
+              <a href="#" class="hover:text-orange-600"
+                >Employers <span class="text-sm">▼</span></a
+              >
+            </li>
+            <li><a href="#" class="hover:text-orange-600">About Us</a></li>
+            <li>
+              <a href="immigrationServices.html" class="hover:text-orange-600"
+                >Immigration Services</a
+              >
+            </li>
+            <li><a href="#" class="hover:text-orange-600">Job Seekers</a></li>
+            <li><a href="#" class="hover:text-orange-600">Blog</a></li>
+            <li><a href="#" class="hover:text-orange-600">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!-- Language Flags -->
+        <div class="flex items-center space-x-2">
+          <div
+            class="w-4 h-4 bg-blue-500"
+            style="
+              background: linear-gradient(to right, #0055a4, #ffffff, #ef4135);
+            "
+          ></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- globel Section -->
+    <div
+      class="text-white flex flex-col gap-8 p-8"
+      style="background-image: url('./photos/Pattern-1.jpg')"
+    >
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight px-8 text-center">
+        Your Go-To Guide for Understanding LMIA: Insights and Application Steps
+      </h1>
+      <div class="flex items-center">
+        <div class="w-full">
+          <img
+            src="/photos/LMIA/woman-is-sitting-job-interview-2-scaled.webp"
+            alt=""
+          />
+        </div>
+
+        <!-- Left Content -->
+        <div class="w-full flex flex-col gap-4 p-8">
+          <p class="mt-4 text-xl">
+            A
+            <span class="font-semibold"
+              >Labour Market Impact Assessment (LMIA)</span
+            >
+            is a document issued by
+            <span class="font-semibold"
+              >Employment and Social Development Canada (ESDC)
+            </span>
+            that employers may require before hiring a foreign worker. The LMIA
+            process ensures that the hiring of a foreign worker will not
+            negatively impact the Canadian labour market.
+          </p>
+          <p class="mt-4 font-semibold">Connect with top talent today!</p>
+
+          <!-- Badges in One Line -->
+          <div class="flex mt-2 gap-2 items-center justify-around">
+            <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+              <img
+                src="./photos/Permanent-and-Seasonal-Jobs.png"
+                alt="Permanent and Seasonal Jobs"
+                class="w-16 h-16 object-cover"
+              />
+            </div>
+            <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+              <img
+                src="./photos/Long-term-Staffing.png"
+                alt="Long-term Staffing"
+                class="w-16 h-16 object-cover"
+              />
+            </div>
+            <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+              <img
+                src="./photos/Legal-Compliance.png"
+                alt="Legal Compliance"
+                class="w-16 h-16 object-cover"
+              />
+              <!-- <span class="text-xs font-semibold text-white">LEGAL<br>COMPLIANCE</span> -->
+            </div>
+            <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+              <img
+                src="./photos/Canada-Licensed.png"
+                alt="Canada Licensed"
+                class="w-16 h-16 object-cover"
+              />
+            </div>
+          </div>
+          <div class="flex mt-4 justify-around">
+            <div
+              class="flex flex-col gap-2 items-center text-center justify-center"
+            >
+              <h3 class="font-extrabold text-4xl">17+</h3>
+              <p class="font-medium text-xl">Years of experience</p>
+            </div>
+            <div
+              class="flex flex-col gap-2 items-center text-center justify-center"
+            >
+              <h3 class="font-extrabold text-4xl">95%</h3>
+              <p class="font-medium text-xl">Success Rate</p>
+            </div>
+            <div
+              class="flex flex-col gap-2 items-center text-center justify-center"
+            >
+              <h3 class="font-extrabold text-4xl">7000+</h3>
+              <p class="font-medium text-xl">Workers in Canada</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cards section -->
+    <div
+      class="flex sm:p-20 px-5 py-20 bg-[#edeef7] gap-20 flex-wrap md:flex-nowrap"
+    >
+      <div
+        class="flex flex-col w-full gap-4 text-center overflow-hidden bg-white text-[#282e69] shadow-2xl rounded-lg"
+      >
+        <div class="w-full">
+          <img
+            src="/photos/LMIA/smiling-colleagues-watching-document-folder-1024x630.webp"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col gap-4 p-8">
+          <h3 class="font-semibold text-2xl">An LMIA gives:</h3>
+          <h4 class="text-lg font-medium">
+            Canadian employers the authorization to hire a temporary foreign
+            worker. It is required for certain temporary positions, allowing
+            prospective employees to apply for a work permit.
+          </h4>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col w-full gap-4 text-center overflow-hidden bg-white text-[#282e69] shadow-2xl rounded-lg"
+      >
+        <div class="w-full">
+          <img
+            src="/photos/LMIA/negotiating-business-image-businesswomen-handshaking-happy-with-work-handshake-gesturing-people-connection-deal-concept-cropped-image-young-business-people-shaking-hands-office-1024x619.webp"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col gap-4 p-8">
+          <h3 class="font-semibold text-2xl">A positive LMIA indicates:</h3>
+          <h4 class="text-lg font-medium">
+            A need for a foreign worker to fill a job vacancy that a Canadian or
+            permanent resident cannot fulfill. A positive LMIA is also known as
+            a confirmation letter.
+          </h4>
+        </div>
+      </div>
+      <div
+        class="flex flex-col w-full gap-4 text-center overflow-hidden bg-white text-[#282e69] shadow-2xl rounded-lg"
+      >
+        <div class="w-full">
+          <img
+            src="/photos/immigrationPage/canadian-woman-consular-officer-giving-passport-male-immigrant-work-visa-citizenship-visa-application-online-form-immigration-concept-visa-approval-Immigration-WV-scaled.webp"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col gap-4 p-8">
+          <h3 class="font-semibold text-2xl">An LMIA confirms that:</h3>
+          <h4 class="text-lg font-medium">
+            No Canadians or permanent residents are available to fill the job
+            due to a shortage of skilled labour. So, there is a genuine need for
+            a temporary foreign worker.
+          </h4>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Slider -->
+    <div class="bg-white">
+      <!-- Main Container -->
+      <div
+        class="container mx-auto py-6 px-6 bg-white-300 rounded-lg shadow-md"
+      >
+        <!-- Section Heading -->
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-bold text-blue-800">Trusted by Employers</h2>
+          <p class="mt-2 text-2xl text-gray-600">
+            Hear from our clients why partnering with us makes all the
+            difference!
+          </p>
+        </div>
+
+        <!-- Testimonial Slider -->
+        <div class="relative bg-white overflow-hidden">
+          <div class="swiper-container bg-white">
+            <div class="swiper-wrapper bg-white overflow-hidden">
+              <!-- Slide 1 -->
+              <div
+                class="swiper-slide p-6 rounded-lg shadow-lg flex flex-col items-center text-center"
+              >
+                <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
+                  "We have been working with Workvantage since 2021 to meet our
+                  staffing needs."
+                </p>
+                <img
+                  src="/photos/Prairie-Pride1.png"
+                  alt="Prairie Pride Logo"
+                  class="w-40 h-40 rounded-full object-cover mb-4"
+                />
+              </div>
+
+              <!-- Slide 2 -->
+              <div
+                class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center"
+              >
+                <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
+                  "We have been working with Workvantage International since
+                  2015 to assist us with our labour challenges."
+                </p>
+                <img
+                  src="/photos/Etegra6.png"
+                  alt="Etegra Logo"
+                  class="w-40 h-40 rounded-full object-cover mb-4"
+                />
+              </div>
+
+              <!-- Slide 3 -->
+              <div
+                class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center"
+              >
+                <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
+                  "Workvantage has always been very thorough about assisting us
+                  in choosing the foreign workers."
+                </p>
+                <img
+                  src="/photos/Pops-pub-and-Grill5.png"
+                  alt="Pops Pub and Grill Logo"
+                  class="w-40 h-40 rounded-full object-cover mb-4"
+                />
+              </div>
+
+              <!-- Slide 4 -->
+              <div
+                class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center"
+              >
+                <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
+                  "Their team is responsive, reliable, knowledgeable, and
+                  provides great service at a good price."
+                </p>
+                <img
+                  src="/photos/Trenton-Cold-Storage4.png"
+                  alt="Trenton Cold Storage Logo"
+                  class="w-40 h-40 rounded-full object-cover mb-4"
+                />
+              </div>
+
+              <!-- Slide 5 -->
+              <div
+                class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center"
+              >
+                <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
+                  "Workvantage makes our lives easier by recruiting and doing
+                  all the necessary paperwork."
+                </p>
+                <img
+                  src="/photos/WCA3.png"
+                  alt="WCA Logo"
+                  class="w-40 h-40 rounded-full object-cover mb-4"
+                />
+              </div>
+            </div>
+
+            <!-- Swiper Navigation Buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <script>
+        const swiper = new Swiper(".swiper-container", {
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          slidesPerView: 1,
+          spaceBetween: 20,
+          allowTouchMove: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+        });
+      </script>
+    </div>
+
+    <!-- Hassle Free Recruitment -->
+    <div
+      class="w-full p-8 sm:p-12 py-12 flex flex-col gap-4 justify-center items-center text-center text-[#282e69] bg-[#edeef7]"
+    >
+      <h3 class="font-bold text-4xl">LMIA Application Process For Employers</h3>
+      <p class="text-xl font-semibold">
+        Streamline your recruitment of foreign workers with our expert guidance
+        every step of the way.
+      </p>
+
+      <div class="grid sm:grid-cols-3 gap-4 mt-4">
+        <div class="flex flex-col gap-4 items-center">
+          <div class="w-24 h-24 justify-center items-center">
+            <img
+              src="/photos/maple (1).png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h4 class="font-bold text-2xl text-[#10143b]">
+            1. Workvantage identifies your company’s needs
+          </h4>
+        </div>
+        <div class="flex flex-col gap-4 items-center">
+          <div class="w-24 h-24 justify-center items-center">
+            <img
+              src="/photos/laptop.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h4 class="font-bold text-2xl text-[#10143b]">
+            2. We recruit foreign workers & prepare the LMIA
+            <span class="text-[#e0421b]">LMIA</span>
+          </h4>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center">
+          <div class="w-24 h-24 justify-center items-center">
+            <img
+              src="/photos/airplane.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h4 class="font-bold text-2xl text-[#10143b]">
+            3. We handle the work permit application & workers’ arrival
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Obtaining a Positive LMIA: How Can a Canadian Employer Get an LMIA? -->
+    <div
+      class="sm:p-20 px-5 py-20 bg-white text-center text-[#282e69] flex flex-col gap-8"
+    >
+      <h3 class="text-6xl font-bold text-[#e0421b]">
+        Obtaining a Positive LMIA: How Can a Canadian Employer Get an LMIA?
+      </h3>
+      <h5 class="text-2xl">
+        Obtaining a positive LMIA can be complex and involves more than just
+        filling out a form. Employers need to apply through Employment and
+        Social Development Canada (ESDC), and the application procedure differs
+        depending on the type of worker they are looking to hire. Each stream,
+        whether for high-wage or low-wage positions, agricultural workers,
+        caregivers, or roles specific to Quebec, has its own set of guidelines
+        and requirements.
+      </h5>
+      <div class="w-full">
+        <img
+          src="/photos/LMIA/happy-engineer-young-black-worker-handshaking-while-greeting-industrial-building-scaled.webp"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- Exploring LMIA Exemptions -->
+
+    <div class="sm:p-20 py-20 px-5 flex items-center gap-10 bg-[#282e69]">
+      <div class="flex flex-col gap-8 text-white">
+        <h2 class="text-5xl">Exploring LMIA Exemptions</h2>
+        <h4 class="font-medium text-2xl">
+          An employee may be exempt from an LMIA if:
+        </h4>
+        <ul class="list-disc text-2xl ml-6">
+          <li>
+            They qualify under the International Mobility Program (IMP), which
+            allows certain workers to enter Canada without an LMIA based on
+            specific work permit categories.
+          </li>
+          <li>
+            Their job type falls under a work permit code that is exempt from
+            LMIA requirements.
+          </li>
+          <li>
+            They are citizens of a visa-exempt country and meet the necessary
+            conditions for exemption.
+          </li>
+          <li>
+            If your prospective temporary foreign employee does not fall under
+            one of these exemptions, you may need to apply for an LMIA.
+          </li>
+        </ul>
+      </div>
+      <div class="w-full h-full flex justify-center items-center">
+        <img
+          src="/photos/LMIA/young-man-civil-engineer-safety-hat-1024x683.webp"
+          alt=""
+          class="h-full w-full object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- Optimizing Recruitment Efforts for LMIA: What Employers Need to Know -->
+
+    <div
+      class="sm:p-20 py-20 px-5 flex items-center gap-10 bg-white text-[#282e69]"
+    >
+      <div class="w-full">
+        <img
+          src="/photos/LMIA/hundsome-businessmen-working-with-clients-1536x1024.webp"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <div class="flex flex-col gap-8 w-full">
+        <h2 class="text-5xl">
+          Optimizing Recruitment Efforts for LMIA: What Employers Need to Know
+        </h2>
+        <h4 class="text-2xl">
+          To prioritize job opportunities for Canadians and permanent residents,
+          employers in most provinces must demonstrate a thorough recruitment
+          process before applying for an LMIA. This includes:
+        </h4>
+        <h4 class="text-2xl">
+          -Advertising on national or provincial job banks for at least 28 days,
+          with some streams requiring additional advertising on specialized
+          platforms targeting underrepresented groups.
+        </h4>
+        <h4 class="italic text-2xl">
+          “Quebec employers may be exempt from this if filling roles deemed
+          essential or listed as difficult to fill by Service Canada.”
+        </h4>
+      </div>
+    </div>
+
+    <!-- Key LMIA Requirements for Canadian Employers in 2024 -->
+
+    <div
+      class="sm:p-20 py-20 px-5 flex items-center gap-10 text-white bg-[#282e69]"
+    >
+      <div class="flex flex-col gap-8 w-full">
+        <h2 class="text-5xl">
+          Key LMIA Requirements for Canadian Employers in 2024
+        </h2>
+        <ul class="list-disc text-2xl ml-6">
+          <li>Operate a legitimate business</li>
+          <li>Demonstrate a genuine need for a foreign worker</li>
+          <li>Conduct domestic recruitment efforts</li>
+          <li>Pay the LMIA processing fee</li>
+          <li>Cover round-trip transportation costs</li>
+          <li>Provide suitable accommodation</li>
+          <li>Ensure fair wages</li>
+        </ul>
+      </div>
+
+      <div class="w-full">
+        <img
+          src="/photos/LMIA/passengers-standing-airport-boarding-gate-1536x1024.webp"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+    <!--Discover Your LMIA Hiring Pathways  -->
+    <div
+      class="sm:p-20 py-20 px-5 flex flex-col gap-10 bg-[#deebff] text-[#282e69] text-center"
+    >
+      <h2 class="text-5xl font-bold">Discover Your LMIA Hiring Pathways</h2>
+      <h4 class="text-xl">
+        <span class="text-[#e0421b] font-semibold"
+          >Employment and Social Development Canada (ESDC)</span
+        >
+        provides employers with a positive LMIA after taking into consideration
+        certain requirements that must be met by the employers. These
+        requirements will vary depending on the type of program through which
+        you are hiring. The programs, also known as streams, are detailed as
+        follows:
+      </h4>
+    </div>
+
+    <!-- LMIA exemptions are available under the International Mobility -->
+
+    <div
+      class="w-4xl mx-auto px-4 sm:px-20 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 text-[#282e69]"
+    >
+      <!-- Other Agencies Issues Card -->
+      <div
+        class="border border-gray-200 rounded-2xl shadow-lg bg-white p-6 flex justify-center items-center"
+      >
+        <h2 class="text-5xl text-center font-bold">
+          LMIA exemptions are available under the International Mobility Program
+          (IMP) and through various Free Trade Agreements (FTAs). These include:
+        </h2>
+      </div>
+
+      <!-- Work Vantage Solution Card -->
+      <div
+        class="border border-gray-200 rounded-2xl shadow-lg bg-[#f3f4ff] p-6 text-xl"
+      >
+        <p>Canada-Chile FTA</p>
+        <p>Canada-Peru FTA</p>
+        <p>Canada-Colombia FTA</p>
+        <p>Canada-Korea FTA</p>
+        <p>Comprehensive Economic and Trade Agreement (CETA)</p>
+        <p>
+          General Agreement on Trade in Services (GATS) Intra-Company
+          Transferees
+        </p>
+        <p>
+          Innovation Stream Pilot North American Free Trade Agreement (NAFTA)
+          (now replaced by the United States-Mexico-Canada Agreement, or USMCA,
+          but often still referred to as NAFTA) Workers from specific countries
+          or those transferring within a multinational company can benefit from
+          these exemptions, provided they meet the criteria set out by these
+          agreements.
+        </p>
+      </div>
+    </div>
+
+    <!-- Latest LMIA Processing Times for 2024 -->
+
+    <div
+      class="sm:p-20 py-20 px-5 flex flex-col bg-[#deebff] text-[#282e69] text-center"
+    >
+      <h2 class="text-5xl font-bold">Latest LMIA Processing Times for 2024</h2>
+      <h4 class="text-xl mt-10">
+        The duration of an LMIA process can be unpredictable. It can take
+        anywhere from a few weeks to several months, considering the mandatory
+        30-day job advertising period before filing an application.
+      </h4>
+      <h4 class="text-xl">
+        According to Service Canada, processing times vary depending on the type
+        of application. See the updated table below for average processing times
+        by application type.
+      </h4>
+      <h4 class="text-xl">
+        Note: The table provides average processing times. Actual processing
+        times may vary depending on the number of applications being processed
+        by Service Canada, additional delays, and the complexity of each case.
+      </h4>
+    </div>
+
+    <!-- 
+    Stream
+     -->
+
+    <div
+      class="sm:p-20 py-20 px-5 flex flex-col gap-10 text-[#282e69] text-xl "
+    >
+      <table class="border table-auto w-full">
+        <thead class="border">
+          <tr class="text-left">
+            <th class="p-2"><p>Stream</p></th>
+            <th class="p-2"><p>Processing times</p></th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr class="border">
+            <td class="p-2"><p>Agricultural Stream:</p></td>
+            <td class="p-2"><p><span class="text-green-500 mr-3 text-2xl font-bold">✓</span>13 business days</p></td>
+          </tr>
+          <tr class="border">
+            <td class="p-2"><p>Global Talent Stream:</p></td>
+            <td class="p-2"><p><span class="text-green-500 mr-3 text-2xl font-bold">✓</span>13 business days</p></td>
+          </tr>
+          <tr class="border">
+            <td class="p-2"><p>High-Wage Stream:</p></td>
+            <td class="p-2"><p><span class="text-green-500 mr-3 text-2xl font-bold">✓</span>7 business days</p></td>
+          </tr>
+          <tr class="border">
+            <td class="p-2"><p>In-Home Caregivers:</p></td>
+            <td class="p-2"><p><span class="text-green-500 mr-3 text-2xl font-bold">✓</span>51 business days</p></td>
+          </tr>
+          <tr class="border">
+            <td class="p-2"><p>Low-Wage Stream:</p></td>
+            <td class="p-2"><p><span class="text-green-500 mr-3 text-2xl font-bold">✓</span>25 business days</p></td>
+          </tr>
+          <tr class="border">
+            <td class="p-2"><p>Permanent Residence Stream:</p></td>
+            <td class="p-2"><p><span class="text-green-500 mr-3 text-2xl font-bold">✓</span>86 business days</p></td>
+          </tr>
+          <tr class="border">
+            <td class="p-2"><p>Seasonal Agricultural Worker Program:</p></td>
+            <td class="p-2"><p><span class="text-green-500 mr-3 text-2xl font-bold">✓</span> 5 business days</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- 
+    Understanding LMIA Application Costs
+    -->
+
+    <div
+    class="w-4xl mx-auto px-4 sm:px-20 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 text-[#282e69]"
+  >
+    
+    <div
+      class="border border-gray-200 rounded-2xl shadow-lg bg-white p-6 flex flex-col gap-8 justify-center items-center"
+    >
+      <h2 class="text-4xl text-center font-bold">
+        Understanding LMIA Application Costs
+      </h2>
+      <h4 class="text-2xl font-medium">Employers are required to cover all costs associated with the LMIA process. It is important to note that these costs cannot be transferred to the temporary foreign worker. Exemptions may apply for certain applications, such as those supporting permanent residency in specific sectors.</h4>
+    </div>
+
+    <div
+    class="border border-gray-200 rounded-2xl shadow-lg bg-white p-6 flex flex-col gap-8 justify-center items-center bg-[#deebff]"
+  >
+    <h2 class="text-4xl text-center font-bold">
+      Navigating LMIA Refusals
+    </h2>
+    <h4 class="text-2xl font-medium">Even when all requirements are met, LMIA applications may still be refused. The decision is at the discretion of Service Canada officers, who consider various factors, including regulatory compliance and any potential technicalities in the application. Employers should be aware that certain conditions or past non-compliance can lead to a refusal.</h4>
+  </div>
+   
+  </div>
+
+
+    <!-- FAQ -->
+
+    <div class="p-4 w-full bg-[#10143b] text-white">
+      <h3 class="text-center text-3xl font-semibold p-2">
+        Frequently Asked Question
+      </h3>
+      <div class="faq flex flex-col p-4">
+  
+        <!-- FAQ Item -->
+        <div class="flex flex-col text-lg p-4 faq-item">
+          <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+            <span class="open text-2xl"> + </span>
+            <span class="close text-2xl hidden"> - </span>
+            How do I start the process of hiring a foreign worker through Workvantage recruitment and staffing agency?
+          </p>
+          <p class="ans hidden">
+            To start the process, contact us for a consultation. We’ll discuss your specific needs and guide you through each step, from job postings to candidate selection and documentation.
+          </p>
+        </div>
+  
+        <!-- FAQ Item -->
+        <div class="flex flex-col text-lg p-4 faq-item">
+          <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+            <span class="open text-2xl"> + </span>
+            <span class="close text-2xl hidden"> - </span>
+            What industries do you specialize in for recruitment?
+          </p>
+          <p class="ans hidden">
+            We specialize in various industries, including Greenhouse, Food Processing, Construction & Trades, Manufacturing & Warehousing, fish processing, Hotel & Restaurants and more. Our diverse network allows us to find the best talent for your specific industry requirements.
+          </p>
+        </div>
+  
+        <!-- FAQ Item -->
+        <div class="flex flex-col text-lg p-4 faq-item">
+          <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+            <span class="open text-2xl"> + </span>
+            <span class="close text-2xl hidden"> - </span>
+            Can you help with both temporary and permanent staffing needs?
+          </p>
+          <p class="ans hidden">
+            Yes, we provide solutions for both temporary and permanent staffing needs. Whether you need short-term project workers or long-term employees, we’ve got you covered.
+          </p>
+        </div>
+  
+        <!-- FAQ Item -->
+        <div class="flex flex-col text-lg p-4 faq-item">
+          <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+            <span class="open text-2xl"> + </span>
+            <span class="close text-2xl hidden"> - </span>
+            How long does the recruitment process take?
+          </p>
+          <p class="ans hidden">
+            The whole process (Recruitment, LMIA, Visa and Travel arrangement) takes between 3 to 6 months, depending on the complexity of the position and the specific requirements of the job. We strive to make the process as efficient as possible.
+          </p>
+        </div>
+  
+        <!-- FAQ Item -->
+        <div class="flex flex-col text-lg p-4 faq-item">
+          <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+            <span class="open text-2xl"> + </span>
+            <span class="close text-2xl hidden"> - </span>
+            What support do you offer after the hiring process is complete?
+          </p>
+          <p class="ans hidden">
+            We offer immigration ongoing support, including assistance with work permit renewals and compliance with immigration regulations. Our goal is to ensure a smooth transition and continued success.
+          </p>
+        </div>
+  
+        <!-- FAQ Item -->
+        <div class="flex flex-col text-lg p-4 faq-item">
+          <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+            <span class="open text-2xl"> + </span>
+            <span class="close text-2xl hidden"> - </span>
+            What are the benefits of working with Workvantage compared to other agencies?
+          </p>
+          <p class="ans hidden">
+            As the leading staffing agency in Canada, Workvantage offers personalized service, extensive industry expertise, and a proven track record of successful placements. We handle all the legal and administrative complexities, providing a hassle-free experience for employers.
+          </p>
+        </div>
+  
+        <!-- FAQ Item -->
+        <div class="flex flex-col text-lg p-4 faq-item">
+          <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+            <span class="open text-2xl"> + </span>
+            <span class="close text-2xl hidden"> - </span>
+            What is the LMIA process and how does it work?
+          </p>
+          <p class="ans hidden">
+            The LMIA process involves obtaining permission from Employment and Social Development Canada (ESDC) to hire a foreign worker. We assist with every step, ensuring all necessary documentation is prepared and submitted accurately.
+          </p>
+        </div>
+  
+        <!-- FAQ Item -->
+        <div class="flex flex-col text-lg p-4 faq-item">
+          <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+            <span class="open text-2xl"> + </span>
+            <span class="close text-2xl hidden"> - </span>
+            What types of work permits do you handle?
+          </p>
+          <p class="ans hidden">
+            We handle various types of work permits, including employer-specific permits, open work permits, and permits under the International Mobility Program. We tailor our services to meet your specific needs.
+          </p>
+        </div>
+  
+        <!-- FAQ Item -->
+        <div class="flex flex-col text-lg p-4 faq-item">
+          <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+            <span class="open text-2xl"> + </span>
+            <span class="close text-2xl hidden"> - </span>
+            Can you assist with permanent residence applications?
+          </p>
+          <p class="ans hidden">
+            Yes, we provide support for permanent residence applications, helping your employees secure their long-term future in Canada. We guide you through the entire process to ensure success.
+          </p>
+        </div>
+  
+        <!-- FAQ Item -->
+        <div class="flex flex-col text-lg p-4 faq-item">
+          <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+            <span class="open text-2xl"> + </span>
+            <span class="close text-2xl hidden"> - </span>
+            What are the costs associated with your services?
+          </p>
+          <p class="ans hidden">
+            The costs vary depending on the specific services required and the complexity of each case. Contact us for a detailed quote tailored to your needs. We strive to offer competitive and transparent pricing.
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  
+  
+    <!-- company -->
+    <div class="w-full flex flex-col gap-2 p-4">
+      <div class="bg-[#f7f7f7] grid md:grid-cols-3 py-8 gap-4 md:gap-2">
+        <div class="flex flex-col justify-center items-center">
+          <img src="/photos/paper.png" alt="" class="md:w-1/3 w-1/5" />
+          <div class="px-6 py-3 rounded-full bg-black text-white font-semibold text-xl">
+            Job Seekers
+          </div>
+        </div>
+  
+        <div class="flex flex-col justify-center items-center md:border-x-4">
+          <img src="/photos/building.png" alt="" class="md:w-1/3 w-1/5" />
+          <div class="px-6 py-3 rounded-full bg-black text-white font-semibold text-xl">
+            Agencies
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <img src="/photos/maple.png" alt="" class="md:w-1/3 w-1/5" />
+          <div class="px-6 py-3 rounded-full bg-black text-white font-semibold text-xl">
+            Immigration Services
+          </div>
+        </div>
+      </div>
+  
+      <div class="grid gap-4 md:gap-2 py-8 md:grid-cols-3">
+        <div class="flex flex-col gap-4 justify-between items-center">
+          <div class="px-6 py-3 text-[#282e69] font-semibold text-2xl">
+            PARTNER COMPANY
+          </div>
+          <img src="/photos/Logo-Immigrationpros.png" alt="" class="md:w-1/3 w-1/5" />
+        </div>
+        <div class="flex flex-col gap-4 justify-between items-center md:border-x-4">
+          <div class="px-6 py-3 text-[#282e69] font-semibold text-2xl">
+            ALLIED COMPANY
+          </div>
+          <img src="/photos/RCIC-CRIC.png" alt="" class="md:w-1/3 w-1/5" />
+        </div>
+        <div class="flex flex-col gap-4 justify-between items-center">
+          <div class="px-6 py-3 text-[#282e69] font-semibold text-2xl">
+            ACCREDITATION
+          </div>
+          <img src="/photos/Logo-Immigrationpros.png" alt="" class="md:w-1/3 w-1/5" />
+        </div>
+      </div>
+    </div>
+  
+    <!-- footer -->
+  
+    <footer class="bg-black text-white pt-8">
+      <div class="p-4 gap-6 grid w-full grid sm:grid-cols-2 lg:grid-cols-4 lg:">
+        <div class="flex flex-col gap-4">
+          <div class="w-full">
+            <img src="/photos/Workvantage-logo-blanco.webp" alt="" class="w-40 h-full object-cover" />
+          </div>
+          <div>
+            *Office attention is by appointment only. If you would like to book
+            an appointment please call us.
+          </div>
+        </div>
+  
+        <div class="flex flex-col gap-2">
+          <p class="text-lg font-medium mb-2">Offices</p>
+          <p class="flex items-center gap-2">
+            <span>&#128222;</span>
+            +1 (587) 409-0054
+            <span><img src="/photos/location-pin.png" alt="" class="w-4 h-4" /></span>
+            Alberta
+          </p>
+          <p class="flex items-center gap-2">
+            <span>&#128222;</span>
+            +1 (587) 409-0054
+            <span><img src="/photos/location-pin.png" alt="" class="w-4 h-4" /></span>
+            Ontario
+          </p>
+          <p class="flex items-center gap-2">
+            <span>&#128222;</span>
+            +1 (587) 409-0054
+            <span><img src="/photos/location-pin.png" alt="" class="w-4 h-4" /></span>
+            Quebec
+          </p>
+          <p class="flex items-center gap-2">
+            <span>&#128222;</span>
+            +1 (587) 409-0054
+            <span><img src="/photos/location-pin.png" alt="" class="w-4 h-4" /></span>
+            Nova Scotia
+          </p>
+          <p class="flex items-center gap-2">
+            <span>&#128222;</span>
+            +1 (587) 409-0054
+            <span><img src="/photos/location-pin.png" alt="" class="w-4 h-4" /></span>
+            British Columbia
+          </p>
+        </div>
+  
+        <div class="flex-col gap-2">
+          <h3 class="text-lg font-medium mb-2">Employers Contact</h3>
+          <p>Toll Free</p>
+          <p><span>&#128222;</span>+1 (877) 575-7202</p>
+          <p class="flex gap-2 items-center">
+            <span><img src="/photos/gmail.png" alt="" class="w-4 h-4" /></span>
+            info@workvantage.ca
+          </p>
+        </div>
+  
+        <div>
+          <p class="text-lg font-medium mb-2">Job Seekers Contact</p>
+          <p class="flex items-center">
+            <span>&#128222;</span> +1 (587) 409-0054
+          </p>
+        </div>
+      </div>
+  
+      <div class="p-4 px-10 bg-[#e0421b] sm:text-xl font-medium flex flex-wrap gap-4 justify-between">
+        <p class="text-center">&copy; 2024 Workvantage - all rights reserved</p>
+        <p class="text-center order-1 sm:order-none">Privacy Policy</p>
+      </div>
+    </footer>
+  
+  
+    <script>
+      // Get all the FAQ question elements
+      const faqQuestions = document.querySelectorAll('.faq-item p');
+  
+      // Loop through each question
+      faqQuestions.forEach(question => {
+        // Add click event listener to each question
+        question.addEventListener('click', () => {
+          // Get the corresponding answer and the open/close icons
+          const ans = question.nextElementSibling;
+          const openIcon = question.querySelector('.open');
+          const closeIcon = question.querySelector('.close');
+          
+          // Toggle the answer visibility
+          ans.classList.toggle('hidden');
+          
+          // Toggle the icons (show "+" and hide "-")
+          openIcon.classList.toggle('hidden');
+          closeIcon.classList.toggle('hidden');
+        });
+      });
+  
+    </script>
+
+  </body>
+</html>
