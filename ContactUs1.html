@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <body class="bg-gray-50 text-gray-800">
+
+        <!-- Top Header Section -->
+        <header class="bg-blue-900 text-white">
+            <div class="flex justify-between items-center px-6 py-3">
+                <!-- Free Assessment Button -->
+                <a href="#" class="bg-orange-600 px-4 py-2 rounded-full font-bold hover:bg-orange-700">
+                    Free Assessment
+                </a>
+    
+                <!-- Phone Number -->
+                <a href="tel:+18774725818" class="text-lg font-bold hover:underline">
+                    +1 (877) 472-5818
+                </a>
+            </div>
+        </header>
+    
+        <!-- Navbar Section -->
+        <header class="bg-white py-4 px-8 shadow-md">
+            <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+                <!-- Logo and Tagline -->
+                <a href="index.html" class="flex items-center ml-48 space-x-4">
+                    <img src="/photos/logo.png" class="h-14 w-auto" alt="Workvantage Logo" />
+                </a>
+    
+                <!-- Navigation Links -->
+                <nav>
+                    <ul class="flex space-x-8 text-blue-900 ml-48 font-bold">
+                        <li><a href="/jobcard1.html" class="hover:text-orange-600 ">Job Opening </a></li>
+                        <li><a href="/submitprofile.html" class="hover:text-orange-600">Submit Your profile</a></li>
+                        <li><a href="/FAQ.html" class="hover:text-orange-600">FAQ</a></li>
+                        <li><a href="/ContactUs1.html" class="hover:text-orange-600">Contact Us</a></li>
+                    </ul>
+                </nav>
+    
+                <!-- Language Flags -->
+                <div class="w-5 h-4" style="background: linear-gradient(to right, #0055a4, #ffffff, #ef4135);"></div>
+            </div>
+        </header>
+
+
+        <div class="w-full sm:p-20 px-5 py-20">
+            <h3 class="text-5xl font-bold text-[#282e69]">Contact US</h3>
+            <h4 class="text-[#282e69] text-xl mt-4">If you want to apply for a job please use <span class="text-[#e0421b]">our job portal</span>. For other inquiries fill in the form.</h4>
+    
+            <form action="" class="flex flex-col gap-3 mt-2">
+                <div class="w-full flex flex-col ">
+                    <label for="name" class=" text-xl flex gap-2  ">Name: <span class="text-[#e0421b]">&#x2a;</span></label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-2 border border-black focus:outline-none focus:border-blue-500 rounded-xl" required>
+    
+                </div>
+                <div class="w-full flex flex-col ">
+                    <label for="Country" class=" text-xl flex gap-2  ">Country: <span class="text-[#e0421b]">&#x2a;</span></label>
+                    <input type="text" id="Country" name="Country" placeholder="Your Country" class="w-full p-2 border border-black focus:outline-none focus:border-blue-500 rounded-xl" required>
+    
+                </div>
+                <div class="w-full flex flex-col ">
+                    <label for="Email" class=" text-xl flex gap-2  ">Email: <span class="text-[#e0421b]">&#x2a;</span></label>
+                    <input type="email" id="name" name="Email" placeholder="Your Email" class="w-full p-2 border border-black focus:outline-none focus:border-blue-500 rounded-xl" required>
+    
+                </div>
+                <div class="w-full flex flex-col ">
+                    <label for="Phone" class=" text-xl flex gap-2  ">Phone: <span class="text-[#e0421b]">&#x2a;</span></label>
+                    <input type="number" id="Phone" name="Phone" placeholder="Your Phone" class="w-full p-2 border border-black focus:outline-none focus:border-blue-500 rounded-xl" required>
+    
+                </div>
+                <div class="w-full flex flex-col ">
+                    <label for="Message" class=" text-xl flex gap-2  ">Message: <span class="text-[#e0421b]">&#x2a;</span></label>
+                    <textarea name="Message" id="Message" rows="4" placeholder="Your Message" class="w-full p-2 border border-black focus:outline-none focus:border-blue-500 rounded-xl"  ></textarea>
+                </div>
+                <input type="submit" value="Send" class="w-full px-3 py-2 bg-[#e0421b] text-white font-semibold mt-4 rounded-md"/>
+            </form>
+        </div>
+    
+    
+</body>
+</html>

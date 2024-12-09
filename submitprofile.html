@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workvantage Header</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  
+
+<!-- Navbar Section -->
+<header class="bg-white py-4 px-8 shadow-md">
+    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+        <!-- Logo and Tagline -->
+        <a href="index.html" class="flex items-center ml-48 space-x-4">
+            <img src="/photos/logo.png" class="h-14 w-auto" alt="Workvantage Logo" />
+        </a>
+
+        <!-- Navigation Links -->
+        <nav>
+            <ul class="flex space-x-8 text-blue-900 ml-48 font-bold">
+                <li><a href="/jobcard1.html" class="hover:text-orange-600 ">Job Opening </a></li>
+                <li><a href="/submitprofile.html" class="hover:text-orange-600">Submit Your profile</a></li>
+                <li><a href="/FAQ.html" class="hover:text-orange-600">FAQ</a></li>
+                <li><a href="/ContactUs1.html" class="hover:text-orange-600">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Language Flags -->
+        <div class="w-5 h-4" style="background: linear-gradient(to right, #0055a4, #ffffff, #ef4135);"></div>
+    </div>
+</header>
+
+ <!-- Header Section -->
+<div class="flex flex-col items-center justify-center ">
+  <!-- Image Section -->
+  <div class="w-full max-w-screen-lg mx-auto p-6">
+    <img id="logo-wallpaper-img" src="/photos/Workvanage_Header_books.png" alt="Workvantage Header Wallpaper" class="w-full max-w-screen-lg h-auto object-contain rounded-lg shadow-lg" />
+  </div>
+</div>
+
+
+    <!-- Welcome Content -->
+    <div class="text-center mt-6">
+      <h1 class="text-3xl font-bold text-blue-900">Welcome to Workvantage</h1>
+      <p class="mt-2 text-lg text-gray-600">
+        Connecting talents worldwide for a brighter future.
+      </p>
+    </div>
+  </div>
+
+  <!-- Form Section -->
+  <div class="max-w-xl mx-auto bg-white shadow-md rounded-lg p-6 space-y-6">
+    <!-- Salutation Dropdown -->
+    <div>
+      <label for="salutation" class="block text-sm font-medium text-gray-700 mb-2">
+        Salutation <span class="text-red-600">*</span>
+      </label>
+      <select 
+        id="salutation" 
+        name="salutation" 
+        class="block w-full bg-gray-50 border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+      >
+        <option value="">-Select-</option>
+        <option value="Mr.">Mr.</option>
+        <option value="Ms.">Ms.</option>
+        <option value="Mrs.">Mrs.</option>
+      </select>
+      <p id="error-salutation" class="mt-2 text-sm text-red-600 hidden">
+        Please select a salutation.
+      </p>
+    </div>
+
+    <!-- First Name Input -->
+    <div>
+      <label for="first-name" class="block text-sm font-medium text-gray-700 mb-2">
+        First Name <span class="text-red-600">*</span>
+      </label>
+      <input 
+        id="first-name" 
+        name="firstName" 
+        type="text" 
+        maxlength="255" 
+        autocomplete="off" 
+        placeholder="Enter your first name" 
+        class="block w-full bg-gray-50 border border-gray-300 text-gray-700 py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+      />
+      <p id="error-first-name" class="mt-2 text-sm text-red-600 hidden">
+        First name is required.
+      </p>
+    </div>
+
+    <!-- Last Name Input -->
+    <div>
+      <label for="last-name" class="block text-sm font-medium text-gray-700 mb-2">
+        Last Name <span class="text-red-600">*</span>
+      </label>
+      <input 
+        id="last-name" 
+        name="lastName" 
+        type="text" 
+        maxlength="255" 
+        autocomplete="off" 
+        placeholder="Enter your last name" 
+        class="block w-full bg-gray-50 border border-gray-300 text-gray-700 py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+      />
+      <p id="error-last-name" class="mt-2 text-sm text-red-600 hidden">
+        Last name is required.
+      </p>
+    </div>
+
+    <!-- Date of Birth Input -->
+    <div>
+      <label for="date-of-birth" class="block text-sm font-medium text-gray-700 mb-2">
+        Date of Birth <span class="text-red-600">*</span>
+      </label>
+      <input 
+        id="date-of-birth" 
+        name="dateOfBirth" 
+        type="date" 
+        class="block w-full bg-gray-50 border border-gray-300 text-gray-700 py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+      />
+      <p id="error-date-of-birth" class="mt-2 text-sm text-red-600 hidden">
+        Date of birth is required.
+      </p>
+    </div>
+
+    <!-- Gender Dropdown -->
+    <div>
+      <label for="gender" class="block text-sm font-medium text-gray-700 mb-2">
+        Gender <span class="text-red-600">*</span>
+      </label>
+      <select 
+        id="gender" 
+        name="gender" 
+        class="block w-full bg-gray-50 border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+      >
+        <option value="">-Select-</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <p id="error-gender" class="mt-2 text-sm text-red-600 hidden">
+        Gender selection is required.
+      </p>
+    </div>
+    <!-- Primary Phone Number Section -->
+  <div class="block text-sm font-medium text-gray-700 mb-2">
+    <label for="PhoneNumber" class="block text-sm font-medium text-gray-700">
+      Mobile <span class="text-red-600">*</span>
+    </label>
+    <input 
+      id="PhoneNumber" 
+      name="PhoneNumber" 
+      type="tel" 
+      placeholder="Enter your mobile number" 
+      class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+    />
+    <p id="error-PhoneNumber" class="mt-2 text-sm text-red-600 hidden">Please enter a valid mobile number.</p>
+  </div>
+
+  <!-- Secondary Phone Number Section -->
+  <div class="block text-sm font-medium text-gray-700 mb-2">
+    <label for="PhoneNumber1" class="block text-sm font-medium text-gray-700">
+      Secondary Phone <span class="text-red-600">*</span>
+    </label>
+    <input 
+      id="PhoneNumber1" 
+      name="PhoneNumber1" 
+      type="tel" 
+      placeholder="Enter your secondary phone number" 
+      class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+    />
+    <p id="error-PhoneNumber1" class="mt-2 text-sm text-red-600 hidden">Please enter a valid secondary phone number.</p>
+  </div>
+
+  <li class="relative mb-4 flex flex-col" id="Email-li">
+    <label for="Email-arialabel" class="flex items-center mb-2 text-sm font-medium text-gray-700">
+      <span>Email</span>
+      <em class="ml-1 text-red-500" aria-label="Required">*</em>
+    </label>
+  
+    <div class="hidden" elemname="fieldHiddenDiv">
+      <em>
+        <svg class="w-5 h-5 text-gray-500">
+          <use xlink:href="#icon-rules-denied-01"></use>
+        </svg>
+      </em>
+      <span>N/A</span>
+    </div>
+  
+    <div class="relative" elemname="fieldContentDiv">
+      <span elname="livefield-email-elem">
+        <b class="block">
+          <input 
+            type="email" 
+            id="Email-arialabel" 
+            name="Email" 
+            inputmode="email" 
+            aria-describedby="hint-Email" 
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" 
+            placeholder="Enter your email" 
+            autocomplete="email" 
+            maxlength="255" 
+            onfocusout="ZFLive.validateFieldConstraint(this);" 
+          />
+        </b>
+  
+        <p class="mt-2 text-sm text-red-500 hidden" id="error-Email" elname="error">
+          Enter a value for this field.
+        </p>
+      </span>
+    </div>
+  
+    <div class="clear-both"></div>
+  </li>
+
+
+  <div>
+    <label for="Country Of Residence" class="block text-sm font-medium text-gray-700 mb-2">
+      Country <span class="text-red-600">*</span>
+    </label>
+    <select 
+      id="Country" 
+      name="Country" 
+      class="block w-full bg-gray-50 border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+    >
+      <option value="">-Select-</option>
+      <!-- <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option> -->
+    </select>
+    <p id="error-gender" class="mt-2 text-sm text-red-600 hidden">
+      Country name selection is required.
+    </p>
+  </div>
+
+
+
+  <li class="relative inline-block w-full" id="Dropdown1-li">
+    <div class="relative  w-full">
+        <!-- Label -->
+        <label for="Dropdown1-arialabel" id="Dropdown1-arialabel-cont" class="block text-sm font-medium text-gray-700">
+            <span>Level of English</span>
+            <em class="text-red-600" aria-label="Required">*</em>
+        </label>
+
+        <!-- Hidden Subfield (N/A) -->
+        <div class="subFrmFieldsHidden subFrmFieldsHiddenCont hidden" elemname="fieldHiddenDiv">
+            <em><svg class="w-5 h-5 text-red-600"><use xlink:href="#icon-rules-denied-01"></use></svg></em>
+            <span class="text-gray-500">N/A</span>
+        </div>
+
+        <div class="tempContDiv" elemname="fieldContentDiv" incwebhk_name="fieldContentDiv">
+            <!-- Select Dropdown -->
+            <div class="relative">
+                <select 
+                    id="Dropdown1-arialabel" 
+                    aria-describedby="hint-Dropdown1" 
+                    name="Dropdown1" 
+                    onchange="ZFLive.prefillFieldLabel(this); ZFLive.hideClosestFieldElemErrorDiv(this); ZFLive.checkUniqueChoiceFld(this);"
+                    class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm bg-white text-gray-900"
+                    aria-hidden="true"
+                >
+                    <option selected value="-Select-">-Select-</option>
+                    <option value="None" formula_val="" textassign_val="" emailassign_val="" option_id="1189015000001835119">None</option>
+                    <option value="Basic" formula_val="" textassign_val="" emailassign_val="" option_id="1189015000001835121">Basic</option>
+                    <option value="Intermediate" formula_val="" textassign_val="" emailassign_val="" option_id="1189015000001835123">Intermediate</option>
+                    <option value="Advanced" formula_val="" textassign_val="" emailassign_val="" option_id="1189015000001835137">Advanced</option>
+                </select>
+                
+                <!-- Custom Dropdown Arrow -->
+                <span class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                    <!--  -->
+                </span>
+            </div>
+
+            <!-- Error Message -->
+            <p id="error-Dropdown1" class="mt-2 text-sm text-red-600 hidden">Please select a valid option.</p>
+        </div>
+    </div>
+</li>
+
+
+<li class="tempFrmWrapper small maxchoices-3 elname-livefield-elem comptype-15" id="MultipleChoice-li" needdata="true" compname="MultipleChoice" linkname="MultipleChoice" isvisible="true" mandatory="true" page_no="1" page_link_name="Page" counteruid="34">
+
+  <label id="MultipleChoice-arialabel" class="block text-sm font-medium text-gray-700">
+      <span>Position(s) applied for</span>
+      <em class="text-red-600" aria-label="Required">*</em>
+  </label>
+
+  <div class="subFrmFieldsHidden subFrmFieldsHiddenCont hidden" elemname="fieldHiddenDiv">
+      <em>
+          <svg class="w-5 h-5 text-red-600">
+              <use xlink:href="#icon-rules-denied-01"></use>
+          </svg>
+      </em>
+      <span class="text-gray-500">N/A</span>
+  </div>
+
+  <div class="tempContDiv mSelect mt-2" role="group" aria-labelledby="MultipleChoice-arialabel" elemname="fieldContentDiv">
+      <select 
+          aria-describedby="hint-MultipleChoice"
+          aria-labelledby="MultipleChoice-arialabel"
+          name="MultipleChoice"
+          id="MultipleChoice-multiple-id"
+          multiple="multiple"
+          onchange="ZFLive.hideClosestFieldElemErrorDiv(this);"
+          onclick="ZFLive.checkMaxChoiceLimit(this);"
+          class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-white text-gray-900"
+      >
+          <option value="Hotel front desk clerks">Hotel front desk clerks</option>
+          <option value="Housekeepers">Housekeepers</option>
+          <option value="Human resources assistants, specialists">Human resources assistants, specialists</option>
+          <option value="IT, Tech support workers">IT, Tech support workers</option>
+          <option value="Industrial electricians">Industrial electricians</option>
+          <option value="Industrial painters, coaters and metal finishing process operators">Industrial painters, coaters and metal finishing process operators</option>
+          <option value="Insulators">Insulators</option>
+          <option value="Ironworkers">Ironworkers</option>
+          <option value="Janitors, caretakers and building superintendents">Janitors, caretakers and building superintendents</option>
+          <option value="Labourers in fish and seafood processing">Labourers in fish and seafood processing</option>
+          <option value="Labourers in food, beverage and associated products processing">Labourers in food, beverage and associated products processing</option>
+          <option value="Landscaping and grounds maintenance labourers">Landscaping and grounds maintenance labourers</option>
+          <option value="Light duty cleaners">Light duty cleaners</option>
+          <option value="Machinists and machining and tooling inspectors">Machinists and machining and tooling inspectors</option>
+          <option value="Manufacturing supervisors and managers">Manufacturing supervisors and managers</option>
+          <option value="Material handlers">Material handlers</option>
+          <option value="Maîtres d'hôtel and hosts/hostesses">Maîtres d'hôtel and hosts/hostesses</option>
+          <option value="Mobile Reefer Technicians">Mobile Reefer Technicians</option>
+          <option value="Motor vehicle body repairers">Motor vehicle body repairers</option>
+          <option value="Nursery and greenhouse workers">Nursery and greenhouse workers</option>
+          <option value="Operators and attendants in amusement, recreation and sport">Operators and attendants in amusement, recreation and sport</option>
+          <option value="Other labourers in processing, manufacturing and utilities">Other labourers in processing, manufacturing and utilities</option>
+          <option value="Other metal products machine operators">Other metal products machine operators</option>
+          <option value="Other products assemblers, finishers and inspectors">Other products assemblers, finishers and inspectors</option>
+          <option value="Other trades helpers and labourers">Other trades helpers and labourers</option>
+          <option value="Other wood products assemblers and inspectors">Other wood products assemblers and inspectors</option>
+          <option value="Painters and decorators">Painters and decorators</option>
+          <option value="Pet groomers">Pet groomers</option>
+          <option value="Plasterers, drywall installers and finishers and lathers">Plasterers, drywall installers and finishers and lathers</option>
+          <option value="Plastic products assemblers, finishers and inspectors">Plastic products assemblers, finishers and inspectors</option>
+          <option value="Plastics processing machine operators">Plastics processing machine operators</option>
+          <option value="Plumbers">Plumbers</option>
+          <option value="Poultry farm labourers">Poultry farm labourers</option>
+          <option value="Pursers and flight attendants">Pursers and flight attendants</option>
+          <option value="Retail sales supervisors">Retail sales supervisors</option>
+          <option value="Roofers and shinglers">Roofers and shinglers</option>
+          <option value="Security guards and related security service occupations">Security guards and related security service occupations</option>
+          <option value="Sheet metal workers">Sheet metal workers</option>
+          <option value="Shippers and receivers">Shippers and receivers</option>
+          <option value="Siding Installers">Siding Installers</option>
+          <option value="Silviculture and forestry workers">Silviculture and forestry workers</option>
+          <option value="Specialized cleaners">Specialized cleaners</option>
+          <option value="Steamfitters, pipefitters and sprinkler system installers">Steamfitters, pipefitters and sprinkler system installers</option>
+          <option value="Structural metal and platework fabricators and fitters">Structural metal and platework fabricators and fitters</option>
+          <option value="Structural metal and platework fabricators">Structural metal and platework fabricators</option>
+          <option value="Subway operators and other transit operators">Subway operators and other transit operators</option>
+          <option value="Supervisors, logging and forestry">Supervisors, logging and forestry</option>
+          <option value="Supervisors, mining and quarrying">Supervisors, mining and quarrying</option>
+          <option value="Tilesetters">Tilesetters</option>
+          <option value="Tour and travel guides">Tour and travel guides</option>
+          <option value="Tour and travel service agents">Tour and travel service agents</option>
+          <option value="Transport truck drivers">Transport truck drivers</option>
+          <option value="Truck and bus mechanics ans mechanical repairers">Truck and bus mechanics ans mechanical repairers</option>
+          <option value="Upholsterers">Upholsterers</option>
+          <option value="Warehouse Managers">Warehouse Managers</option>
+          <option value="Welders">Welders</option>
+          <option value="Woodworking machine operators">Woodworking machine operators</option>
+      </select>
+
+      <!-- Error Message -->
+      <p class="text-sm text-red-600 mt-2 hidden" id="error-MultipleChoice"></p>
+
+      <!-- Instruction Text -->
+      <p class="text-sm text-gray-500 mt-2" id="hint-MultipleChoice">
+          Please select the position(s) that you have enough experience to apply for. To select more than one, keep the control key pressed while selecting the other position.
+      </p>
+  </div>
+  
+  <div class="clearBoth"></div>
+</li>
+
+  
+
+<li class="tempFrmWrapper small" elname="livefield-elem" comptype="2" id="MultiLine-li" needdata="true" compname="MultiLine" linkname="MultiLine" isvisible="true" mandatory="false" page_no="1" page_link_name="Page" show_word_count="false" min_range="0" max_range="65535" range_type="1" showlabel="true" counteruid="35">
+  <!-- Label -->
+  <label class="labelName block text-lg font-semibold" for="MultiLine-arialabel">
+    <span>Skill set</span>
+  </label>
+
+  <!-- Hidden Field Content (optional) -->
+  <div class="subFrmFieldsHidden subFrmFieldsHiddenCont hidden" elemname="fieldHiddenDiv">
+    <em><svg class="icon icon-Denied-1-01"><use xlink:href="#icon-rules-denied-01"></use></svg></em>
+    <span>N/A</span>
+  </div>
+
+  <!-- Textarea Container -->
+  <div class="tempContDiv" elemname="fieldContentDiv">
+    <!-- Textarea Input -->
+    <span class="countWrd">
+      <textarea 
+        id="MultiLine-arialabel" 
+        aria-describedby="hint-MultiLine countMsg-MultiLine" 
+        onkeyup="ZFLive.countWordOrCharacters(this);" 
+        onfocusin="ZFLive.countWordOrCharacters(this);" 
+        onfocusout="ZFLive.hideWordCount(this); ZFLive.validateFieldConstraint(this);" 
+        autocomplete="off" 
+        name="MultiLine" 
+        placeholder="" 
+        class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+      ></textarea>
+      <p style="display:none;" class="countAlertOver text-red-500" elname="countmsg" id="countMsg-MultiLine"></p>
+    </span>
+
+    <!-- Error Message -->
+    <p class="errorMessage text-red-500" elname="error" id="error-MultiLine"></p>
+
+    <!-- Instruction Message -->
+    <p class="instruction instrSpace text-sm text-gray-600" elname="hint" id="hint-MultiLine">
+      Indicate all the skills that describe you. You can list as many as you consider appropriate. Separate each skill that you list with a comma. (i.e. Punctuality, Responsible, Proactive, Teamwork)
+    </p>
+  </div>
+
+  <!-- Clear Floating Elements -->
+  <div class="clearBoth"></div>
+</li>
+
+
+
+<li class="tempFrmWrapper dropdown small zfSelect2CustomCont" elname="livefield-elem" comptype="12" id="Dropdown7-li" needdata="true" compname="Dropdown7" linkname="Dropdown7" isvisible="true" mandatory="true" page_no="1" page_link_name="Page" showlabel="true" counteruid="38">
+
+  <label for="Dropdown7-arialabel" id="Dropdown7-arialabel-cont" class="labelName text-sm font-semibold">
+    <span>Do you have a valid passport?</span>
+    <em class="text-red-500" aria-label="Required">*</em>
+  </label>
+
+  <div class="subFrmFieldsHidden subFrmFieldsHiddenCont hidden" elemname="fieldHiddenDiv">
+    <em>
+      <svg class="icon icon-Denied-1-01">
+        <use xlink:href="#icon-rules-denied-01"></use>
+      </svg>
+    </em>
+    <span class="text-gray-500">N/A</span>
+  </div>
+
+  <div class="tempContDiv" elemname="fieldContentDiv" incwebhk_name="fieldContentDiv">
+    <div class="form_selectBox relative">
+
+      <select id="Dropdown7-arialabel" aria-describedby="hint-Dropdown7" name="Dropdown7"
+        onchange="ZFLive.prefillFieldLabel(this); ZFLive.hideClosestFieldElemErrorDiv(this); ZFLive.checkUniqueChoiceFld(this);" tabindex="-1"
+        class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        
+        <option selected="true" value="-Select-" class="text-gray-500">-Select-</option>
+        <option value="Yes" option_id="1189015000001877117">Yes</option>
+        <option value="No" option_id="1189015000001877119">No</option>
+        <option value="In process" option_id="1189015000001877121">In process</option>
+      </select>
+            <span class="select2-selection__arrow select2FormArrow" role="presentation"><b role="presentation"></b></span>
+          </span>
+        </span>
+        <span class="dropdown-wrapper" aria-hidden="true"></span>
+      </span>
+    </div>
+
+    <div elname="liveFieldTempChoiceCont" class="hidden"></div>
+
+    <p class="errorMessage text-red-500 text-sm mt-2" elname="error" id="error-Dropdown7"></p>
+  </div>
+
+  <div class="clearBoth"></div>
+</li>
+
+
+<!-- Include jQuery and jQuery UI in the <head> section -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  
+  <li tabindex="1" isunique="false" class="tempFrmWrapper date" elname="livefield-elem" comptype="5" id="Date1-li" compname="Date1" linkname="Date1" needdata="true" isvisible="true" disableddays="{}" startoftheweek="0" mandatory="false" page_no="1" page_link_name="Page" showlabel="true" counteruid="39">
+    <label class="labelName text-sm font-semibold" for="Date1-date">
+      <span>Passport expiry date (if applicable)</span>
+    </label>
+  
+    <div class="subFrmFieldsHidden subFrmFieldsHiddenCont hidden" elemname="fieldHiddenDiv">
+      <em>
+        <svg class="icon icon-Denied-1-01">
+          <use xlink:href="#icon-rules-denied-01"></use>
+        </svg>
+      </em>
+      <span class="text-gray-500">N/A</span>
+    </div>
+  
+    <div class="tempContDiv" datelocale="en-GB" elname="dd-M-yy" id="Date1dateDiv" isdisable="false" elemname="fieldContentDiv">
+      <div class="calendarCont relative">
+        <input aria-describedby="hint-Date1 Date1-subInfoText" aria-haspopup="dialog" name="Date1" elname="date" id="Date1-date" onchange="ZFLive.validateFieldConstraint(this);" onfocusout="checkDatePicker(this);" autocomplete="off" onclick="ZFUtil.showLiveDatePicker(this)" onfocus="ZFUtil.showLiveDatePicker(this)" type="text" value="" placeholder="Select date" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" style="height: 37px;">
+  
+        <div class="calIconWrapper absolute top-0 right-2 flex items-center justify-center" role="img" aria-label="Date" elname="imgWrapDiv">
+          <img class="calendarIcon" src="https://static.zohocdn.com/forms/images/spacer.325472601571f31e1bf00674c368d335.gif" alt="calendar icon" title="Select Date">
+        </div>
+  
+        <div class="clearBoth"></div>
+      </div>
+  
+      <label class="formSubInfoText text-sm text-gray-500 mt-2" elname="formSubInfoText" id="Date1-subInfoText">DD-MM-YYYY</label>
+    </div>
+  
+    <p class="errorMessage text-red-500 text-sm mt-2" elname="error" id="error-Date1"></p>
+  </li>
+  
+  <!-- Script to initialize the datepicker -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // Initialize the jQuery UI datepicker
+      $("#Date1-date").datepicker({
+        dateFormat: "dd-mm-yy", // Set the date format
+        showAnim: "drop", // Animation for showing the calendar
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "1900:2100", // Limit year range from 1900 to 2100
+        firstDay: 0, // Set the first day of the week to Sunday (0 for Sunday, 1 for Monday, etc.)
+        showOtherMonths: true, // Show other months in the calendar
+        selectOtherMonths: true, // Allow selecting days from other months
+      });
+  
+      // Optional: Customize the icon functionality
+      $(".calendarIcon").click(function() {
+        $("#Date1-date").focus();
+      });
+    });
+  </script>
+  
+
+
+  <li class="tempFrmWrapper dropdown small zfSelect2CustomCont" elname="livefield-elem" comptype="12" id="Dropdown8-li" needdata="true" compname="Dropdown8" linkname="Dropdown8" isvisible="true" mandatory="false" page_no="1" page_link_name="Page" showlabel="true" counteruid="40">
+
+    <label for="Dropdown8-arialabel" id="Dropdown8-arialabel-cont" class="labelName text-sm font-semibold">
+      <span>Citizenship as per your valid passport</span> 
+    </label>
+  
+    <!-- Hidden message for error -->
+    <div class="subFrmFieldsHidden subFrmFieldsHiddenCont hidden" elemname="fieldHiddenDiv">
+      <em>
+        <svg class="icon icon-Denied-1-01">
+          <use xlink:href="#icon-rules-denied-01"></use>
+        </svg>
+      </em>
+      <span class="text-gray-500">N/A</span>
+    </div>
+  
+    <div class="tempContDiv" elemname="fieldContentDiv" incwebhk_name="fieldContentDiv">
+      <div class="form_selectBox relative">
+        <!-- Dropdown -->
+        <div class="selectArrow absolute top-0 right-2 flex items-center justify-center">
+          <!-- Optional custom icon for dropdown arrow -->
+        </div>
+  
+        <select id="Dropdown8-arialabel" aria-describedby="hint-Dropdown8" name="Dropdown8" onchange="ZFLive.prefillFieldLabel(this); ZFLive.hideClosestFieldElemErrorDiv(this); ZFLive.checkUniqueChoiceFld(this);" tabindex="-1" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option selected="true" value="-Select-">-Select-</option>
+          <!-- Add more options as needed -->
+        </select>
+  
+        <!-- Custom select wrapper for styling -->
+        <span class="select2 select2-container select2-container--default select2-container--focus" dir="ltr" style="width: 100%; display: none;">
+          <span class="selection">
+            <span class="select2-selection select2-selection--single select2FormCont" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Dropdown8-arialabel-container">
+              <span class="select2-selection__rendered" id="select2-Dropdown8-arialabel-container" title="-Select-">
+                <div class="select2FormFont drpDwnPlaceholder">-Select-</div>
+              </span>
+              <span class="select2-selection__arrow select2FormArrow" role="presentation">
+                <b role="presentation"></b>
+              </span>
+            </span>
+          </span>
+          <span class="dropdown-wrapper" aria-hidden="true"></span>
+        </span>
+  
+        <!-- Optional hidden choice container -->
+        <div elname="liveFieldTempChoiceCont" style="display: none;"></div>
+  
+        <!-- Error message -->
+        <p class="errorMessage text-red-500 text-sm mt-2" elname="error" id="error-Dropdown8"></p>
+      </div>  
+    </div>
+  
+    <!-- Clear floats -->
+    <div class="clearBoth"></div>
+  </li>
+  
+
+  <li class="tempFrmWrapper dropdown small zfSelect2CustomCont" elname="livefield-elem" comptype="12" id="Dropdown10-li" needdata="true" compname="Dropdown10" linkname="Dropdown10" isvisible="true" mandatory="true" page_no="1" page_link_name="Page" showlabel="true" counteruid="63">
+
+    <label for="Dropdown10-arialabel" id="Dropdown10-arialabel-cont" class="labelName text-sm font-semibold">
+      <span>How did you find us?</span>
+      <em class="important text-red-500" aria-label="Required">*</em>
+    </label>
+  
+    <!-- Hidden message for error -->
+    <div class="subFrmFieldsHidden subFrmFieldsHiddenCont hidden" elemname="fieldHiddenDiv">
+      <em>
+        <svg class="icon icon-Denied-1-01">
+          <use xlink:href="#icon-rules-denied-01"></use>
+        </svg>
+      </em>
+      <span class="text-gray-500">N/A</span>
+    </div>
+  
+    <div class="tempContDiv" elemname="fieldContentDiv" incwebhk_name="fieldContentDiv">
+      <div class="form_selectBox relative">
+        <!-- Dropdown -->
+        <select id="Dropdown10-arialabel" aria-describedby="hint-Dropdown10" name="Dropdown10" onchange="ZFLive.prefillFieldLabel(this); ZFLive.hideClosestFieldElemErrorDiv(this); ZFLive.checkUniqueChoiceFld(this);" tabindex="-1" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option selected="true" value="-Select-">-Select-</option>
+          <option value="Referred by someone" formula_val="" textassign_val="" emailassign_val="" option_id="1189015000002432325">Referred by someone</option>
+          <option value="Instagram" formula_val="" textassign_val="" emailassign_val="" option_id="1189015000002432327">Instagram</option>
+          <option value="Facebook" formula_val="" textassign_val="" emailassign_val="" option_id="1189015000002432329">Facebook</option>
+          <option value="Other" formula_val="" textassign_val="" emailassign_val="" option_id="1189015000002432343">Other</option>
+        </select>
+  
+        <!-- Custom select wrapper for styling -->
+        <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%; display: none;">
+          <span class="selection">
+            <span class="select2-selection select2-selection--single select2FormCont" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Dropdown10-arialabel-container">
+              <span class="select2-selection__rendered" id="select2-Dropdown10-arialabel-container" title="-Select-">
+                <div class="select2FormFont drpDwnPlaceholder">-Select-</div>
+              </span>
+              <span class="select2-selection__arrow select2FormArrow" role="presentation">
+                <b role="presentation"></b>
+              </span>
+            </span>
+          </span>
+          <span class="dropdown-wrapper" aria-hidden="true"></span>
+        </span>
+  
+        <!-- Optional hidden choice container -->
+        <div elname="liveFieldTempChoiceCont" style="display: none;"></div>
+  
+        <!-- Error message -->
+        <p class="errorMessage text-red-500 text-sm mt-2" elname="error" id="error-Dropdown10"></p>
+      </div>
+    </div>
+  
+    <!-- Clear floats -->
+    <div class="clearBoth"></div>
+  </li>
+
+  
+
+  <li class="tempFrmWrapper dropdown small zfSelect2CustomCont" elname="livefield-elem" comptype="12" id="Dropdown11-li" needdata="true" compname="Dropdown11" linkname="Dropdown11" isvisible="true" mandatory="true" page_no="1" page_link_name="Page" showlabel="true" counteruid="64">
+
+    <label for="Dropdown11-arialabel" id="Dropdown11-arialabel-cont" class="labelName text-sm font-semibold">
+      <span>Have you traveled to Canada before?</span>
+      <em class="important text-red-500" aria-label="Required">*</em>
+    </label>
+  
+    <!-- Hidden message for error -->
+    <div class="subFrmFieldsHidden subFrmFieldsHiddenCont hidden" elemname="fieldHiddenDiv">
+      <em>
+        <svg class="icon icon-Denied-1-01">
+          <use xlink:href="#icon-rules-denied-01"></use>
+        </svg>
+      </em>
+      <span class="text-gray-500">N/A</span>
+    </div>
+  
+    <div class="tempContDiv" elemname="fieldContentDiv" incwebhk_name="fieldContentDiv">
+      <div class="form_selectBox relative">
+        <!-- Dropdown -->
+        <select id="Dropdown11-arialabel" aria-describedby="hint-Dropdown11" name="Dropdown11" onchange="ZFLive.prefillFieldLabel(this); ZFLive.hideClosestFieldElemErrorDiv(this); ZFLive.checkUniqueChoiceFld(this);" tabindex="-1" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option selected="true" value="-Select-">-Select-</option>
+          <option value="Yes" formula_val="" textassign_val="" emailassign_val="" option_id="1189015000002432361">Yes</option>
+          <option value="No" formula_val="" textassign_val="" emailassign_val="" option_id="1189015000002432363">No</option>
+        </select>
+  
+        <!-- Custom select wrapper for styling -->
+        <span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" style="width: 100%; display: none;">
+          <span class="selection">
+            <span class="select2-selection select2-selection--single select2FormCont" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Dropdown11-arialabel-container">
+              <span class="select2-selection__rendered" id="select2-Dropdown11-arialabel-container" title="-Select-">
+                <div class="select2FormFont drpDwnPlaceholder">-Select-</div>
+              </span>
+              <span class="select2-selection__arrow select2FormArrow" role="presentation">
+                <b role="presentation"></b>
+              </span>
+            </span>
+          </span>
+          <span class="dropdown-wrapper" aria-hidden="true"></span>
+        </span>
+  
+        <!-- Optional hidden choice container -->
+        <div elname="liveFieldTempChoiceCont" style="display: none;"></div>
+  
+        <!-- Error message -->
+        <p class="errorMessage text-red-500 text-sm mt-2" elname="error" id="error-Dropdown11"></p>
+      </div>
+    </div>
+  
+    <!-- Clear floats -->
+    <div class="clearBoth"></div>
+  </li>
+
+  
+  <li elname="livefield-elem" comptype="1" id="SingleLine8-li" needdata="false" compname="SingleLine8" linkname="SingleLine8" counteruid="65" isvisible="true" isunique="false" class="tempFrmWrapper small" mandatory="false" page_no="1" page_link_name="Page" showlabel="true" style="display: block;"> 
+
+    <!-- Label -->
+    <label class="labelName text-sm font-semibold" for="SingleLine8-arialabel">
+      <span>What did you do in Canada?</span>
+    </label>
+  
+    <!-- Hidden message for error (initially hidden) -->
+    <div class="subFrmFieldsHidden subFrmFieldsHiddenCont hidden" elemname="fieldHiddenDiv">
+      <em>
+        <svg class="icon icon-Denied-1-01">
+          <use xlink:href="#icon-rules-denied-01"></use>
+        </svg>
+      </em>
+      <span class="text-gray-500">N/A</span>
+    </div>
+  
+    <!-- Input Field Container -->
+    <div class="tempContDiv" elemname="fieldContentDiv" incwebhk_name="fieldContentDiv">
+      <!-- Input Field -->
+      <span>
+        <b class="inptCont">
+          <input 
+            id="SingleLine8-arialabel" 
+            aria-describedby="hint-SingleLine8" 
+            onkeyup="ZFLive.configureInputMask(this);" 
+            onfocusout="ZFLive.validateFieldConstraint(this);" 
+            autocomplete="off" 
+            type="text" 
+            maxlength="255" 
+            name="SingleLine8" 
+            value="" 
+            placeholder="Enter your answer here" 
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </b>
+      </span>
+  
+      <!-- Error message -->
+      <p class="errorMessage text-red-500 text-sm mt-2" elname="error" id="error-SingleLine8"></p>
+    </div>
+  
+    <!-- Clear both floats (if necessary) -->
+    <div class="clearBoth"></div>
+  </li>
+
+  
+
+  <li class="tempFrmWrapper file_upload" uploadlimit="1" elname="livefield-elem" comptype="19" id="FileUpload-li" needdata="true" compname="FileUpload" linkname="FileUpload" allowedtype="pdf,doc,docx" isvisible="true" mandatory="true" page_no="1" page_link_name="Page" counteruid="21">
+
+    <!-- Label -->
+    <label id="FileUpload-arialabel" class="labelName text-sm font-semibold">
+      <span>Attach your Curriculum (only pdf, doc, docx allowed)</span>
+      <em class="important text-red-500" aria-label="Required">*</em>
+    </label>
+  
+    <!-- Hidden message for error (initially hidden) -->
+    <div class="subFrmFieldsHidden subFrmFieldsHiddenCont hidden" elemname="fieldHiddenDiv">
+      <em>
+        <svg class="icon icon-Denied-1-01">
+          <use xlink:href="#icon-rules-denied-01"></use>
+        </svg>
+      </em>
+      <span class="text-gray-500">N/A</span>
+    </div>
+  
+    <!-- Input Field Container -->
+    <div class="tempContDiv" elemname="fieldContentDiv">
+      
+      <!-- Upload Container -->
+      <div class="uploadContainer">
+        <!-- File Input -->
+        <input 
+          type="file" 
+          name="FileUpload" 
+          id="FileUpload-id" 
+          class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          onchange="ZFLive.addMultipleFileUploadFields(this.files,'FileUpload','1')">
+        
+        <!-- Hidden input for file path -->
+        <input style="display:none;" type="hidden" value="" elname="FileUpload" filepath="">
+        
+        <!-- Image Options -->
+        <div class="imageOptions mt-4">
+          <div class="imageOptionsCont onlyUpload" elname="uploadDiv">
+            <div class="flLeft imageOptionsText" aria-hidden="true">
+              Choose File
+            </div>
+            <div class="flRight imageOptionsActCont">
+              <span class="sr-only" elname="uploadIconSpan" id="FileUpload-upload-icon">Upload file</span>
+              <a role="button" aria-describedby="hint-FileUpload" aria-labelledby="FileUpload-arialabel FileUpload-upload-icon" href="javascript:;" class="uploadIconCont" elname="iconUpload" onclick="triggerinputfiletag('FileUpload');">
+                <svg class="icon icon-upload">
+                  <use xlink:href="#icon-upload"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="clearBoth"></div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Uploaded Files List -->
+      <div class="uploadedCont hidden" id="FileUpload-div-files">
+        <ul elname="fileElementUL" class="fileUploadBdrbot">
+          <li elname="templateFileElement" class="hidden">
+            <span elname="fileSpanElement" class="flLeft previewWrapper">
+              <div class="previewContainer">
+                <a elname="zoomIcon" class="over_Icon" onclick="ZFLive.zoomImage(this);">
+                  <span elname="zoomIcon" class="zoomIcon"></span>
+                </a>
+                <img elname="fileImage">
+                <div elname="fileNonImage" class="fileTypeIcon"></div>
+              </div>
+            </span>
+  
+            <div class="uploadFileCont">
+              <em elname="fileName" class="uploadFileTitle"></em>
+              <b elname="fileExtension"></b>
+              <p elname="fileSize" class="fileSize text-sm text-gray-500" style="display: none;"></p>
+              <div class="progressBarWrapper">
+                <div class="progressBarCont">
+                  <div elname="progressbar_line" class="progressBar bg-blue-500 h-1"></div>
+                </div>
+              </div>
+            </div>
+            <a name="removeFileElement" role="button" style="display:none;" onclick="ZFLive.removeAndDeleteFile('FileUpload',this)" class="flRight attachDelete">
+              <svg class="icon icon-delete">
+                <use xlink:href="#icon-delete"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="clearBoth"></div>
+      </div>
+  
+      <!-- Error Messages -->
+      <p class="errorMessage text-red-500 text-sm mt-2" elname="error" id="error-FileUpload"></p>
+      <p class="errorMessage text-red-500 text-sm mt-2" elname="fu_error" id="fu_error-FileUpload"></p>
+    </div>
+  
+    <!-- Clear both floats (if necessary) -->
+    <div class="clearBoth"></div>
+  </li>
+  
+
+  <ul elname="footer" class="footerWrapper formRelative" page_no="1" page_count="1" counter_page_uid="1" page_link_name="Page">
+    <li class="btnAllign fmFooter relative overflow-visible" id="formAccess" elname="0">
+      
+      <div class="pageFotDef">
+        
+        <!-- Submit Button Container -->
+        <div class="alignSubmit">
+          <div class="formRelative inline-block submitBtnCont">
+            <button class="fmSmtButton submitColor submitWrapper fmSmtButtom px-6 -mt-30 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700" elname="submit" value="submit">
+              <em>Submit</em>
+            </button>
+          </div>
+        </div>
+  
+      </div>
+      
+      <!-- Clear both floats -->
+      <div class="clearBoth"></div>
+    </li>
+  </ul>
+  
+
+  
+  </div>
+
+  <!-- JavaScript Validation -->
+  <script>
+    // Validation logic
+    document.querySelectorAll('input, select').forEach(field => {
+      field.addEventListener('focusout', function () {
+        const errorElement = document.getElementById(`error-${this.id}`);
+        if (this.value.trim() === '') {
+          errorElement.classList.remove('hidden');
+        } else {
+          errorElement.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+
+  <!-- Script for Validation -->
+  <script>
+    document.querySelectorAll('input[type="tel"]').forEach((input) => {
+      input.addEventListener('focusout', function () {
+        const errorId = `error-${this.id}`;
+        const errorElement = document.getElementById(errorId);
+        if (this.value.trim() === '') {
+          errorElement.classList.remove('hidden');
+        } else {
+          errorElement.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+
+  
+
+</body>
+</html>
