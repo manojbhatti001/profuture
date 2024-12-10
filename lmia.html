@@ -21,9 +21,12 @@
   <body>
     <!-- Header Section -->
     <header class="bg-blue-900 text-white">
-      <div class="flex justify-between items-center px-6 py-3">
+      <div class="flex flex-col md:flex-row justify-between items-center px-4 md:px-6 py-3 space-y-2 md:space-y-0">
         <!-- Free Assessment Button -->
-        <a href="#" class="bg-orange-600 text-white px-4 py-2 rounded-full font-bold hover:bg-orange-700">
+        <a
+          href="#"
+          class="bg-orange-600 text-white px-4 py-2 rounded-full font-bold text-center hover:bg-orange-700"
+        >
           Free Assessment
         </a>
   
@@ -35,25 +38,36 @@
     </header>
   
     <!-- Navbar Section -->
-    <header class="bg-white py-4 px-8 shadow-md">
-      <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+    <header class="bg-white py-4 px-4 md:px-8 shadow-md">
+      <div class="flex flex-wrap md:flex-nowrap justify-between items-center max-w-screen-xl mx-auto">
         <!-- Logo and Tagline -->
         <a href="index.html" class="flex items-center space-x-4">
-          <img src="/photos/logo.png" class="h-14 w-auto" alt="Logo" />
-          <!-- Adjusted logo size -->
+          <img src="/photos/logo.png" class="h-10 md:h-14 w-auto" alt="Logo" />
         </a>
   
         <!-- Navigation Links -->
-        <nav>
-          <ul class="flex flex-wrap space-x-8 text-blue-900 font-bold">
+        <nav class="w-full md:w-auto">
+          <ul
+            class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-8 text-blue-900 font-bold"
+          >
             <li class="relative group">
               <a href="#" class="group-hover:text-orange-600">Employers <span class="text-sm">▼</span></a>
               <!-- Dropdown Menu -->
-              <ul class="absolute hidden bg-white text-blue-600 space-y-4 top-full left-0 w-48 z-10 group-hover:block">
-                <li><a href="/index.html" class="block px-4 py-2  hover:text-orange-600">Employers</a></li>
-                <li><a href="/lmia.html" class="block px-4 py-2 hover:text-orange-600">LMIA</a></li>
-                <li><a href="/Seasonal.html" class="block px-4 py-2  hover:text-orange-600">Seasonal</a></li>
-                <li><a href="/industries.html" class="block px-4 py-2 hover:text-orange-600">Industries</a></li>
+              <ul
+                class="absolute hidden bg-white text-blue-600 space-y-4 top-full left-0 w-48 z-10 group-hover:block shadow-md"
+              >
+                <li>
+                  <a href="/index.html" class="block px-4 py-2 hover:text-orange-600">Employers</a>
+                </li>
+                <li>
+                  <a href="/lmia.html" class="block px-4 py-2 hover:text-orange-600">LMIA</a>
+                </li>
+                <li>
+                  <a href="/Seasonal.html" class="block px-4 py-2 hover:text-orange-600">Seasonal</a>
+                </li>
+                <li>
+                  <a href="/industries.html" class="block px-4 py-2 hover:text-orange-600">Industries</a>
+                </li>
               </ul>
             </li>
             <li><a href="/AboutUs.html" class="hover:text-orange-600">About Us</a></li>
@@ -62,107 +76,103 @@
             <li><a href="/Blog.html" class="hover:text-orange-600">Blog</a></li>
             <li><a href="/Contactus.html" class="hover:text-orange-600">Contact Us</a></li>
           </ul>
-          
-          
         </nav>
   
         <!-- Language Flags -->
-        <div class="flex items-center space-x-2">
-          <div class="w-4 h-4 bg-blue-500" style="
-                background: linear-gradient(to right, #0055a4, #ffffff, #ef4135);
-              "></div>
+        <div class="hidden md:flex items-center space-x-2">
+          <div
+            class="w-4 h-4 bg-blue-500"
+            style="background: linear-gradient(to right, #0055a4, #ffffff, #ef4135);"
+          ></div>
         </div>
       </div>
     </header>
 
-    <!-- globel Section -->
-    <div
-      class="text-white flex flex-col gap-8 p-8"
-      style="background-image: url('./photos/Pattern-1.jpg')"
-    >
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight px-8 text-center">
-        Your Go-To Guide for Understanding LMIA: Insights and Application Steps
-      </h1>
-      <div class="flex items-center">
-        <div class="w-full">
-          <img
-            src="/photos/LMIA/woman-is-sitting-job-interview-2-scaled.webp"
-            alt=""
-          />
-        </div>
+  <!-- Globel Section -->
+<div
+class="text-white flex flex-col gap-8 p-8"
+style="background-image: url('./photos/Pattern-1.jpg')"
+>
+<h1 class="text-4xl md:text-5xl font-bold leading-tight text-center px-8">
+  Your Go-To Guide for Understanding LMIA: Insights and Application Steps
+</h1>
 
-        <!-- Left Content -->
-        <div class="w-full flex flex-col gap-4 p-8">
-          <p class="mt-4 text-xl">
-            A
-            <span class="font-semibold"
-              >Labour Market Impact Assessment (LMIA)</span
-            >
-            is a document issued by
-            <span class="font-semibold"
-              >Employment and Social Development Canada (ESDC)
-            </span>
-            that employers may require before hiring a foreign worker. The LMIA
-            process ensures that the hiring of a foreign worker will not
-            negatively impact the Canadian labour market.
-          </p>
-          <p class="mt-4 font-semibold">Connect with top talent today!</p>
+<!-- Flex Container for Image and Left Content -->
+<div class="flex flex-col md:flex-row items-center gap-8">
+  
+  <!-- Image on top for small screens, side by side for larger screens -->
+  <div class="w-full md:w-1/2">
+    <img
+      src="/photos/LMIA/woman-is-sitting-job-interview-2-scaled.webp"
+      alt=""
+      class="w-full h-auto rounded-lg"
+    />
+  </div>
 
-          <!-- Badges in One Line -->
-          <div class="flex mt-2 gap-2 items-center justify-around">
-            <div class="w-16 h-16 rounded-lg flex items-center justify-center">
-              <img
-                src="./photos/Permanent-and-Seasonal-Jobs.png"
-                alt="Permanent and Seasonal Jobs"
-                class="w-16 h-16 object-cover"
-              />
-            </div>
-            <div class="w-16 h-16 rounded-lg flex items-center justify-center">
-              <img
-                src="./photos/Long-term-Staffing.png"
-                alt="Long-term Staffing"
-                class="w-16 h-16 object-cover"
-              />
-            </div>
-            <div class="w-16 h-16 rounded-lg flex items-center justify-center">
-              <img
-                src="./photos/Legal-Compliance.png"
-                alt="Legal Compliance"
-                class="w-16 h-16 object-cover"
-              />
-              <!-- <span class="text-xs font-semibold text-white">LEGAL<br>COMPLIANCE</span> -->
-            </div>
-            <div class="w-16 h-16 rounded-lg flex items-center justify-center">
-              <img
-                src="./photos/Canada-Licensed.png"
-                alt="Canada Licensed"
-                class="w-16 h-16 object-cover"
-              />
-            </div>
-          </div>
-          <div class="flex mt-4 justify-around">
-            <div
-              class="flex flex-col gap-2 items-center text-center justify-center"
-            >
-              <h3 class="font-extrabold text-4xl">17+</h3>
-              <p class="font-medium text-xl">Years of experience</p>
-            </div>
-            <div
-              class="flex flex-col gap-2 items-center text-center justify-center"
-            >
-              <h3 class="font-extrabold text-4xl">95%</h3>
-              <p class="font-medium text-xl">Success Rate</p>
-            </div>
-            <div
-              class="flex flex-col gap-2 items-center text-center justify-center"
-            >
-              <h3 class="font-extrabold text-4xl">7000+</h3>
-              <p class="font-medium text-xl">Workers in Canada</p>
-            </div>
-          </div>
-        </div>
+  <!-- Left Content -->
+  <div class="w-full md:w-1/2 flex flex-col gap-4 p-8">
+    <p class="mt-4 text-xl">
+      A
+      <span class="font-semibold">Labour Market Impact Assessment (LMIA)</span>
+      is a document issued by
+      <span class="font-semibold">Employment and Social Development Canada (ESDC)</span>
+      that employers may require before hiring a foreign worker. The LMIA
+      process ensures that the hiring of a foreign worker will not negatively
+      impact the Canadian labour market.
+    </p>
+    <p class="mt-4 font-semibold">Connect with top talent today!</p>
+
+    <!-- Badges in One Line, stack on mobile -->
+    <div class="flex flex-wrap mt-2 gap-2 items-center justify-around">
+      <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+        <img
+          src="./photos/Permanent-and-Seasonal-Jobs.png"
+          alt="Permanent and Seasonal Jobs"
+          class="w-16 h-16 object-cover"
+        />
+      </div>
+      <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+        <img
+          src="./photos/Long-term-Staffing.png"
+          alt="Long-term Staffing"
+          class="w-16 h-16 object-cover"
+        />
+      </div>
+      <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+        <img
+          src="./photos/Legal-Compliance.png"
+          alt="Legal Compliance"
+          class="w-16 h-16 object-cover"
+        />
+      </div>
+      <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+        <img
+          src="./photos/Canada-Licensed.png"
+          alt="Canada Licensed"
+          class="w-16 h-16 object-cover"
+        />
       </div>
     </div>
+
+    <!-- Stats Section (Stack vertically on mobile) -->
+    <div class="flex flex-wrap mt-4 justify-around gap-8">
+      <div class="flex flex-col gap-2 items-center text-center">
+        <h3 class="font-extrabold text-4xl">17+</h3>
+        <p class="font-medium text-xl">Years of experience</p>
+      </div>
+      <div class="flex flex-col gap-2 items-center text-center">
+        <h3 class="font-extrabold text-4xl">95%</h3>
+        <p class="font-medium text-xl">Success Rate</p>
+      </div>
+      <div class="flex flex-col gap-2 items-center text-center">
+        <h3 class="font-extrabold text-4xl">7000+</h3>
+        <p class="font-medium text-xl">Workers in Canada</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 
     <!-- cards section -->
     <div
@@ -226,127 +236,103 @@
     </div>
 
 
-    <!-- Slider -->
-    <div class="bg-white">
-      <!-- Main Container -->
-      <div
-        class="container mx-auto py-6 px-6 bg-white-300 rounded-lg shadow-md"
-      >
-        <!-- Section Heading -->
-        <div class="text-center mb-8">
-          <h2 class="text-2xl font-bold text-blue-800">Trusted by Employers</h2>
-          <p class="mt-2 text-2xl text-gray-600">
-            Hear from our clients why partnering with us makes all the
-            difference!
-          </p>
-        </div>
+    <!-- Partner Section -->
+ <div class="bg-yellow-300">
+  <style>
+    /* Disable manual horizontal scrolling */
+    .swiper-container {
+      overflow: hidden;
+      /* Prevent scrolling */
+    }
+  </style>
 
-        <!-- Testimonial Slider -->
-        <div class="relative bg-white overflow-hidden">
-          <div class="swiper-container bg-white">
-            <div class="swiper-wrapper bg-white overflow-hidden">
-              <!-- Slide 1 -->
-              <div
-                class="swiper-slide p-6 rounded-lg shadow-lg flex flex-col items-center text-center"
-              >
-                <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
-                  "We have been working with Workvantage since 2021 to meet our
-                  staffing needs."
-                </p>
-                <img
-                  src="/photos/Prairie-Pride1.png"
-                  alt="Prairie Pride Logo"
-                  class="w-40 h-40 rounded-full object-cover mb-4"
-                />
-              </div>
-
-              <!-- Slide 2 -->
-              <div
-                class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center"
-              >
-                <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
-                  "We have been working with Workvantage International since
-                  2015 to assist us with our labour challenges."
-                </p>
-                <img
-                  src="/photos/Etegra6.png"
-                  alt="Etegra Logo"
-                  class="w-40 h-40 rounded-full object-cover mb-4"
-                />
-              </div>
-
-              <!-- Slide 3 -->
-              <div
-                class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center"
-              >
-                <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
-                  "Workvantage has always been very thorough about assisting us
-                  in choosing the foreign workers."
-                </p>
-                <img
-                  src="/photos/Pops-pub-and-Grill5.png"
-                  alt="Pops Pub and Grill Logo"
-                  class="w-40 h-40 rounded-full object-cover mb-4"
-                />
-              </div>
-
-              <!-- Slide 4 -->
-              <div
-                class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center"
-              >
-                <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
-                  "Their team is responsive, reliable, knowledgeable, and
-                  provides great service at a good price."
-                </p>
-                <img
-                  src="/photos/Trenton-Cold-Storage4.png"
-                  alt="Trenton Cold Storage Logo"
-                  class="w-40 h-40 rounded-full object-cover mb-4"
-                />
-              </div>
-
-              <!-- Slide 5 -->
-              <div
-                class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center"
-              >
-                <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
-                  "Workvantage makes our lives easier by recruiting and doing
-                  all the necessary paperwork."
-                </p>
-                <img
-                  src="/photos/WCA3.png"
-                  alt="WCA Logo"
-                  class="w-40 h-40 rounded-full object-cover mb-4"
-                />
-              </div>
-            </div>
-
-            <!-- Swiper Navigation Buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </div>
+  <!-- <div class="bg-yellow-300"> -->
+    <!-- Main Container -->
+    <div class="container mx-auto py-6 px-6 bg-white-300 rounded-lg shadow-md">
+      <!-- Section Heading -->
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-bold text-blue-800">Trusted by Employers</h2>
+        <p class="mt-2 text-2xl text-gray-600">
+          Hear from our clients why partnering with us makes all the
+          difference!
+        </p>
       </div>
 
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <!-- Testimonial Slider -->
+      <div class="relative">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4">
+                "We have been working with Workvantage since 2021 to meet our
+                staffing needs."
+              </p>
+              <img src="/photos/Prairie-Pride1.png" alt="Prairie Pride Logo"
+                class="w-40 h-40 rounded-full object-cover mb-4" />
+            </div>
 
-      <script>
-        const swiper = new Swiper(".swiper-container", {
-          loop: true,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          slidesPerView: 1,
-          spaceBetween: 20,
-          allowTouchMove: true,
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-        });
-      </script>
+            <!-- Slide 2 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4">
+                "We have been working with Workvantage International since
+                2015 to assist us with our labour challenges."
+              </p>
+              <img src="/photos/Etegra6.png" alt="Etegra Logo" class="w-40 h-40 rounded-full object-cover mb-4" />
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4">
+                "Workvantage has always been very thorough about assisting us
+                in choosing the foreign workers."
+              </p>
+              <img src="/photos/Pops-pub-and-Grill5.png" alt="Pops Pub and Grill Logo"
+                class="w-40 h-40 rounded-full object-cover mb-4" />
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4">
+                "Their team is responsive, reliable, knowledgeable, and
+                provides great service at a good price."
+              </p>
+              <img src="/photos/Trenton-Cold-Storage4.png" alt="Trenton Cold Storage Logo"
+                class="w-40 h-40 rounded-full object-cover mb-4" />
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4">
+                "Workvantage makes our lives easier by recruiting and doing
+                all the necessary paperwork."
+              </p>
+              <img src="/photos/WCA3.png" alt="WCA Logo" class="w-40 h-40 rounded-full object-cover mb-4" />
+            </div>
+          </div>
+
+          <!-- Swiper Navigation Buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper-container", {
+    loop: true,  // Allows infinite loop
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 1,  // One slide per view
+    spaceBetween: 20,  // Space between slides
+    allowTouchMove: true,  // Enable touch/drag interaction
+    autoplay: false,  // Disable autoplay
+  });
+</script>
+ </div>
 
     <!-- Hassle Free Recruitment -->
     <div
@@ -541,20 +527,21 @@
       </h4>
     </div>
 
-    <!-- LMIA exemptions are available under the International Mobility -->
+   <!-- LMIA Exemptions Section -->
+<div
+class="w-full max-w-7xl mx-auto px-4 sm:px-20 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 text-[#282e69]"
+>
+<!-- Other Agencies Issues Card -->
+<div
+  class="border border-gray-200 rounded-2xl shadow-lg bg-white p-6 flex justify-center items-center"
+>
+  <h2 class="text-3xl sm:text-4xl md:text-5xl text-center font-bold">
+    LMIA exemptions are available under the International Mobility Program
+    (IMP) and through various Free Trade Agreements (FTAs). These include:
+  </h2>
+</div>
+</div>
 
-    <div
-      class="w-4xl mx-auto px-4 sm:px-20 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 text-[#282e69]"
-    >
-      <!-- Other Agencies Issues Card -->
-      <div
-        class="border border-gray-200 rounded-2xl shadow-lg bg-white p-6 flex justify-center items-center"
-      >
-        <h2 class="text-5xl text-center font-bold">
-          LMIA exemptions are available under the International Mobility Program
-          (IMP) and through various Free Trade Agreements (FTAs). These include:
-        </h2>
-      </div>
 
       <!-- Work Vantage Solution Card -->
       <div

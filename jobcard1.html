@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Job Portal</title>
   <style>
-    
     /* Custom Scrollbars */
     .scrollable {
       scrollbar-width: thin;
@@ -37,238 +36,261 @@
   </style>
 </head>
 <body class="bg-gray-100 font-sans text-gray-800">
-  
 
 <!-- Navbar Section -->
 <header class="bg-white py-4 px-8 shadow-md">
-    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+    <div class="flex flex-wrap justify-between items-center max-w-screen-xl mx-auto">
         <!-- Logo and Tagline -->
-        <a href="index.html" class="flex items-center ml-48 space-x-4">
+        <a href="index.html" class="flex items-center space-x-4">
             <img src="/photos/logo.png" class="h-14 w-auto" alt="Workvantage Logo" />
         </a>
 
-        <!-- Navigation Links -->
-        <nav>
-            <ul class="flex space-x-8 text-blue-900 ml-48 font-bold">
-                <li><a href="/jobcard1.html" class="hover:text-orange-600 ">Job Opening </a></li>
+        <!-- Navigation Links (Hidden on mobile, shown on larger screens) -->
+        <nav class="hidden md:block">
+            <ul class="flex flex-wrap space-x-8 text-blue-900 font-bold">
+                <li><a href="/jobcard1.html" class="hover:text-orange-600">Job Opening</a></li>
                 <li><a href="/submitprofile.html" class="hover:text-orange-600">Submit Your profile</a></li>
                 <li><a href="/FAQ.html" class="hover:text-orange-600">FAQ</a></li>
                 <li><a href="/ContactUs1.html" class="hover:text-orange-600">Contact Us</a></li>
             </ul>
         </nav>
 
-        <!-- Language Flags -->
-        <div class="w-5 h-4" style="background: linear-gradient(to right, #0055a4, #ffffff, #ef4135);"></div>
+        <!-- Language Flags (Hidden on mobile, shown on larger screens) -->
+        <div class="w-5 h-4 mt-4 md:mt-0 hidden md:block" style="background: linear-gradient(to right, #0055a4, #ffffff, #ef4135);"></div>
+
+        <!-- Mobile Menu Button (Visible only on mobile) -->
+        <button class="md:hidden text-blue-900 focus:outline-none" id="mobile-menu-button">
+            <i class="fas fa-bars text-2xl"></i> <!-- Hamburger icon -->
+        </button>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default, visible on mobile) -->
+    <div class="md:hidden hidden" id="mobile-menu" style="background-color: white;">
+        <ul class="flex flex-col space-y-4 text-center py-4 text-blue-900 font-bold">
+            <li><a href="/jobcard1.html" class="hover:text-orange-600">Job Opening</a></li>
+            <li><a href="/submitprofile.html" class="hover:text-orange-600">Submit Your profile</a></li>
+            <li><a href="/FAQ.html" class="hover:text-orange-600">FAQ</a></li>
+            <li><a href="/ContactUs1.html" class="hover:text-orange-600">Contact Us</a></li>
+        </ul>
     </div>
 </header>
 
-      
+<script>
+    // Mobile menu toggle script
+    document.getElementById("mobile-menu-button").addEventListener("click", function() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden"); // Toggle visibility of the mobile menu
+    });
+</script>
 
-  <div class="container mx-auto p-6 flex gap-6">
+
+
+<div class="container mx-auto p-6 flex flex-col-reverse gap-6 md:flex-row">
     <!-- Sidebar Filters -->
-    <aside class="w-1/4 bg-white p-6 rounded-lg shadow-xl h-screen sticky top-0 overflow-y-auto scrollable">
-      <h2 class="text-2xl font-bold text-gray-800 mb-6">Filters</h2>
+    <aside class="w-full md:w-1/4 bg-white p-6 rounded-lg shadow-xl h-auto md:h-screen sticky top-0 overflow-y-auto scrollable">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Filters</h2>
 
-      <!-- Work Mode Filter -->
-      <div class="mb-6">
-        <h3 class="text-lg font-semibold text-gray-800 mb-3">Work Mode</h3>
-        <div class="space-y-3">
-          <label class="flex items-center text-gray-700 cursor-pointer">
-            <input type="checkbox" class="form-checkbox text-blue-500 mr-3" value="office" onchange="filterJobs()" />
-            Work from office
-          </label>
-          <label class="flex items-center text-gray-700 cursor-pointer">
-            <input type="checkbox" class="form-checkbox text-blue-500 mr-3" value="hybrid" onchange="filterJobs()" />
-            Hybrid
-          </label>
-          <label class="flex items-center text-gray-700 cursor-pointer">
-            <input type="checkbox" class="form-checkbox text-blue-500 mr-3" value="remote" onchange="filterJobs()" />
-            Remote
-          </label>
+        <!-- Work Mode Filter -->
+        <div class="mb-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-3">Work Mode</h3>
+            <div class="space-y-3">
+                <label class="flex items-center text-gray-700 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox text-blue-500 mr-3" value="office" onchange="filterJobs()" />
+                    Work from office
+                </label>
+                <label class="flex items-center text-gray-700 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox text-blue-500 mr-3" value="hybrid" onchange="filterJobs()" />
+                    Hybrid
+                </label>
+                <label class="flex items-center text-gray-700 cursor-pointer">
+                    <input type="checkbox" class="form-checkbox text-blue-500 mr-3" value="remote" onchange="filterJobs()" />
+                    Remote
+                </label>
+            </div>
         </div>
-      </div>
 
-      <!-- Department Filter -->
-      <div class="mb-6">
-        <h3 class="text-lg font-semibold text-gray-800 mb-3">Department</h3>
-        <select id="departmentFilter" class="w-full p-2 border border-gray-300 rounded-lg" onchange="filterJobs()">
-          <option value="">All</option>
-          <option value="engineering">Engineering </option>
-          <option value="marketing">Marketing</option>
-          <option value="sales">Sales</option>
-          <option value="finance">Finance</option>
-          <option value="hr">HR</option>
-        </select>
-      </div>
-
-      <!-- Experience Range Filter -->
-      <div class="mb-6">
-        <h3 class="text-lg font-semibold text-gray-800 mb-3">Experience</h3>
-        <input type="range" min="0" max="10" value="0" class="w-full bg-gray-200 rounded-lg" id="experienceRange" oninput="updateExperienceValue()" onchange="filterJobs()">
-        <div class="flex justify-between text-sm text-gray-600 mt-2">
-          <span>0 Yrs</span>
-          <span>10 Yrs</span>
+        <!-- Department Filter -->
+        <div class="mb-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-3">Department</h3>
+            <select id="departmentFilter" class="w-full p-2 border border-gray-300 rounded-lg" onchange="filterJobs()">
+                <option value="">All</option>
+                <option value="engineering">Engineering</option>
+                <option value="marketing">Marketing</option>
+                <option value="sales">Sales</option>
+                <option value="finance">Finance</option>
+                <option value="hr">HR</option>
+            </select>
         </div>
-        <p id="experienceValue" class="text-gray-800 text-sm font-semibold mt-2">Selected: 0+ Yrs</p>
-      </div>
 
-      <!-- Salary Range Filter -->
-      <div class="mb-6">
-        <h3 class="text-lg font-semibold text-gray-800 mb-3">Salary (₹ Lakhs PA)</h3>
-        <input type="range" min="0" max="10" value="0" class="w-full bg-gray-200 rounded-lg" id="salaryRange" oninput="updateSalaryValue()" onchange="filterJobs()">
-        <div class="flex justify-between text-sm text-gray-600 mt-2">
-          <span>0 Lacs</span>
-          <span>10 Lacs</span>
+        <!-- Experience Range Filter -->
+        <div class="mb-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-3">Experience</h3>
+            <input type="range" min="0" max="10" value="0" class="w-full bg-gray-200 rounded-lg" id="experienceRange" oninput="updateExperienceValue()" onchange="filterJobs()">
+            <div class="flex justify-between text-sm text-gray-600 mt-2">
+                <span>0 Yrs</span>
+                <span>10 Yrs</span>
+            </div>
+            <p id="experienceValue" class="text-gray-800 text-sm font-semibold mt-2">Selected: 0+ Yrs</p>
         </div>
-        <p id="salaryValue" class="text-gray-800 text-sm font-semibold mt-2">Selected: ₹0+ Lacs</p>
-      </div>
+
+        <!-- Salary Range Filter -->
+        <div class="mb-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-3">Salary (₹ Lakhs PA)</h3>
+            <input type="range" min="0" max="10" value="0" class="w-full bg-gray-200 rounded-lg" id="salaryRange" oninput="updateSalaryValue()" onchange="filterJobs()">
+            <div class="flex justify-between text-sm text-gray-600 mt-2">
+                <span>0 Lacs</span>
+                <span>10 Lacs</span>
+            </div>
+            <p id="salaryValue" class="text-gray-800 text-sm font-semibold mt-2">Selected: ₹0+ Lacs</p>
+        </div>
     </aside>
 
     <!-- Main Content -->
-    <main class="w-full ">
-      <h2 class="text-5xl font-bold text-center text-blue-800 mb-6">Job Listings</h2>
-      <div id="jobCardsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-6 rounded-lg bg-white-300 h-[80vh] overflow-y-auto scrollable">
-        <!-- Job cards will be inserted here dynamically -->
-         
-      </div>
+    <main class="w-full md:w-3/4">
+        <h2 class="text-5xl font-bold text-center text-blue-800 mb-6">Job Listings</h2>
+        <div id="jobCardsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-6 rounded-lg bg-white-300 h-[80vh] overflow-y-auto scrollable">
+            <!-- Job cards will be inserted here dynamically -->
+        </div>
     </main>
-  </div>
+</div>
 
-  <div id="jobCardsContainer" class="grid grid-cols-1 gap-6 ">
-
-  </div>
-  
-  <script>
+<script>
     const jobData = [
-      {
-        title: ".Net Production Support",
-        company: "Capgemini",
-        experience: "5-10 Yrs",
-        salary: "₹7-17 Lacs PA",
-        workMode: "hybrid",
-        department: "engineering",
-        location: "Bangalore, Pune",
-        description: "Functional RUN experience (JIRA, tickets), Good oral and written English communication",
-        image: "https://via.placeholder.com/150/4C9BFF/FFFFFF?text=Capgemini",
-      },
-      {
-        title: "Software Developer",
-        company: "Infosys",
-        experience: "3-6 Yrs",
-        salary: "₹6-12 Lacs PA",
-        workMode: "remote",
-        department: "engineering",
-        location: "Remote",
-        description: "Experience in Java, Spring, and Microservices",
-        image: "https://via.placeholder.com/150/FF5733/FFFFFF?text=Infosys",
-      },
-      {
-        title: "Marketing Manager",
-        company: "Tata Group",
-        experience: "5-8 Yrs",
-        salary: "₹8-15 Lacs PA",
-        workMode: "office",
-        department: "marketing",
-        location: "Mumbai",
-        description: "Experience in SEO and Digital Marketing",
-        image: "https://via.placeholder.com/150/FFC300/FFFFFF?text=Tata+Group",
-      },
-      {
-        title: "Sales Executive",
-        company: "Wipro",
-        experience: "2-5 Yrs",
-        salary: "₹4-9 Lacs PA",
-        workMode: "hybrid",
-        department: "sales",
-        location: "Bangalore",
-        description: "Experience in sales and customer management",
-        image: "https://via.placeholder.com/150/28A745/FFFFFF?text=Wipro",
-      },
-      {
-        title: "HR Manager",
-        company: "Cognizant",
-        experience: "5-10 Yrs",
-        salary: "₹10-20 Lacs PA",
-        workMode: "office",
-        department: "hr",
-        location: "Chennai",
-        description: "Expertise in recruitment and employee engagement",
-        image: "https://via.placeholder.com/150/6F42C1/FFFFFF?text=Cognizant",
-      },
-      {
-        title: "Finance Analyst",
-        company: "HDFC",
-        experience: "2-4 Yrs",
-        salary: "₹5-10 Lacs PA",
-        workMode: "remote",
-        department: "finance",
-        location: "Remote",
-        description: "Experience in financial modeling and analysis",
-        image: "https://via.placeholder.com/150/007BFF/FFFFFF?text=HDFC",
-      },
+        {
+            title: ".Net Production Support",
+            company: "Capgemini",
+            experience: "5-10 Yrs",
+            salary: "₹7-17 Lacs PA",
+            workMode: "hybrid",
+            department: "engineering",
+            location: "Bangalore, Pune",
+            description: "Functional RUN experience (JIRA, tickets), Good oral and written English communication",
+            image: "https://via.placeholder.com/150/4C9BFF/FFFFFF?text=Capgemini",
+        },
+        {
+            title: "Software Developer",
+            company: "Infosys",
+            experience: "3-6 Yrs",
+            salary: "₹6-12 Lacs PA",
+            workMode: "remote",
+            department: "engineering",
+            location: "Remote",
+            description: "Experience in Java, Spring, and Microservices",
+            image: "https://via.placeholder.com/150/FF5733/FFFFFF?text=Infosys",
+        },
+        {
+            title: "Marketing Manager",
+            company: "Tata Group",
+            experience: "5-8 Yrs",
+            salary: "₹8-15 Lacs PA",
+            workMode: "office",
+            department: "marketing",
+            location: "Mumbai",
+            description: "Experience in SEO and Digital Marketing",
+            image: "https://via.placeholder.com/150/FFC300/FFFFFF?text=Tata+Group",
+        },
+        {
+            title: "Sales Executive",
+            company: "Wipro",
+            experience: "2-5 Yrs",
+            salary: "₹4-9 Lacs PA",
+            workMode: "hybrid",
+            department: "sales",
+            location: "Bangalore",
+            description: "Experience in sales and customer management",
+            image: "https://via.placeholder.com/150/28A745/FFFFFF?text=Wipro",
+        },
+        {
+            title: "HR Manager",
+            company: "Cognizant",
+            experience: "5-10 Yrs",
+            salary: "₹10-20 Lacs PA",
+            workMode: "office",
+            department: "hr",
+            location: "Chennai",
+            description: "Expertise in recruitment and employee engagement",
+            image: "https://via.placeholder.com/150/6F42C1/FFFFFF?text=Cognizant",
+        },
+        {
+            title: "Finance Analyst",
+            company: "HDFC",
+            experience: "2-4 Yrs",
+            salary: "₹5-10 Lacs PA",
+            workMode: "remote",
+            department: "finance",
+            location: "Remote",
+            description: "Experience in financial modeling and analysis",
+            image: "https://via.placeholder.com/150/007BFF/FFFFFF?text=HDFC",
+        },
     ];
-  
+
     function displayJobs(jobs) {
-      const container = document.getElementById("jobCardsContainer");
-      container.innerHTML = "";
-      jobs.forEach((job) => {
-        const jobCard = document.createElement("div");
-        jobCard.className =
-          "bg-white p-4 rounded-2xl shadow-2xl card-hover max-w-xl border border-gray-200";
-  
-        jobCard.innerHTML = `
-          <div class="flex justify-between items-center mb-4">
-            <img src="${job.image}" alt="${job.company}" class="h-12 w-12 rounded-md">
-            <div class="text-right">
-              <h3 class="text-lg font-bold text-gray-900">${job.title}</h3>
-              <p class="text-xl text-black">${job.company}</p>
-            </div>
-          </div>
-          <div class="flex flex-wrap gap-2 text-sm text-gray-700 mb-4">
-            <span class="flex items-center">
-              <i class="fa-solid fa-briefcase"></i>${job.experience}
-            </span>
-            <span class="flex items-center">
-              <i class="fa-solid fa-indian-rupee-sign"></i> ${job.salary}
-            </span>
-            <span class="flex items-center">
-               <i class="fa-solid fa-location-dot"></i>${job.location}
-            </span>
-          </div>
-          <p class="text-black-600">${job.description}</p>
-          <div class="flex justify-between items-center mt-4 text-blue-600">
-            <div class="flex gap-2  text-lg">
-              <span>${job.department}</span>
-              <span>${job.workMode}</span>
-            </div>
-            <button class="border border-blue-600 px-3 py-1 rounded-md text-blue-600 hover:bg-blue-50">
-              Save
-            </button>
-          </div>
-        `;
-  
-        container.appendChild(jobCard);
-      });
+        const container = document.getElementById("jobCardsContainer");
+        container.innerHTML = "";
+        jobs.forEach((job) => {
+            const jobCard = document.createElement("div");
+            jobCard.className =
+                "bg-white p-4 rounded-2xl shadow-2xl card-hover max-w-xl border border-gray-200";
+
+            jobCard.innerHTML = `
+                <div class="flex justify-between items-center mb-4">
+                    <img src="${job.image}" alt="${job.company}" class="h-12 w-12 rounded-md">
+                    <div class="text-right">
+                        <h3 class="text-lg font-bold text-gray-900">${job.title}</h3>
+                        <p class="text-xl text-black">${job.company}</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">${job.location}</p>
+                <p class="mt-2 text-sm text-gray-600">Experience: ${job.experience}</p>
+                <p class="mt-2 text-sm text-gray-600">Salary: ${job.salary}</p>
+                <p class="mt-2 text-sm text-gray-600">Description: ${job.description}</p>
+            `;
+            container.appendChild(jobCard);
+        });
     }
 
-    // Update Experience Range value
+    function filterJobs() {
+        const department = document.getElementById("departmentFilter").value;
+        const experience = document.getElementById("experienceRange").value;
+        const salary = document.getElementById("salaryRange").value;
+        const workModeCheckboxes = document.querySelectorAll("input[type=checkbox]:checked");
+        const selectedWorkModes = Array.from(workModeCheckboxes).map(
+            (checkbox) => checkbox.value
+        );
+
+        const filteredJobs = jobData.filter((job) => {
+            const matchesDepartment =
+                !department || job.department === department;
+            const matchesExperience = parseInt(job.experience) >= experience;
+            const matchesSalary = parseInt(job.salary.split(" ")[0]) >= salary;
+            const matchesWorkMode =
+                !selectedWorkModes.length || selectedWorkModes.includes(job.workMode);
+
+            return (
+                matchesDepartment &&
+                matchesExperience &&
+                matchesSalary &&
+                matchesWorkMode
+            );
+        });
+
+        displayJobs(filteredJobs);
+    }
+
     function updateExperienceValue() {
-      const experienceValue = document.getElementById('experienceValue');
-      const experienceRange = document.getElementById('experienceRange').value;
-      experienceValue.textContent = `Selected: ${experienceRange}+ Yrs`;
+        const experienceRange = document.getElementById("experienceRange");
+        const experienceValue = document.getElementById("experienceValue");
+        experienceValue.textContent = `Selected: ${experienceRange.value}+ Yrs`;
     }
 
-    // Update Salary Range value
     function updateSalaryValue() {
-      const salaryValue = document.getElementById('salaryValue');
-      const salaryRange = document.getElementById('salaryRange').value;
-      salaryValue.textContent = `Selected: ₹${salaryRange}+ Lacs`;
+        const salaryRange = document.getElementById("salaryRange");
+        const salaryValue = document.getElementById("salaryValue");
+        salaryValue.textContent = `Selected: ₹${salaryRange.value}+ Lacs`;
     }
 
-    // Initial call to display jobs
-    window.onload = () => {
-      displayJobs(jobData);
-    }
-  </script>
+    displayJobs(jobData); // Display all jobs on page load
+</script>
+
 </body>
 </html>

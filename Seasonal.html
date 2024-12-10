@@ -16,9 +16,12 @@
 <body class="font-sans">
     <!-- Header Section -->
     <header class="bg-blue-900 text-white">
-      <div class="flex justify-between items-center px-6 py-3">
+      <div class="flex flex-col md:flex-row justify-between items-center px-4 md:px-6 py-3 space-y-2 md:space-y-0">
         <!-- Free Assessment Button -->
-        <a href="#" class="bg-orange-600 text-white px-4 py-2 rounded-full font-bold hover:bg-orange-700">
+        <a
+          href="#"
+          class="bg-orange-600 text-white px-4 py-2 rounded-full font-bold text-center hover:bg-orange-700"
+        >
           Free Assessment
         </a>
   
@@ -30,25 +33,36 @@
     </header>
   
     <!-- Navbar Section -->
-    <header class="bg-white py-4 px-8 shadow-md">
-      <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+    <header class="bg-white py-4 px-4 md:px-8 shadow-md">
+      <div class="flex flex-wrap md:flex-nowrap justify-between items-center max-w-screen-xl mx-auto">
         <!-- Logo and Tagline -->
         <a href="index.html" class="flex items-center space-x-4">
-          <img src="/photos/logo.png" class="h-14 w-auto" alt="Logo" />
-          <!-- Adjusted logo size -->
+          <img src="/photos/logo.png" class="h-10 md:h-14 w-auto" alt="Logo" />
         </a>
   
         <!-- Navigation Links -->
-        <nav>
-          <ul class="flex flex-wrap space-x-8 text-blue-900 font-bold">
+        <nav class="w-full md:w-auto">
+          <ul
+            class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-8 text-blue-900 font-bold"
+          >
             <li class="relative group">
               <a href="#" class="group-hover:text-orange-600">Employers <span class="text-sm">▼</span></a>
               <!-- Dropdown Menu -->
-              <ul class="absolute hidden bg-white text-blue-600 space-y-4 top-full left-0 w-48 z-10 group-hover:block">
-                <li><a href="/index.html" class="block px-4 py-2  hover:text-orange-600">Employers</a></li>
-                <li><a href="/lmia.html" class="block px-4 py-2 hover:text-orange-600">LMIA</a></li>
-                <li><a href="/Seasonal.html" class="block px-4 py-2  hover:text-orange-600">Seasonal</a></li>
-                <li><a href="/industries.html" class="block px-4 py-2 hover:text-orange-600">Industries</a></li>
+              <ul
+                class="absolute hidden bg-white text-blue-600 space-y-4 top-full left-0 w-48 z-10 group-hover:block shadow-md"
+              >
+                <li>
+                  <a href="/index.html" class="block px-4 py-2 hover:text-orange-600">Employers</a>
+                </li>
+                <li>
+                  <a href="/lmia.html" class="block px-4 py-2 hover:text-orange-600">LMIA</a>
+                </li>
+                <li>
+                  <a href="/Seasonal.html" class="block px-4 py-2 hover:text-orange-600">Seasonal</a>
+                </li>
+                <li>
+                  <a href="/industries.html" class="block px-4 py-2 hover:text-orange-600">Industries</a>
+                </li>
               </ul>
             </li>
             <li><a href="/AboutUs.html" class="hover:text-orange-600">About Us</a></li>
@@ -57,103 +71,103 @@
             <li><a href="/Blog.html" class="hover:text-orange-600">Blog</a></li>
             <li><a href="/Contactus.html" class="hover:text-orange-600">Contact Us</a></li>
           </ul>
-          
-          
         </nav>
   
         <!-- Language Flags -->
-        <div class="flex items-center space-x-2">
-          <div class="w-4 h-4 bg-blue-500" style="
-                background: linear-gradient(to right, #0055a4, #ffffff, #ef4135);
-              "></div>
+        <div class="hidden md:flex items-center space-x-2">
+          <div
+            class="w-4 h-4 bg-blue-500"
+            style="background: linear-gradient(to right, #0055a4, #ffffff, #ef4135);"
+          ></div>
         </div>
       </div>
     </header>
 
 
-    <!-- globel Section -->
-    <div class="text-white flex flex-col gap-8 p-8" style="background-image: url('./photos/Pattern-1.jpg')">
-        <h2 class="text-4xl md:text-5xl font-bold leading-tight px-8 text-center">
-            Seasonal Staff for Canadian Employers: Your Solution for Peak Seasons
-        </h2>
-        <div class="flex items-center">
-            <div class="grid sm:grid-cols-2 w-full overflow-hidden gap-2">
-                <!-- Image 1 -->
-                <div class="w-full h-64">
-                    <img src="/photos/employers/retrato-mujer-comerciante-pie-mostrador-dulces-turcos-scaled.jpg" alt=""
-                        class="w-full h-full object-cover rounded-lg" />
-                </div>
+    <!-- Globel Section -->
+<div
+class="text-white flex flex-col gap-8 p-8"
+style="background-image: url('./photos/Pattern-1.jpg')"
+>
+<h1 class="text-4xl md:text-5xl font-bold leading-tight text-center px-8">
+  Your Go-To Guide for Understanding LMIA: Insights and Application Steps
+</h1>
 
-                <!-- Image 2 -->
-                <div class="w-full h-64">
-                    <img src="/photos/employers/Landscaper-scaled.jpg" alt=""
-                        class="w-full h-full object-cover rounded-lg" />
-                </div>
+<!-- Flex Container for Image and Left Content -->
+<div class="flex flex-col md:flex-row items-center gap-8">
+  
+  <!-- Image on top for small screens, side by side for larger screens -->
+  <div class="w-full md:w-1/2">
+    <img
+      src="/photos/LMIA/woman-is-sitting-job-interview-2-scaled.webp"
+      alt=""
+      class="w-full h-auto rounded-lg"
+    />
+  </div>
 
-                <!-- Image 3 -->
-                <div class="w-full h-64">
-                    <img src="/photos/animationImg/Man-yellow-vest-raking-leaves-park.webp" alt=""
-                        class="w-full h-full object-cover rounded-lg" />
-                </div>
+  <!-- Left Content -->
+  <div class="w-full md:w-1/2 flex flex-col gap-4 p-8">
+    <p class="mt-4 text-xl">
+      A
+      <span class="font-semibold">Labour Market Impact Assessment (LMIA)</span>
+      is a document issued by
+      <span class="font-semibold">Employment and Social Development Canada (ESDC)</span>
+      that employers may require before hiring a foreign worker. The LMIA
+      process ensures that the hiring of a foreign worker will not negatively
+      impact the Canadian labour market.
+    </p>
+    <p class="mt-4 font-semibold">Connect with top talent today!</p>
 
-                <!-- Image 4 -->
-                <div class="w-full h-64">
-                    <img src="/photos/employers/Food-Counter-Attendant.webp" alt=""
-                        class="w-full h-full object-cover rounded-lg" />
-                </div>
-            </div>
-
-
-            <!-- Left Content -->
-            <div class="w-full flex flex-col gap-4 p-8">
-                <p class="mt-4 text-xl">
-                    A
-                    <span class="font-semibold">Labour Market Impact Assessment (LMIA)</span>
-                    is a document issued by
-                    <span class="font-semibold">Employment and Social Development Canada (ESDC)
-                    </span>
-                    that employers may require before hiring a foreign worker. The LMIA
-                    process ensures that the hiring of a foreign worker will not
-                    negatively impact the Canadian labour market.
-                </p>
-                <p class="mt-4 font-semibold">Connect with top talent today!</p>
-
-                <!-- Badges in One Line -->
-                <div class="flex mt-2 gap-2 items-center justify-around">
-                    <div class="w-16 h-16 rounded-lg flex items-center justify-center">
-                        <img src="./photos/Permanent-and-Seasonal-Jobs.png" alt="Permanent and Seasonal Jobs"
-                            class="w-16 h-16 object-cover" />
-                    </div>
-                    <div class="w-16 h-16 rounded-lg flex items-center justify-center">
-                        <img src="./photos/Long-term-Staffing.png" alt="Long-term Staffing"
-                            class="w-16 h-16 object-cover" />
-                    </div>
-                    <div class="w-16 h-16 rounded-lg flex items-center justify-center">
-                        <img src="./photos/Legal-Compliance.png" alt="Legal Compliance"
-                            class="w-16 h-16 object-cover" />
-                        <!-- <span class="text-xs font-semibold text-white">LEGAL<br>COMPLIANCE</span> -->
-                    </div>
-                    <div class="w-16 h-16 rounded-lg flex items-center justify-center">
-                        <img src="./photos/Canada-Licensed.png" alt="Canada Licensed" class="w-16 h-16 object-cover" />
-                    </div>
-                </div>
-                <div class="flex mt-4 justify-around">
-                    <div class="flex flex-col gap-2 items-center text-center justify-center">
-                        <h3 class="font-extrabold text-4xl">17+</h3>
-                        <p class="font-medium text-xl">Years of experience</p>
-                    </div>
-                    <div class="flex flex-col gap-2 items-center text-center justify-center">
-                        <h3 class="font-extrabold text-4xl">95%</h3>
-                        <p class="font-medium text-xl">Success Rate</p>
-                    </div>
-                    <div class="flex flex-col gap-2 items-center text-center justify-center">
-                        <h3 class="font-extrabold text-4xl">7000+</h3>
-                        <p class="font-medium text-xl">Workers in Canada</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Badges in One Line, stack on mobile -->
+    <div class="flex flex-wrap mt-2 gap-2 items-center justify-around">
+      <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+        <img
+          src="./photos/Permanent-and-Seasonal-Jobs.png"
+          alt="Permanent and Seasonal Jobs"
+          class="w-16 h-16 object-cover"
+        />
+      </div>
+      <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+        <img
+          src="./photos/Long-term-Staffing.png"
+          alt="Long-term Staffing"
+          class="w-16 h-16 object-cover"
+        />
+      </div>
+      <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+        <img
+          src="./photos/Legal-Compliance.png"
+          alt="Legal Compliance"
+          class="w-16 h-16 object-cover"
+        />
+      </div>
+      <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+        <img
+          src="./photos/Canada-Licensed.png"
+          alt="Canada Licensed"
+          class="w-16 h-16 object-cover"
+        />
+      </div>
     </div>
+
+    <!-- Stats Section (Stack vertically on mobile) -->
+    <div class="flex flex-wrap mt-4 justify-around gap-8">
+      <div class="flex flex-col gap-2 items-center text-center">
+        <h3 class="font-extrabold text-4xl">17+</h3>
+        <p class="font-medium text-xl">Years of experience</p>
+      </div>
+      <div class="flex flex-col gap-2 items-center text-center">
+        <h3 class="font-extrabold text-4xl">95%</h3>
+        <p class="font-medium text-xl">Success Rate</p>
+      </div>
+      <div class="flex flex-col gap-2 items-center text-center">
+        <h3 class="font-extrabold text-4xl">7000+</h3>
+        <p class="font-medium text-xl">Workers in Canada</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
     <!-- our service Section -->
     <div class="bg-gray-200 py-20 px-5 sm:px-20">
@@ -296,105 +310,103 @@
         </div>
     </div>
 
-    <!-- Slider -->
+    <!-- Partner Section -->
+ <div class="bg-yellow-300">
+  <style>
+    /* Disable manual horizontal scrolling */
+    .swiper-container {
+      overflow: hidden;
+      /* Prevent scrolling */
+    }
+  </style>
 
-    <div class="bg-white">
-        <!-- Main Container -->
-        <div class="container mx-auto py-6 px-6 bg-white-300 rounded-lg shadow-md">
-            <!-- Section Heading -->
-            <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-blue-800">Trusted by Employers</h2>
-                <p class="mt-2 text-2xl text-gray-600">
-                    Hear from our clients why partnering with us makes all the
-                    difference!
-                </p>
+  <!-- <div class="bg-yellow-300"> -->
+    <!-- Main Container -->
+    <div class="container mx-auto py-6 px-6 bg-white-300 rounded-lg shadow-md">
+      <!-- Section Heading -->
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-bold text-blue-800">Trusted by Employers</h2>
+        <p class="mt-2 text-2xl text-gray-600">
+          Hear from our clients why partnering with us makes all the
+          difference!
+        </p>
+      </div>
+
+      <!-- Testimonial Slider -->
+      <div class="relative">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4">
+                "We have been working with Workvantage since 2021 to meet our
+                staffing needs."
+              </p>
+              <img src="/photos/Prairie-Pride1.png" alt="Prairie Pride Logo"
+                class="w-40 h-40 rounded-full object-cover mb-4" />
             </div>
 
-            <!-- Testimonial Slider -->
-            <div class="relative bg-white overflow-hidden">
-                <div class="swiper-container bg-white">
-                    <div class="swiper-wrapper bg-white overflow-hidden">
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-                            <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
-                                "We have been working with Workvantage since 2021 to meet our
-                                staffing needs."
-                            </p>
-                            <img src="/photos/Prairie-Pride1.png" alt="Prairie Pride Logo"
-                                class="w-40 h-40 rounded-full object-cover mb-4" />
-                        </div>
-
-                        <!-- Slide 2 -->
-                        <div
-                            class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
-                            <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
-                                "We have been working with Workvantage International since
-                                2015 to assist us with our labour challenges."
-                            </p>
-                            <img src="/photos/Etegra6.png" alt="Etegra Logo"
-                                class="w-40 h-40 rounded-full object-cover mb-4" />
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div
-                            class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
-                            <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
-                                "Workvantage has always been very thorough about assisting us
-                                in choosing the foreign workers."
-                            </p>
-                            <img src="/photos/Pops-pub-and-Grill5.png" alt="Pops Pub and Grill Logo"
-                                class="w-40 h-40 rounded-full object-cover mb-4" />
-                        </div>
-
-                        <!-- Slide 4 -->
-                        <div
-                            class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
-                            <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
-                                "Their team is responsive, reliable, knowledgeable, and
-                                provides great service at a good price."
-                            </p>
-                            <img src="/photos/Trenton-Cold-Storage4.png" alt="Trenton Cold Storage Logo"
-                                class="w-40 h-40 rounded-full object-cover mb-4" />
-                        </div>
-
-                        <!-- Slide 5 -->
-                        <div
-                            class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
-                            <p class="text-lg text-gray-700 font-bold mb-4 max-w-md">
-                                "Workvantage makes our lives easier by recruiting and doing
-                                all the necessary paperwork."
-                            </p>
-                            <img src="/photos/WCA3.png" alt="WCA Logo"
-                                class="w-40 h-40 rounded-full object-cover mb-4" />
-                        </div>
-                    </div>
-
-                    <!-- Swiper Navigation Buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4">
+                "We have been working with Workvantage International since
+                2015 to assist us with our labour challenges."
+              </p>
+              <img src="/photos/Etegra6.png" alt="Etegra Logo" class="w-40 h-40 rounded-full object-cover mb-4" />
             </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4">
+                "Workvantage has always been very thorough about assisting us
+                in choosing the foreign workers."
+              </p>
+              <img src="/photos/Pops-pub-and-Grill5.png" alt="Pops Pub and Grill Logo"
+                class="w-40 h-40 rounded-full object-cover mb-4" />
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4">
+                "Their team is responsive, reliable, knowledgeable, and
+                provides great service at a good price."
+              </p>
+              <img src="/photos/Trenton-Cold-Storage4.png" alt="Trenton Cold Storage Logo"
+                class="w-40 h-40 rounded-full object-cover mb-4" />
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+              <p class="text-lg text-gray-700 font-bold mb-4">
+                "Workvantage makes our lives easier by recruiting and doing
+                all the necessary paperwork."
+              </p>
+              <img src="/photos/WCA3.png" alt="WCA Logo" class="w-40 h-40 rounded-full object-cover mb-4" />
+            </div>
+          </div>
+
+          <!-- Swiper Navigation Buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-        <script>
-            const swiper = new Swiper(".swiper-container", {
-                loop: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                slidesPerView: 1,
-                spaceBetween: 20,
-                allowTouchMove: true,
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
-            });
-        </script>
+      </div>
     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper-container", {
+    loop: true,  // Allows infinite loop
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 1,  // One slide per view
+    spaceBetween: 20,  // Space between slides
+    allowTouchMove: true,  // Enable touch/drag interaction
+    autoplay: false,  // Disable autoplay
+  });
+</script>
+ </div>
 
     <!-- Maximize Efficiency with Seasonal Employment -->
 
@@ -434,174 +446,173 @@
 
     </div>
 
-    <!-- Find Top Seasonal Talent in Key Industries -->
+   <!-- Find Top Seasonal Talent in Key Industries -->
+<div class="bg-[#deebff] sm:p-20 px-5 py-20 flex gap-8 flex-col justify-center items-center">
 
-    <div class="bg-[#deebff] sm:p-20 px-5 py-20 flex gap-8 flex flex-col justify-center items-center">
+  <div class="bg-white text-[#282e69] p-8 rounded-2xl w-full max-w-7xl">
+      <h3 class="text-3xl sm:text-4xl md:text-5xl font-semibold text-center">
+          Find Top Seasonal Talent in Key Industries
+      </h3>
 
-        <div class="bg-white text-[#282e69] p-8 rounded-2xl">
-            <h3 class="text-5xl font-semibold text-center">Find Top Seasonal Talent in Key Industries</h3>
-            <div class="flex gap-8 justify-center items-center mt-8">
-                <span
-                    class="p-2 px-6 border-b-2 hover:text-[#e0421b] border-[#e0421b] bg-[#deebff] cursor-pointer text-xl ">Amusement
-                    Parks</span>
-                <span
-                    class="p-2 px-6 border-b-2 hover:text-[#e0421b] border-[#e0421b] bg-[#deebff] cursor-pointer text-xl ">Agriculture</span>
-                <span
-                    class="p-2 px-6 border-b-2 hover:text-[#e0421b] border-[#e0421b] bg-[#deebff] cursor-pointer text-xl ">Landscaping</span>
-                <span
-                    class="p-2 px-6 border-b-2 hover:text-[#e0421b] border-[#e0421b] bg-[#deebff] cursor-pointer text-xl ">Hotels
-                    & Restaurants</span>
-            </div>
+      <div class="flex gap-8 justify-center items-center mt-8 flex-wrap">
+          <span class="p-2 px-6 border-b-2 hover:text-[#e0421b] border-[#e0421b] bg-[#deebff] cursor-pointer text-xl">
+              Amusement Parks
+          </span>
+          <span class="p-2 px-6 border-b-2 hover:text-[#e0421b] border-[#e0421b] bg-[#deebff] cursor-pointer text-xl">
+              Agriculture
+          </span>
+          <span class="p-2 px-6 border-b-2 hover:text-[#e0421b] border-[#e0421b] bg-[#deebff] cursor-pointer text-xl">
+              Landscaping
+          </span>
+          <span class="p-2 px-6 border-b-2 hover:text-[#e0421b] border-[#e0421b] bg-[#deebff] cursor-pointer text-xl">
+              Hotels & Restaurants
+          </span>
+      </div>
 
-            <div class="flex gap-8 mt-8 items-center">
-                <div class="flex flex-col gap-4 w-full">
-                    <h4 class="text-2xl font-semibold">Discover the top temporary foreign workers' positions for 2024 in
-                        this industry</h4>
-                    <ul class="list-disc text-xl ml-6">
-                        <li>Ride Operators</li>
-                        <li>Maintenance Workers</li>
-                        <li>Guest Services Staff</li>
-                    </ul>
-                    <h4 class="text-lg font-semibold">
-                        Explore all the roles we can fill for you on our Amusement & Seasonal page!
-                    </h4>
-                </div>
-                <div class="w-full flex justify-center items-center">
-                    <img src="photos/employers/AdobeStock_639221026-1536x1025.jpeg" alt=""
-                        class="w-full h-full object-cover">
-                </div>
-            </div>
+      <div class="flex gap-8 mt-8 items-center flex-col md:flex-row">
+          <div class="flex flex-col gap-4 w-full md:w-1/2">
+              <h4 class="text-2xl font-semibold">
+                  Discover the top temporary foreign workers' positions for 2024 in this industry
+              </h4>
+              <ul class="list-disc text-xl ml-6">
+                  <li>Ride Operators</li>
+                  <li>Maintenance Workers</li>
+                  <li>Guest Services Staff</li>
+              </ul>
+              <h4 class="text-lg font-semibold mt-4">
+                  Explore all the roles we can fill for you on our Amusement & Seasonal page!
+              </h4>
+          </div>
 
-        </div>
+          <div class="w-full md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
+              <img src="photos/employers/AdobeStock_639221026-1536x1025.jpeg" alt=""
+                  class="w-full h-full object-cover rounded-lg">
+          </div>
+      </div>
 
-        <div class="flex justify-center items-center mt-4">
-            <a href="#" class=" bg-[#e0421b] text-white font-bold py-3 px-6 rounded-3xl hover:bg-[#282e69]">
-                Contact us to Check all our seasonal positions
-            </a>
-        </div>
+  </div>
 
-    </div>
+  <div class="flex justify-center items-center mt-6 md:mt-4">
+      <a href="#" class="bg-[#e0421b] text-white font-bold py-3 px-6 rounded-3xl hover:bg-[#282e69]">
+          Contact us to Check all our seasonal positions
+      </a>
+  </div>
+
+</div>
 
 
-    <!-- Other Agencies Issues -->
 
-    <div class="w-4xl mx-auto px-4 sm:px-20 py-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Other Agencies Issues Card -->
-        <div class="border border-gray-200 rounded-2xl shadow-lg bg-white p-6">
-            <h2 class="text-[28px] font-semibold text-[#1e2f6f] mb-4">
-                Other Agencies Issues
-            </h2>
-            <div class="space-y-4">
-                <!-- Row 1 -->
-                <div class="flex items-center">
-                    <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
-                    <p class="text-[#1e2f6f] text-lg">
-                        Hard to find enough skilled workers locally
-                    </p>
-                </div>
-                <!-- Row 2 -->
-                <div class="flex items-center">
-                    <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
-                    <p class="text-[#1e2f6f] text-lg">
-                        Limited access to specialized skills
-                    </p>
-                </div>
-                <!-- Row 3 -->
-                <div class="flex items-center">
-                    <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
-                    <p class="text-[#1e2f6f] text-lg">
-                        Immigration paperwork is complex and confusing
-                    </p>
-                </div>
-                <!-- Row 4 -->
-                <div class="flex items-center">
-                    <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
-                    <p class="text-[#1e2f6f] text-lg">
-                        Recruitment takes too long and is inefficient
-                    </p>
-                </div>
-                <!-- Row 5 -->
-                <div class="flex items-center">
-                    <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
-                    <p class="text-[#1e2f6f] text-lg">
-                        High turnover rates disrupt business operations
-                    </p>
-                </div>
-                <!-- Row 6 -->
-                <div class="flex items-center">
-                    <span class="text-red-500 mr-3 text-2xl font-bold">✕</span>
-                    <p class="text-[#1e2f6f] text-lg">
-                        Seasonal labour demands are hard to meet
-                    </p>
-                </div>
-            </div>
-        </div>
+<!-- Other Agencies Issues Section -->
+<div class="w-full mx-auto px-4 sm:px-6 lg:px-20 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        <!-- Work Vantage Solution Card -->
-        <div class="border border-gray-200 rounded-2xl shadow-lg bg-[#f3f4ff] p-6">
-            <div class="flex items-center gap-3 mb-4">
-                <img src="/photos/logo.png" alt="Work Vantage Logo" class="h-12" />
-                <h2 class="text-[28px] font-semibold text-[#1e2f6f]">
-                    Work Vantage Solution
-                </h2>
-            </div>
-            <div class="space-y-4">
-                <!-- Row 1 -->
-                <div class="flex items-center">
-                    <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
-                    <p class="text-[#1e2f6f] text-lg">
-                        Access a <span class="font-bold">global talent pool</span>
-                    </p>
-                </div>
-                <!-- Row 2 -->
-                <div class="flex items-center">
-                    <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
-                    <p class="text-[#1e2f6f] text-lg">
-                        Candidates with
-                        <span class="font-bold">specific skills</span> tailored to your
-                        industry
-                    </p>
-                </div>
-                <!-- Row 3 -->
-                <div class="flex items-center">
-                    <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
-                    <p class="text-[#1e2f6f] text-lg">
-                        We ensure a <span class="font-bold">smooth process</span>
-                    </p>
-                </div>
-                <!-- Row 4 -->
-                <div class="flex items-center">
-                    <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
-                    <p class="text-[#1e2f6f] text-lg">
-                        Streamlined process for
-                        <span class="font-bold">faster hiring</span>
-                    </p>
-                </div>
-                <!-- Row 5 -->
-                <div class="flex items-center">
-                    <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
-                    <p class="text-[#1e2f6f] text-lg">
-                        <span class="font-bold">Qualified workers</span> to enhance
-                        workforce stability
-                    </p>
-                </div>
-                <!-- Row 6 -->
-                <div class="flex items-center">
-                    <span class="text-green-500 mr-3 text-2xl font-bold">✓</span>
-                    <p class="text-[#1e2f6f] text-lg">
-                        <span class="font-bold">Seasonal workers</span> to meet peak
-                        labour demands
-                    </p>
-                </div>
-            </div>
-        </div>
+  <!-- Other Agencies Issues Card -->
+  <div class="border border-gray-200 rounded-2xl shadow-lg bg-white p-6">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-[#1e2f6f] mb-6">
+          Other Agencies Issues
+      </h2>
+      <div class="space-y-4">
+          <!-- Issue Row -->
+          <div class="flex items-start gap-3">
+              <span class="text-red-500 text-xl sm:text-2xl font-bold">✕</span>
+              <p class="text-[#1e2f6f] text-base sm:text-lg">
+                  Hard to find enough skilled workers locally
+              </p>
+          </div>
+          <div class="flex items-start gap-3">
+              <span class="text-red-500 text-xl sm:text-2xl font-bold">✕</span>
+              <p class="text-[#1e2f6f] text-base sm:text-lg">
+                  Limited access to specialized skills
+              </p>
+          </div>
+          <div class="flex items-start gap-3">
+              <span class="text-red-500 text-xl sm:text-2xl font-bold">✕</span>
+              <p class="text-[#1e2f6f] text-base sm:text-lg">
+                  Immigration paperwork is complex and confusing
+              </p>
+          </div>
+          <div class="flex items-start gap-3">
+              <span class="text-red-500 text-xl sm:text-2xl font-bold">✕</span>
+              <p class="text-[#1e2f6f] text-base sm:text-lg">
+                  Recruitment takes too long and is inefficient
+              </p>
+          </div>
+          <div class="flex items-start gap-3">
+              <span class="text-red-500 text-xl sm:text-2xl font-bold">✕</span>
+              <p class="text-[#1e2f6f] text-base sm:text-lg">
+                  High turnover rates disrupt business operations
+              </p>
+          </div>
+          <div class="flex items-start gap-3">
+              <span class="text-red-500 text-xl sm:text-2xl font-bold">✕</span>
+              <p class="text-[#1e2f6f] text-base sm:text-lg">
+                  Seasonal labour demands are hard to meet
+              </p>
+          </div>
+      </div>
+  </div>
 
-        <div class="flex justify-center items-center mt-4 col-span-2">
-            <a href="#" class=" bg-[#e0421b] text-white font-bold py-3 px-6 rounded-3xl hover:bg-[#282e69]">
-                Transform your workforce with workvantage
-            </a>
-        </div>
-    </div>
+  <!-- Work Vantage Solution Card -->
+  <div class="border border-gray-200 rounded-2xl shadow-lg bg-[#f3f4ff] p-6">
+      <div class="flex items-center gap-3 mb-6">
+          <img src="/photos/logo.png" alt="Work Vantage Logo" class="h-12 w-12 object-contain" />
+          <h2 class="text-2xl sm:text-3xl font-semibold text-[#1e2f6f]">
+              Work Vantage Solution
+          </h2>
+      </div>
+      <div class="space-y-4">
+          <!-- Solution Row -->
+          <div class="flex items-start gap-3">
+              <span class="text-green-500 text-xl sm:text-2xl font-bold">✓</span>
+              <p class="text-[#1e2f6f] text-base sm:text-lg">
+                  Access a <span class="font-bold">global talent pool</span>
+              </p>
+          </div>
+          <div class="flex items-start gap-3">
+              <span class="text-green-500 text-xl sm:text-2xl font-bold">✓</span>
+              <p class="text-[#1e2f6f] text-base sm:text-lg">
+                  Candidates with
+                  <span class="font-bold">specific skills</span> tailored to your
+                  industry
+              </p>
+          </div>
+          <div class="flex items-start gap-3">
+              <span class="text-green-500 text-xl sm:text-2xl font-bold">✓</span>
+              <p class="text-[#1e2f6f] text-base sm:text-lg">
+                  We ensure a <span class="font-bold">smooth process</span>
+              </p>
+          </div>
+          <div class="flex items-start gap-3">
+              <span class="text-green-500 text-xl sm:text-2xl font-bold">✓</span>
+              <p class="text-[#1e2f6f] text-base sm:text-lg">
+                  Streamlined process for
+                  <span class="font-bold">faster hiring</span>
+              </p>
+          </div>
+          <div class="flex items-start gap-3">
+              <span class="text-green-500 text-xl sm:text-2xl font-bold">✓</span>
+              <p class="text-[#1e2f6f] text-base sm:text-lg">
+                  <span class="font-bold">Qualified workers</span> to enhance
+                  workforce stability
+              </p>
+          </div>
+          <div class="flex items-start gap-3">
+              <span class="text-green-500 text-xl sm:text-2xl font-bold">✓</span>
+              <p class="text-[#1e2f6f] text-base sm:text-lg">
+                  <span class="font-bold">Seasonal workers</span> to meet peak
+                  labour demands
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <!-- CTA Button -->
+  <div class="flex justify-center items-center mt-8 col-span-1 md:col-span-2">
+      <a href="#" class="bg-[#e0421b] text-white font-bold py-3 px-6 rounded-full hover:bg-[#282e69] transition">
+          Transform your workforce with WorkVantage
+      </a>
+  </div>
+</div>
+
 
       <!-- Real Feedback Real Success -->
     <div class="p-4 w-full flex gap-4 flex-col justify-between items-center py-12">

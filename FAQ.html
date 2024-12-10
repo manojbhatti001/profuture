@@ -9,258 +9,296 @@
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Top Header Section -->
-    <header class="bg-blue-900 text-white">
-        <div class="flex justify-between items-center px-6 py-3">
-            <!-- Free Assessment Button -->
-            <a href="#" class="bg-orange-600 px-4 py-2 rounded-full font-bold hover:bg-orange-700">
-                Free Assessment
-            </a>
+<header class="bg-blue-900 text-white">
+  <div class="flex justify-between items-center px-6 py-3">
+    <!-- Free Assessment Button -->
+    <a href="#" class="bg-orange-600 px-4 py-2 rounded-full font-bold hover:bg-orange-700">
+        Free Assessment
+    </a>
 
-            <!-- Phone Number -->
-            <a href="tel:+18774725818" class="text-lg font-bold hover:underline">
-                +1 (877) 472-5818
-            </a>
-        </div>
-    </header>
+    <!-- Phone Number -->
+    <a href="tel:+18774725818" class="text-lg font-bold hover:underline">
+        +1 (877) 472-5818
+    </a>
+  </div>
+</header>
 
-    <!-- Navbar Section -->
-    <header class="bg-white py-4 px-8 shadow-md">
-        <div class="flex justify-between items-center max-w-screen-xl mx-auto">
-            <!-- Logo and Tagline -->
-            <a href="index.html" class="flex items-center ml-48 space-x-4">
-                <img src="/photos/logo.png" class="h-14 w-auto" alt="Workvantage Logo" />
-            </a>
+<!-- Navbar Section -->
+<header class="bg-white py-4 px-6 sm:px-8 shadow-md">
+  <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+    <!-- Logo and Tagline -->
+    <a href="index.html" class="flex items-center space-x-4">
+        <img src="/photos/logo.png" class="h-14 w-auto" alt="Workvantage Logo" />
+    </a>
 
-            <!-- Navigation Links -->
-            <nav>
-                <ul class="flex space-x-8 text-blue-900 ml-48 font-bold">
-                    <li><a href="/jobcard1.html" class="hover:text-orange-600 ">Job Opening </a></li>
-                    <li><a href="/submitprofile.html" class="hover:text-orange-600">Submit Your profile</a></li>
-                    <li><a href="/FAQ.html" class="hover:text-orange-600">FAQ</a></li>
-                    <li><a href="/ContactUs1.html" class="hover:text-orange-600">Contact Us</a></li>
-                </ul>
-            </nav>
+    <!-- Navigation Links (Responsive) -->
+    <nav class="hidden sm:block">
+        <ul class="flex space-x-8 text-blue-900 font-bold">
+            <li><a href="/jobcard1.html" class="hover:text-orange-600">Job Opening</a></li>
+            <li><a href="/submitprofile.html" class="hover:text-orange-600">Submit Your profile</a></li>
+            <li><a href="/FAQ.html" class="hover:text-orange-600">FAQ</a></li>
+            <li><a href="/ContactUs1.html" class="hover:text-orange-600">Contact Us</a></li>
+        </ul>
+    </nav>
 
-            <!-- Language Flags -->
-            <div class="w-5 h-4" style="background: linear-gradient(to right, #0055a4, #ffffff, #ef4135);"></div>
-        </div>
-    </header>
+    <!-- Hamburger Menu for Smaller Screens -->
+    <div class="sm:hidden flex items-center">
+        <button class="text-black focus:outline-none" id="menu-toggle">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Language Flags -->
+    <div class="hidden sm:block w-5 h-4 bg-gradient-to-r from-[#0055a4] to-[#ef4135]"></div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<nav id="mobile-menu" class="sm:hidden hidden bg-white top-16 left-0 right-0 shadow-md">
+  <ul class="flex flex-col p-4 space-y-4 text-blue-900 font-bold">
+      <li><a href="/jobcard1.html" class="hover:text-orange-600">Job Opening</a></li>
+      <li><a href="/submitprofile.html" class="hover:text-orange-600">Submit Your profile</a></li>
+      <li><a href="/FAQ.html" class="hover:text-orange-600">FAQ</a></li>
+      <li><a href="/ContactUs1.html" class="hover:text-orange-600">Contact Us</a></li>
+  </ul>
+</nav>
+
+<script>
+    // Toggle mobile menu visibility
+    const menuToggleButton = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    menuToggleButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden'); // Toggling the visibility of the mobile menu
+    });
+</script>
+
+  
 
     <!-- Scam Warning Section -->
-    <section class="bg-yellow-300 py-8">
-        <div class="max-w-6xl mx-auto p-6 bg-yellow-200 rounded-lg shadow-lg">
-            <h1 class="text-2xl font-bold text-gray-800">Scam Warning!</h1>
-            <p class="mt-4 text-gray-700">
-                At Workvantage, we prioritize ethical recruitment practices. However, scammers may attempt to misuse our name. Our only authorized agent in India is 
-                <strong>2COMS Group, India, Kolkata, 8 Moulavi Mujibur Rahman Sarani</strong>. 
-                Contact: 
-                <a href="mailto:chandrika@2coms.com" class="text-blue-600 underline">chandrika@2coms.com</a>, 
-                Phone: 
-                <a href="tel:+918096268296" class="text-blue-600 underline">+91 8096268296</a>.
-                Verify authenticity by contacting them directly. 
-                <a href="#" class="text-red-600 underline font-semibold">Learn more</a>.
-            </p>
-        </div>
-    </section>
+<section class="bg-yellow-300 py-8">
+  <div class="max-w-6xl mx-auto p-6 bg-yellow-200 rounded-lg shadow-lg">
+      <h1 class="text-2xl sm:text-3xl font-bold text-gray-800">Scam Warning!</h1>
+      <p class="mt-4 text-gray-700 text-base sm:text-lg">
+          At Workvantage, we prioritize ethical recruitment practices. However, scammers may attempt to misuse our name. Our only authorized agent in India is 
+          <strong>2COMS Group, India, Kolkata, 8 Moulavi Mujibur Rahman Sarani</strong>. 
+          Contact: 
+          <a href="mailto:chandrika@2coms.com" class="text-blue-600 underline">chandrika@2coms.com</a>, 
+          Phone: 
+          <a href="tel:+918096268296" class="text-blue-600 underline">+91 8096268296</a>.
+          Verify authenticity by contacting them directly. 
+          <a href="#" class="text-red-600 underline font-semibold">Learn more</a>.
+      </p>
+  </div>
+</section>
 
-    <!-- Heading Section -->
-<div class="text-center mb-10 mt-8">
-    <h2 class="text-3xl font-semibold text-gray-800">Frequently Asked Questions (FAQs)</h2>
-    <div class="mt-2">
-      <h3 class="text-xl text-gray-600">Explore the most common questions from those interested in learning more about us.</h3>
-    </div>
+
+ <!-- Heading Section -->
+<div class="text-center mb-10 mt-8 px-4">
+  <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800">Frequently Asked Questions (FAQs)</h2>
+  <div class="mt-2">
+      <h3 class="text-xl sm:text-2xl text-gray-600">Explore the most common questions from those interested in learning more about us.</h3>
   </div>
-  
-  <!-- Container with image -->
-<div class="w-full h-96  mb-6 flex items-center justify-center">
-    <img src="/photos/successful-businesswoman-working-laptop-computer" alt="FAQ Image" class="w-full h-full object-contain">
-  </div>
+</div>
+
+<!-- Container with image -->
+<div class="w-full h-72 sm:h-96 mb-6 flex items-center justify-center px-4">
+  <img src="/photos/successful-businesswoman-working-laptop-computer" alt="FAQ Image" class="w-full h-full object-contain">
+</div>
+
   
 
 
 
     <!-- FAQ -->
+<div class="p-4 w-full bg-[#10143b] text-white">
+  <h3 class="text-center text-3xl sm:text-4xl font-semibold p-2">
+    Frequently Asked Question
+  </h3>
+  <div class="faq flex flex-col p-4">
 
-  <div class="p-4 w-full bg-[#10143b] text-white">
-    <h3 class="text-center text-3xl font-semibold p-2">
-      Frequently Asked Question
-    </h3>
-    <div class="faq flex flex-col p-4">
+    <!-- FAQ Item -->
+    <div class="flex flex-col text-lg sm:text-xl p-4 faq-item">
+      <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+        <span class="open text-2xl"> + </span>
+        <span class="close text-2xl hidden"> - </span>
+        How do I start the process of hiring a foreign worker through Workvantage recruitment and staffing agency?
+      </p>
+      <p class="ans hidden">
+        To start the process, contact us for a consultation. We’ll discuss your specific needs and guide you through each step, from job postings to candidate selection and documentation.
+      </p>
+    </div>
 
-      <!-- FAQ Item -->
-      <div class="flex flex-col text-lg p-4 faq-item">
-        <p class="flex items-center gap-3 border-t-2 cursor-pointer">
-          <span class="open text-2xl"> + </span>
-          <span class="close text-2xl hidden"> - </span>
-          How do I start the process of hiring a foreign worker through Workvantage recruitment and staffing agency?
-        </p>
-        <p class="ans hidden">
-          To start the process, contact us for a consultation. We’ll discuss your specific needs and guide you through each step, from job postings to candidate selection and documentation.
-        </p>
+    <!-- FAQ Item -->
+    <div class="flex flex-col text-lg sm:text-xl p-4 faq-item">
+      <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+        <span class="open text-2xl"> + </span>
+        <span class="close text-2xl hidden"> - </span>
+        What industries do you specialize in for recruitment?
+      </p>
+      <p class="ans hidden">
+        We specialize in various industries, including Greenhouse, Food Processing, Construction & Trades, Manufacturing & Warehousing, fish processing, Hotel & Restaurants, and more. Our diverse network allows us to find the best talent for your specific industry requirements.
+      </p>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="flex flex-col text-lg sm:text-xl p-4 faq-item">
+      <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+        <span class="open text-2xl"> + </span>
+        <span class="close text-2xl hidden"> - </span>
+        Can you help with both temporary and permanent staffing needs?
+      </p>
+      <p class="ans hidden">
+        Yes, we provide solutions for both temporary and permanent staffing needs. Whether you need short-term project workers or long-term employees, we’ve got you covered.
+      </p>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="flex flex-col text-lg sm:text-xl p-4 faq-item">
+      <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+        <span class="open text-2xl"> + </span>
+        <span class="close text-2xl hidden"> - </span>
+        How long does the recruitment process take?
+      </p>
+      <p class="ans hidden">
+        The whole process (Recruitment, LMIA, Visa, and Travel arrangement) takes between 3 to 6 months, depending on the complexity of the position and the specific requirements of the job. We strive to make the process as efficient as possible.
+      </p>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="flex flex-col text-lg sm:text-xl p-4 faq-item">
+      <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+        <span class="open text-2xl"> + </span>
+        <span class="close text-2xl hidden"> - </span>
+        What support do you offer after the hiring process is complete?
+      </p>
+      <p class="ans hidden">
+        We offer immigration ongoing support, including assistance with work permit renewals and compliance with immigration regulations. Our goal is to ensure a smooth transition and continued success.
+      </p>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="flex flex-col text-lg sm:text-xl p-4 faq-item">
+      <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+        <span class="open text-2xl"> + </span>
+        <span class="close text-2xl hidden"> - </span>
+        What are the benefits of working with Workvantage compared to other agencies?
+      </p>
+      <p class="ans hidden">
+        As the leading staffing agency in Canada, Workvantage offers personalized service, extensive industry expertise, and a proven track record of successful placements. We handle all the legal and administrative complexities, providing a hassle-free experience for employers.
+      </p>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="flex flex-col text-lg sm:text-xl p-4 faq-item">
+      <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+        <span class="open text-2xl"> + </span>
+        <span class="close text-2xl hidden"> - </span>
+        What is the LMIA process and how does it work?
+      </p>
+      <p class="ans hidden">
+        The LMIA process involves obtaining permission from Employment and Social Development Canada (ESDC) to hire a foreign worker. We assist with every step, ensuring all necessary documentation is prepared and submitted accurately.
+      </p>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="flex flex-col text-lg sm:text-xl p-4 faq-item">
+      <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+        <span class="open text-2xl"> + </span>
+        <span class="close text-2xl hidden"> - </span>
+        What types of work permits do you handle?
+      </p>
+      <p class="ans hidden">
+        We handle various types of work permits, including employer-specific permits, open work permits, and permits under the International Mobility Program. We tailor our services to meet your specific needs.
+      </p>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="flex flex-col text-lg sm:text-xl p-4 faq-item">
+      <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+        <span class="open text-2xl"> + </span>
+        <span class="close text-2xl hidden"> - </span>
+        Can you assist with permanent residence applications?
+      </p>
+      <p class="ans hidden">
+        Yes, we provide support for permanent residence applications, helping your employees secure their long-term future in Canada. We guide you through the entire process to ensure success.
+      </p>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="flex flex-col text-lg sm:text-xl p-4 faq-item">
+      <p class="flex items-center gap-3 border-t-2 cursor-pointer">
+        <span class="open text-2xl"> + </span>
+        <span class="close text-2xl hidden"> - </span>
+        What are the costs associated with your services?
+      </p>
+      <p class="ans hidden">
+        The costs vary depending on the specific services required and the complexity of each case. Contact us for a detailed quote tailored to your needs. We strive to offer competitive and transparent pricing.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- company -->
+<div class="w-full flex flex-col gap-2 p-4">
+  <!-- First Grid Section -->
+  <div class="bg-[#f7f7f7] grid grid-cols-1 md:grid-cols-3 py-8 gap-4 md:gap-2">
+    <!-- Job Seekers -->
+    <div class="flex flex-col justify-center items-center">
+      <img src="/photos/paper.png" alt="" class="w-1/3 md:w-1/2 lg:w-1/3" />
+      <div class="px-6 py-3 rounded-full bg-black text-white font-semibold text-xl">
+        Job Seekers
       </div>
+    </div>
 
-      <!-- FAQ Item -->
-      <div class="flex flex-col text-lg p-4 faq-item">
-        <p class="flex items-center gap-3 border-t-2 cursor-pointer">
-          <span class="open text-2xl"> + </span>
-          <span class="close text-2xl hidden"> - </span>
-          What industries do you specialize in for recruitment?
-        </p>
-        <p class="ans hidden">
-          We specialize in various industries, including Greenhouse, Food Processing, Construction & Trades, Manufacturing & Warehousing, fish processing, Hotel & Restaurants and more. Our diverse network allows us to find the best talent for your specific industry requirements.
-        </p>
+    <!-- Agencies -->
+    <div class="flex flex-col justify-center items-center md:border-x-4">
+      <img src="/photos/building.png" alt="" class="w-1/3 md:w-1/2 lg:w-1/3" />
+      <div class="px-6 py-3 rounded-full bg-black text-white font-semibold text-xl">
+        Agencies
       </div>
+    </div>
 
-      <!-- FAQ Item -->
-      <div class="flex flex-col text-lg p-4 faq-item">
-        <p class="flex items-center gap-3 border-t-2 cursor-pointer">
-          <span class="open text-2xl"> + </span>
-          <span class="close text-2xl hidden"> - </span>
-          Can you help with both temporary and permanent staffing needs?
-        </p>
-        <p class="ans hidden">
-          Yes, we provide solutions for both temporary and permanent staffing needs. Whether you need short-term project workers or long-term employees, we’ve got you covered.
-        </p>
+    <!-- Immigration Services -->
+    <div class="flex flex-col justify-center items-center">
+      <img src="/photos/maple.png" alt="" class="w-1/3 md:w-1/2 lg:w-1/3" />
+      <div class="px-6 py-3 rounded-full bg-black text-white font-semibold text-xl">
+        Immigration Services
       </div>
-
-      <!-- FAQ Item -->
-      <div class="flex flex-col text-lg p-4 faq-item">
-        <p class="flex items-center gap-3 border-t-2 cursor-pointer">
-          <span class="open text-2xl"> + </span>
-          <span class="close text-2xl hidden"> - </span>
-          How long does the recruitment process take?
-        </p>
-        <p class="ans hidden">
-          The whole process (Recruitment, LMIA, Visa and Travel arrangement) takes between 3 to 6 months, depending on the complexity of the position and the specific requirements of the job. We strive to make the process as efficient as possible.
-        </p>
-      </div>
-
-      <!-- FAQ Item -->
-      <div class="flex flex-col text-lg p-4 faq-item">
-        <p class="flex items-center gap-3 border-t-2 cursor-pointer">
-          <span class="open text-2xl"> + </span>
-          <span class="close text-2xl hidden"> - </span>
-          What support do you offer after the hiring process is complete?
-        </p>
-        <p class="ans hidden">
-          We offer immigration ongoing support, including assistance with work permit renewals and compliance with immigration regulations. Our goal is to ensure a smooth transition and continued success.
-        </p>
-      </div>
-
-
-
-
-      
-
-      <!-- FAQ Item -->
-      <div class="flex flex-col text-lg p-4 faq-item">
-        <p class="flex items-center gap-3 border-t-2 cursor-pointer">
-          <span class="open text-2xl"> + </span>
-          <span class="close text-2xl hidden"> - </span>
-          What are the benefits of working with Workvantage compared to other agencies?
-        </p>
-        <p class="ans hidden">
-          As the leading staffing agency in Canada, Workvantage offers personalized service, extensive industry expertise, and a proven track record of successful placements. We handle all the legal and administrative complexities, providing a hassle-free experience for employers.
-        </p>
-      </div>
-
-      <!-- FAQ Item -->
-      <div class="flex flex-col text-lg p-4 faq-item">
-        <p class="flex items-center gap-3 border-t-2 cursor-pointer">
-          <span class="open text-2xl"> + </span>
-          <span class="close text-2xl hidden"> - </span>
-          What is the LMIA process and how does it work?
-        </p>
-        <p class="ans hidden">
-          The LMIA process involves obtaining permission from Employment and Social Development Canada (ESDC) to hire a foreign worker. We assist with every step, ensuring all necessary documentation is prepared and submitted accurately.
-        </p>
-      </div>
-
-      <!-- FAQ Item -->
-      <div class="flex flex-col text-lg p-4 faq-item">
-        <p class="flex items-center gap-3 border-t-2 cursor-pointer">
-          <span class="open text-2xl"> + </span>
-          <span class="close text-2xl hidden"> - </span>
-          What types of work permits do you handle?
-        </p>
-        <p class="ans hidden">
-          We handle various types of work permits, including employer-specific permits, open work permits, and permits under the International Mobility Program. We tailor our services to meet your specific needs.
-        </p>
-      </div>
-
-      <!-- FAQ Item -->
-      <div class="flex flex-col text-lg p-4 faq-item">
-        <p class="flex items-center gap-3 border-t-2 cursor-pointer">
-          <span class="open text-2xl"> + </span>
-          <span class="close text-2xl hidden"> - </span>
-          Can you assist with permanent residence applications?
-        </p>
-        <p class="ans hidden">
-          Yes, we provide support for permanent residence applications, helping your employees secure their long-term future in Canada. We guide you through the entire process to ensure success.
-        </p>
-      </div>
-
-      <!-- FAQ Item -->
-      <div class="flex flex-col text-lg p-4 faq-item">
-        <p class="flex items-center gap-3 border-t-2 cursor-pointer">
-          <span class="open text-2xl"> + </span>
-          <span class="close text-2xl hidden"> - </span>
-          What are the costs associated with your services?
-        </p>
-        <p class="ans hidden">
-          The costs vary depending on the specific services required and the complexity of each case. Contact us for a detailed quote tailored to your needs. We strive to offer competitive and transparent pricing.
-        </p>
-      </div>
-
     </div>
   </div>
 
-
-  <!-- company -->
-  <div class="w-full flex flex-col gap-2 p-4">
-    <div class="bg-[#f7f7f7] grid md:grid-cols-3 py-8 gap-4 md:gap-2">
-      <div class="flex flex-col justify-center items-center">
-        <img src="/photos/paper.png" alt="" class="md:w-1/3 w-1/5" />
-        <div class="px-6 py-3 rounded-full bg-black text-white font-semibold text-xl">
-          Job Seekers
-        </div>
+  <!-- Second Grid Section -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 py-8 md:gap-2">
+    <!-- Partner Company -->
+    <div class="flex flex-col gap-4 justify-between items-center">
+      <div class="px-6 py-3 text-[#282e69] font-semibold text-xl sm:text-2xl md:text-3xl">
+        PARTNER COMPANY
       </div>
-
-      <div class="flex flex-col justify-center items-center md:border-x-4">
-        <img src="/photos/building.png" alt="" class="md:w-1/3 w-1/5" />
-        <div class="px-6 py-3 rounded-full bg-black text-white font-semibold text-xl">
-          Agencies
-        </div>
-      </div>
-      <div class="flex flex-col justify-center items-center">
-        <img src="/photos/maple.png" alt="" class="md:w-1/3 w-1/5" />
-        <div class="px-6 py-3 rounded-full bg-black text-white font-semibold text-xl">
-          Immigration Services
-        </div>
-      </div>
+      <img src="/photos/Logo-Immigrationpros.png" alt="" class="w-1/3 md:w-1/2 lg:w-1/3" />
     </div>
 
-    <div class="grid gap-4 md:gap-2 py-8 md:grid-cols-3">
-      <div class="flex flex-col gap-4 justify-between items-center">
-        <div class="px-6 py-3 text-[#282e69] font-semibold text-2xl">
-          PARTNER COMPANY
-        </div>
-        <img src="/photos/Logo-Immigrationpros.png" alt="" class="md:w-1/3 w-1/5" />
+    <!-- Allied Company -->
+    <div class="flex flex-col gap-4 justify-between items-center md:border-x-4">
+      <div class="px-6 py-3 text-[#282e69] font-semibold text-xl sm:text-2xl md:text-3xl">
+        ALLIED COMPANY
       </div>
-      <div class="flex flex-col gap-4 justify-between items-center md:border-x-4">
-        <div class="px-6 py-3 text-[#282e69] font-semibold text-2xl">
-          ALLIED COMPANY
-        </div>
-        <img src="/photos/RCIC-CRIC.png" alt="" class="md:w-1/3 w-1/5" />
+      <img src="/photos/RCIC-CRIC.png" alt="" class="w-1/3 md:w-1/2 lg:w-1/3" />
+    </div>
+
+    <!-- Accreditation -->
+    <div class="flex flex-col gap-4 justify-between items-center">
+      <div class="px-6 py-3 text-[#282e69] font-semibold text-xl sm:text-2xl md:text-3xl">
+        ACCREDITATION
       </div>
-      <div class="flex flex-col gap-4 justify-between items-center">
-        <div class="px-6 py-3 text-[#282e69] font-semibold text-2xl">
-          ACCREDITATION
-        </div>
-        <img src="/photos/Logo-Immigrationpros.png" alt="" class="md:w-1/3 w-1/5" />
-      </div>
+      <img src="/photos/Logo-Immigrationpros.png" alt="" class="w-1/3 md:w-1/2 lg:w-1/3" />
     </div>
   </div>
+</div>
+
 
   <!-- footer -->
 
